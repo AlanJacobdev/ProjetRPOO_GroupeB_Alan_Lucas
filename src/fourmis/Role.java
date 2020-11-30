@@ -1,5 +1,5 @@
 package fourmis;
 
-public class Role {
+public abstract class Role {
 
 }

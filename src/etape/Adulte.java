@@ -1,5 +1,9 @@
 package etape;
 
-public class Adulte {
+import fourmis.Etape;
 
+public class Adulte extends Etape {
+
+	
+	
 }

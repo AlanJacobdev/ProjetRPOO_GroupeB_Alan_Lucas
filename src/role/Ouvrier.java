@@ -1,5 +1,7 @@
 package role;
 
-public class Ouvrier {
+import fourmis.Role;
+
+public class Ouvrier extends Role{
 
 }

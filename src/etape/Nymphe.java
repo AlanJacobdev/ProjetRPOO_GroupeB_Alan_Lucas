@@ -1,5 +1,7 @@
 package etape;
 
-public class Nymphe {
+import fourmis.Etape;
+
+public class Nymphe extends Etape{
 
 }

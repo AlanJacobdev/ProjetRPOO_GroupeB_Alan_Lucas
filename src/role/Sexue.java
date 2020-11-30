@@ -1,5 +1,7 @@
 package role;
 
-public class Sexue {
+import fourmis.Role;
+
+public class Sexue extends Role{
 
 }

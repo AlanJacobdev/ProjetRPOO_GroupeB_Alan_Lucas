@@ -1,5 +1,7 @@
 package etape;
 
-public class Oeuf {
+import fourmis.Etape;
+
+public class Oeuf extends Etape {
 
 }

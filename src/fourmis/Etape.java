@@ -1,5 +1,9 @@
 package fourmis;
 
-public class Etape {
+public abstract class Etape {
 
+	Etape next() {
+		return this;
+	}
+	
 }
