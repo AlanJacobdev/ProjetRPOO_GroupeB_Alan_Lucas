@@ -2,11 +2,11 @@ package fourmis;
 
 import etape.Oeuf;
 
-public class Fourmi {
+public class Fourmis {
 
 	Etape etape;
 
-	public Fourmi() {
+	public Fourmis() {
 		this.etape = new Oeuf();
 	}
 	
