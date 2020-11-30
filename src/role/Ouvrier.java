@@ -2,11 +2,11 @@ package role;
 
 import fourmis.Role;
 
-public class Ouvrier extends Role{
+public class Ouvrier extends Role {
 
-	@Override
-	protected void step() {
-		
-	}
+  @Override
+  protected void step() {
+
+  }
 
 }

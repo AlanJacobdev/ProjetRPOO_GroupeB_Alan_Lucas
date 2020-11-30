@@ -7,13 +7,12 @@ import fourmis.Fourmis;
 
 public class Fourmiliere {
 
-	List<Fourmis> lesFourmis;
+  List<Fourmis> lesFourmis;
 
-	public Fourmiliere() {
-		this.lesFourmis = new ArrayList<>();
-	}
-	
-	
-	
-	
+  public Fourmiliere() {
+    this.lesFourmis = new ArrayList<>();
+  }
+
+
+
 }

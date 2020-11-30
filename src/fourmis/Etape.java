@@ -4,19 +4,19 @@ import etape.Oeuf;
 
 public abstract class Etape {
 
-	Etape etape;
-	Integer nbJour;
-	
-	public Etape() {
-		this.etape = new Oeuf();
-		
-	}
+  Etape etape;
+  Integer nbJour;
 
-	Etape next() {
-		nbJour++;
-		return this;
-	}
+  public Etape() {
+    this.etape = new Oeuf();
 
-	protected abstract void step();
+  }
+
+  Etape next() {
+    nbJour++;
+    return this;
+  }
+
+  protected abstract void step();
 
 }

@@ -2,10 +2,10 @@ package etape;
 
 import fourmis.Etape;
 
-public class Nymphe extends Etape{
+public class Nymphe extends Etape {
 
-	
-	public void step() {
-		
-	}
+
+  public void step() {
+
+  }
 }
