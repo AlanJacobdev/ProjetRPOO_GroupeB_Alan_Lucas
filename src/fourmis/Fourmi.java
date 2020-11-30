@@ -1,4 +1,4 @@
-package fourmiliere;
+package fourmis;
 
 public class Fourmi {
 
