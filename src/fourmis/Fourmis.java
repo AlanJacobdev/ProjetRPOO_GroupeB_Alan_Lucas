@@ -10,6 +10,9 @@ public class Fourmis {
     this.etape = new Oeuf();
   }
 
+  public Fourmis(Etape etape) {
+    this.etape = etape;
+  }
 
   public void step() {
     this.etape = etape.next();
