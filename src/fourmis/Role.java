@@ -6,7 +6,10 @@ import role.Soldat;
 
 public abstract class Role {
 
-  protected abstract void step();
+  
+  public Role() {
+  }
+
 
   protected int minimumPopulationOuvriere = 0;
   protected int maximalPopulationOuvriere = 65;
@@ -16,6 +19,8 @@ public abstract class Role {
 
   protected int minimumPopulationSexue = 85;
   protected int maximalPopulationSexue = 100;
+
+  protected abstract void step();
 
 
   /**
