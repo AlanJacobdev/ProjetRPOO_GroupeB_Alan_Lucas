@@ -12,7 +12,7 @@ public class Reine extends SexueFemelle {
   public Reine() {
     super(null);
     this.age = 0;
-    this.esperanceVie = (int) (Math.random() * (1461 - 3652));
+    this.esperanceVie = (int) (Math.random() * (3652 - 1461)) + 1461;
   }
   
   /**
@@ -33,6 +33,8 @@ public class Reine extends SexueFemelle {
   
   @Override
   protected Etape mourrir() {
+    System.out.println(age);
+    System.out.println(esperanceVie);
     if (this.age >= this.esperanceVie) {
       detruireFourmilliere();
       return new Mort(stadeEvolution.getFourmis());
