@@ -23,9 +23,11 @@ public class Main {
     
     simulateur.getReine().pondre(10);
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
+    int jour = 0;
     while (true) {
+      jour++;
       laFourmiliere.step();
-      simulateur.getJournal().ecrire(laFourmiliere);
+      simulateur.getJournal().ecrire(laFourmiliere, jour);
       try {
         Thread.sleep(1000);
       } catch (InterruptedException e) {
