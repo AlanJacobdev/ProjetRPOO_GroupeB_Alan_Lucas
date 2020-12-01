@@ -21,7 +21,7 @@ public class Fourmis {
    * @return un Objet Fourmis dont l'étape est de type Adulte et le role est de type Reine.
    */
   public Fourmis creerReine() {
-    Adulte reine = new Adulte();
+    Adulte reine = new Adulte(true);
     reine.attributionRoleReine();
     this.etape = reine;
 

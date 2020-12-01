@@ -4,7 +4,6 @@ import fourmis.Etape;
 import fourmis.Role;
 import role.Ouvrier;
 import role.Reine;
-import role.Sexue;
 import role.SexueFemelle;
 import role.SexueMale;
 import role.Soldat;
@@ -12,6 +11,8 @@ import role.Soldat;
 public class Adulte extends Etape {
 
   Role roleFourmis;
+  Integer age;
+  Integer esperanceVie;
 
   static int minimumPopulationOuvriere = 0;
   static int maximalPopulationOuvriere = 65;
@@ -20,15 +21,28 @@ public class Adulte extends Etape {
   static int minimumPopulationSexue = 85;
   static int maximalPopulationSexue = 100;
 
-  public Adulte() {
+  /**
+   * Creation d'une fourmis adulte.
+   * 
+   * @param isReine : <br/>
+   *        <b>true</b> Créer Reine <br/>
+   *        <b>false</b> Creer fourmis (Ouvrière, Soldat, Sexuée)
+   */
+  public Adulte(Boolean isReine) {
     super();
-    this.roleFourmis = this.creerRole();
+    if (!(isReine)) {
+      this.roleFourmis = this.creerRole();
+      this.esperanceVie = (int) (Math.random() * (547 - 913));
+    } else {
+      this.attributionRoleReine();
+      this.esperanceVie = (int) (Math.random() * (1461 - 3650));
+    }
   }
 
 
 
   public void step() {
-
+    age++;
   }
 
   /**

@@ -1,6 +1,7 @@
 package etape;
 
 import fourmis.Etape;
+import fourmis.Role;
 
 public class Nymphe extends Etape {
 
@@ -12,6 +13,20 @@ public class Nymphe extends Etape {
   }
 
   public void step() {
+    age++;
+  }
 
+  @Override
+  protected Etape next() {
+    if (age == joursAvantFourmis) {
+      return new Adulte(false);
+    }
+    return this;
+  }
+
+  @Override
+  protected Role getRole() {
+    // TODO Auto-generated method stub
+    return null;
   }
 }
