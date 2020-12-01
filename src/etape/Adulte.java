@@ -12,8 +12,7 @@ import role.Soldat;
 public class Adulte extends Etape {
 
   Role roleFourmis;
-  Integer age;
-  Integer esperanceVie;
+
   Fourmiliere laFourmiliere;
 
   static int minimumPopulation = 0;
@@ -25,29 +24,14 @@ public class Adulte extends Etape {
    * Adulte.
    * 
    */
-  public Adulte(Boolean isReine, Fourmiliere fourmiliere) {
+  public Adulte(Fourmiliere fourmiliere) {
     super();
     this.laFourmiliere = fourmiliere;
-    if (isReine) {
-      this.attributionRoleReine();
-      this.esperanceVie = (int) (Math.random() * (547 - 913));
-    } else {
-      this.roleFourmis = this.creerRole();
-      this.esperanceVie = (int) (Math.random() * (1461 - 3652));
-    }
-
+    this.roleFourmis = this.creerRole();
   }
 
-  /**
-   * Incrémentation du temps.
-   */
-  public void step() {
-    age++;
-    if (this.roleFourmis instanceof Reine && age == esperanceVie) {
-      ((Reine) this.roleFourmis).detruireFourmilliere();
-    }
-  }
-
+ 
+  
   /**
    * Attribue un rôle à une fourmis adulte.
    */
@@ -55,18 +39,18 @@ public class Adulte extends Etape {
     int categorieFourmis = (int) (Math.random() * (maximalPopulation - minimumPopulation));
     if (categorieFourmis < maximalPopulationOuvriere) {
       this.laFourmiliere.incrementerOuvrieres();
-      return new Ouvrier();
+      return new Ouvrier(laFourmiliere);
     }
     if (categorieFourmis < maximalPopulationSoldat) {
       this.laFourmiliere.incrementerSoldats();
-      return new Soldat();
+      return new Soldat(laFourmiliere);
     }
     if ((boolean) (Math.random() > 0.5 ? 1 : 2 == 1)) {
       this.laFourmiliere.incrementerSexueMale();
-      return new SexueMale();
+      return new SexueMale(laFourmiliere);
     }
     this.laFourmiliere.incrementerSexueFemelle();
-    return new SexueFemelle();
+    return new SexueFemelle(laFourmiliere);
   }
 
   public void attributionRoleReine() {
@@ -81,6 +65,12 @@ public class Adulte extends Etape {
   @Override
   protected Etape next() {
     return this;
+  }
+
+  @Override
+  protected void step() {
+    this.getRole().step();
+    
   }
 
 }

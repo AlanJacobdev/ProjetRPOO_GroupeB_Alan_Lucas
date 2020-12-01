@@ -33,6 +33,15 @@ public class Fourmiliere {
     this.nbSexueMales = 0;
   }
 
+  /**
+   * .
+   */
+  public void step() {
+    for (Fourmis uneFourmis : lesFourmis) {
+      uneFourmis.step();
+    }
+  }
+  
   public void incrementerOeufs() {
     this.nbOeufs++;
   }

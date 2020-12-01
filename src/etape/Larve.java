@@ -20,13 +20,6 @@ public class Larve extends Etape {
     this.laFourmiliere.incrementerLarves();
   }
 
-  
-  
-  public void step() {
-    age++;
-  }
-
-
 
   @Override
   protected Etape next() {
@@ -45,4 +38,9 @@ public class Larve extends Etape {
     return null;
   }
 
+
+  @Override
+  protected void step() {
+    age++;
+  }
 }
