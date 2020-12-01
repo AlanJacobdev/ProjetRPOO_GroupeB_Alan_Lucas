@@ -8,6 +8,7 @@ import java.util.List;
 public class Fourmiliere {
 
   private List<Fourmis> lesFourmis;
+  private List<Fourmis> lesFourmisMortes;
   private Fourmis reine;
   private InformationsFourmiliere infos;
 
@@ -19,6 +20,7 @@ public class Fourmiliere {
   public Fourmiliere(Reine reine) {
     this.lesFourmis = new ArrayList<>();
     this.infos = new InformationsFourmiliere();
+    this.lesFourmisMortes = new ArrayList<>();
   }
 
   /**
@@ -27,6 +29,9 @@ public class Fourmiliere {
   public void step() {
     for (Fourmis uneFourmis : lesFourmis) {
       uneFourmis.step();
+    }
+    if (this.lesFourmisMortes.size() > 0) {
+      this.removeFourmis();
     }
   }
 
@@ -44,9 +49,16 @@ public class Fourmiliere {
   public InformationsFourmiliere getInfos() {
     return this.infos;
   }
+  
+  public void ajoutFourmisMorte(Fourmis fourmis) {
+    this.lesFourmisMortes.add(fourmis);
+  }
 
-  public void removeFourmis(Fourmis fourmis) {
-    this.lesFourmis.remove(fourmis);
+  private void removeFourmis() {
+    for (Fourmis fourmis : this.lesFourmisMortes) {
+      this.lesFourmis.remove(fourmis);
+    }
+    this.lesFourmisMortes = new ArrayList<>();
   }
 
   public List<Fourmis> getFourmis() {

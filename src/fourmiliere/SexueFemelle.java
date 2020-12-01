@@ -28,7 +28,7 @@ public class SexueFemelle extends Sexue {
       Fourmis fourmis = this.stadeEvolution.getFourmis();
       fourmis.getFourmiliere().getInfos().addMort(fourmis);
       fourmis.getFourmiliere().getInfos().decrementerSexueFemelle();
-      fourmis.getFourmiliere().removeFourmis(fourmis);
+      fourmis.getFourmiliere().ajoutFourmisMorte(fourmis);
       return new Mort(fourmis);
     }
     return stadeEvolution;

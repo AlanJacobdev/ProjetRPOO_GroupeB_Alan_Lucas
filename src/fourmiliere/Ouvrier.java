@@ -28,7 +28,7 @@ public class Ouvrier extends Role {
       Fourmis fourmis = this.stadeEvolution.getFourmis();
       fourmis.getFourmiliere().getInfos().addMort(fourmis);
       fourmis.getFourmiliere().getInfos().decrementerOuvrieres();
-      fourmis.getFourmiliere().removeFourmis(fourmis);
+      fourmis.getFourmiliere().ajoutFourmisMorte(fourmis);
       return new Mort(fourmis);
     }
     return stadeEvolution;
