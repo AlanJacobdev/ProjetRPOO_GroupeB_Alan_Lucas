@@ -21,7 +21,7 @@ public class Main {
       e1.printStackTrace();
     }
     
-    simulateur.getReine().pondre(10);
+    simulateur.getReine().pondre(10000);
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
     int jour = 0;
     while (true) {
