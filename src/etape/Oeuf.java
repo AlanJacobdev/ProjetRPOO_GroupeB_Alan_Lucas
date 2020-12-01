@@ -1,20 +1,33 @@
 package etape;
 
 import fourmis.Etape;
+import fourmis.Role;
 
 public class Oeuf extends Etape {
-  
-  Integer age;
-  Integer joursAvantEclosion = 3;
-  
+
+
   public Oeuf() {
-    age = 0;
+
   }
 
 
 
   public void step() {
 
+  }
+
+
+
+  @Override
+  protected Etape next() {
+    return this;
+  }
+
+
+
+  @Override
+  protected Role getRole() {
+    return null;
   }
 
 }

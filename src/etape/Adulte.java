@@ -3,6 +3,8 @@ package etape;
 import fourmis.Etape;
 import fourmis.Role;
 import role.Ouvrier;
+import role.Reine;
+import role.Sexue;
 import role.SexueFemelle;
 import role.SexueMale;
 import role.Soldat;
@@ -10,9 +12,7 @@ import role.Soldat;
 public class Adulte extends Etape {
 
   Role roleFourmis;
-  Integer age;
-  Integer esperanceDeVie;
-  
+
   static int minimumPopulationOuvriere = 0;
   static int maximalPopulationOuvriere = 65;
   static int minimumPopulationSoldat = 65;
@@ -21,9 +21,8 @@ public class Adulte extends Etape {
   static int maximalPopulationSexue = 100;
 
   public Adulte() {
+    super();
     this.roleFourmis = this.creerRole();
-    this.age = 0;
-    this.esperanceDeVie = 
   }
 
 
@@ -48,6 +47,20 @@ public class Adulte extends Etape {
       return new SexueMale();
     }
     return new SexueFemelle();
+  }
+
+  public void attributionRoleReine() {
+    this.roleFourmis = new Reine();
+  }
+
+  @Override
+  protected Role getRole() {
+    return this.roleFourmis;
+  }
+
+  @Override
+  protected Etape next() {
+    return this;
   }
 
 }
