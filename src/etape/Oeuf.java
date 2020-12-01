@@ -12,12 +12,9 @@ public class Oeuf extends Etape {
     age = 0;
   }
 
-
   public void step() {
     age++;
   }
-
-
 
   @Override
   protected Etape next() {
@@ -26,8 +23,6 @@ public class Oeuf extends Etape {
     }
     return this;
   }
-
-
 
   @Override
   protected Role getRole() {

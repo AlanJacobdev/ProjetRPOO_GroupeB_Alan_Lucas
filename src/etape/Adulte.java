@@ -22,27 +22,23 @@ public class Adulte extends Etape {
   static int maximalPopulationSexue = 100;
 
   /**
-   * Creation d'une fourmis adulte.
+   * Adulte.
    * 
-   * @param isReine : <br/>
-   *        <b>true</b> Créer Reine <br/>
-   *        <b>false</b> Creer fourmis (Ouvrière, Soldat, Sexuée)
    */
   public Adulte(Boolean isReine) {
     super();
-    if (!(isReine)) {
-      this.roleFourmis = this.creerRole();
+    if (isReine) {
+      this.attributionRoleReine();
       this.esperanceVie = (int) (Math.random() * (547 - 913));
     } else {
-      this.attributionRoleReine();
-      this.esperanceVie = (int) (Math.random() * (1461 - 3650));
+      this.roleFourmis = this.creerRole();
+      this.esperanceVie = (int) (Math.random() * (1461 - 3652));
     }
+
   }
 
-
-
   public void step() {
-    age++;
+
   }
 
   /**
