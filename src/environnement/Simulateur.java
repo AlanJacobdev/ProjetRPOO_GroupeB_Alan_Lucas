@@ -1,9 +1,10 @@
 package environnement;
 
-import fourmis.Fourmis;
-import fourmis.Role;
 import java.io.File;
-import role.Reine;
+import fourmiliere.Fourmiliere;
+import fourmiliere.Fourmis;
+import fourmiliere.Reine;
+import fourmiliere.Role;
 
 
 public class Simulateur {

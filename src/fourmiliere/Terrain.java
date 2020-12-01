@@ -1,4 +1,4 @@
-package environnement;
+package fourmiliere;
 
 public class Terrain {
 

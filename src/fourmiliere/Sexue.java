@@ -1,6 +1,4 @@
-package role;
-
-import fourmis.Role;
+package fourmiliere;
 
 public abstract class Sexue extends Role {
 

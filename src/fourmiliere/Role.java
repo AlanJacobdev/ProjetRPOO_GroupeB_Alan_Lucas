@@ -1,4 +1,4 @@
-package fourmis;
+package fourmiliere;
 
 
 public abstract class Role {
@@ -7,7 +7,7 @@ public abstract class Role {
   public Role() {
   }
   
-  protected abstract void step();
+  abstract void step();
 
 
   

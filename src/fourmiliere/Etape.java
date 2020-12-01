@@ -1,6 +1,4 @@
-package fourmis;
-
-import etape.Oeuf;
+package fourmiliere;
 
 public abstract class Etape {
 

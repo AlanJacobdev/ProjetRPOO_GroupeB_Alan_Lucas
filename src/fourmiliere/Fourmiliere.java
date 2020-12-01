@@ -1,10 +1,8 @@
-package environnement;
+package fourmiliere;
 
-import fourmis.Fourmis;
 import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.List;
-import role.Reine;
 
 public class Fourmiliere {
 

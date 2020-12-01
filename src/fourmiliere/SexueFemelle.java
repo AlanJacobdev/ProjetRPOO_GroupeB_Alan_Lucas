@@ -1,9 +1,6 @@
-package role;
+package fourmiliere;
 
-import environnement.Fourmiliere;
-import fourmis.Role;
-
-public class Ouvrier extends Role {
+public class SexueFemelle extends Sexue {
   Integer age;
   Integer esperanceVie;
   Fourmiliere saFourmiliere;
@@ -11,9 +8,9 @@ public class Ouvrier extends Role {
   /**
    * Constructeur.
    * 
-   * @param laFourmiliere Fourmiliere
+   * @param laFourmiliere Fourmilliere
    */
-  public Ouvrier(Fourmiliere laFourmiliere) {
+  public SexueFemelle(Fourmiliere laFourmiliere) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));

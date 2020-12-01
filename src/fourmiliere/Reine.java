@@ -1,6 +1,4 @@
-package role;
-
-import environnement.Fourmiliere;
+package fourmiliere;
 
 public class Reine extends SexueFemelle {
 

@@ -1,8 +1,4 @@
-package fourmis;
-
-import environnement.Fourmiliere;
-import etape.Adulte;
-import etape.Oeuf;
+package fourmiliere;
 
 public class Fourmis {
 

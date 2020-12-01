@@ -1,8 +1,4 @@
-package etape;
-
-import environnement.Fourmiliere;
-import fourmis.Etape;
-import fourmis.Role;
+package fourmiliere;
 
 public class Oeuf extends Etape {
 
@@ -15,7 +11,6 @@ public class Oeuf extends Etape {
    * @param fourmiliere La fourmilière.
    */
   public Oeuf(Fourmiliere fourmiliere) {
-    super();
     age = 0;
     this.laFourmiliere = fourmiliere;
     this.laFourmiliere.incrementerOeufs();

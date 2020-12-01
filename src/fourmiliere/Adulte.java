@@ -1,13 +1,4 @@
-package etape;
-
-import environnement.Fourmiliere;
-import fourmis.Etape;
-import fourmis.Role;
-import role.Ouvrier;
-import role.Reine;
-import role.SexueFemelle;
-import role.SexueMale;
-import role.Soldat;
+package fourmiliere;
 
 public class Adulte extends Etape {
 

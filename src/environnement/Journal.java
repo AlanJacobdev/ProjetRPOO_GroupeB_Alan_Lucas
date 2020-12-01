@@ -4,13 +4,14 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import fourmiliere.Fourmiliere;
 
 public class Journal {
 
   private File journalActivite;
-  
+
   public Journal(File fichier) {
-    File journalActivite = fichier;
+    this.journalActivite = fichier;
 
   }
 

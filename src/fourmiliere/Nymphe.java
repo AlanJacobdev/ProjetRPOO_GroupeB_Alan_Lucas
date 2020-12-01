@@ -1,8 +1,4 @@
-package etape;
-
-import environnement.Fourmiliere;
-import fourmis.Etape;
-import fourmis.Role;
+package fourmiliere;
 
 public class Nymphe extends Etape {
 
