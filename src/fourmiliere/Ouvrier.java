@@ -3,18 +3,18 @@ package fourmiliere;
 public class Ouvrier extends Role {
   Integer age;
   Integer esperanceVie;
-  Fourmiliere saFourmiliere;
+  Fourmis fourmis;
 
   /**
    * Constructeur.
    * 
-   * @param laFourmiliere Fourmiliere
+   * @param fourmis Fourmiliere
    */
-  public Ouvrier(Fourmiliere laFourmiliere) {
+  public Ouvrier(Fourmis fourmis) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));
-    this.saFourmiliere = laFourmiliere;
+    this.fourmis = fourmis;
   }
 
   @Override

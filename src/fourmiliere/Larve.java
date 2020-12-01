@@ -4,24 +4,23 @@ public class Larve extends Etape {
 
   Integer age;
   Integer joursAvantNymphe = 10;
-  Fourmiliere laFourmiliere;
-  
+  Fourmis fourmis;
+
   /**
    * Constructeur d'une larve.
-   * @param fourmiliere La fourmilière.
+   * 
+   * @param fourmis La fourmilière.
    */
-  public Larve(Fourmiliere fourmiliere) {
+  public Larve(Fourmis fourmis) {
     age = 0;
-    this.laFourmiliere = fourmiliere;
-    this.laFourmiliere.incrementerLarves();
+    this.fourmis = fourmis;
   }
 
 
   @Override
   protected Etape next() {
     if (this.age == this.joursAvantNymphe) {
-      this.laFourmiliere.decrementerLarves();
-      return new Nymphe(this.laFourmiliere);
+      return new Nymphe(this.fourmis);
     }
     return null;
   }

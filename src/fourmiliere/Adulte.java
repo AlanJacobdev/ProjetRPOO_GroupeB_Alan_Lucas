@@ -4,7 +4,7 @@ public class Adulte extends Etape {
 
   Role roleFourmis;
 
-  Fourmiliere laFourmiliere;
+  Fourmis fourmis;
 
   static int minimumPopulation = 0;
   static int maximalPopulationOuvriere = 65;
@@ -15,9 +15,9 @@ public class Adulte extends Etape {
    * Adulte.
    * 
    */
-  public Adulte(Fourmiliere fourmiliere) {
+  public Adulte(Fourmis fourmis) {
     super();
-    this.laFourmiliere = fourmiliere;
+    this.fourmis = fourmis;
     this.roleFourmis = this.creerRole();
   }
 
@@ -29,19 +29,15 @@ public class Adulte extends Etape {
   public Role creerRole() {
     int categorieFourmis = (int) (Math.random() * (maximalPopulation - minimumPopulation));
     if (categorieFourmis < maximalPopulationOuvriere) {
-      this.laFourmiliere.incrementerOuvrieres();
-      return new Ouvrier(laFourmiliere);
+      return new Ouvrier(this.fourmis);
     }
     if (categorieFourmis < maximalPopulationSoldat) {
-      this.laFourmiliere.incrementerSoldats();
-      return new Soldat(laFourmiliere);
+      return new Soldat(this.fourmis);
     }
     if ((boolean) (Math.random() > 0.5 ? 1 : 2 == 1)) {
-      this.laFourmiliere.incrementerSexueMale();
-      return new SexueMale(laFourmiliere);
+      return new SexueMale(this.fourmis);
     }
-    this.laFourmiliere.incrementerSexueFemelle();
-    return new SexueFemelle(laFourmiliere);
+    return new SexueFemelle(this.fourmis);
   }
 
   public void attributionRoleReine() {

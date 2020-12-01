@@ -3,18 +3,18 @@ package fourmiliere;
 public class SexueFemelle extends Sexue {
   Integer age;
   Integer esperanceVie;
-  Fourmiliere saFourmiliere;
+  Fourmis fourmis;
 
   /**
    * Constructeur.
    * 
-   * @param laFourmiliere Fourmilliere
+   * @param fourmis Fourmilliere
    */
-  public SexueFemelle(Fourmiliere laFourmiliere) {
+  public SexueFemelle(Fourmis fourmis) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));
-    this.saFourmiliere = laFourmiliere;
+    this.fourmis = fourmis;
   }
 
   @Override

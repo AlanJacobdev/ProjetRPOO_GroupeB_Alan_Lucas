@@ -4,17 +4,17 @@ public class SexueMale extends Sexue {
 
   Integer age;
   Integer esperanceVie;
-  Fourmiliere saFourmiliere;
+  Fourmis fourmis;
   
   /**
    * Constructeur.
-   * @param laFourmiliere Fourmillière
+   * @param fourmis Fourmillière
    */
-  public SexueMale(Fourmiliere laFourmiliere) {
+  public SexueMale(Fourmis fourmis) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));
-    this.saFourmiliere = laFourmiliere;
+    this.fourmis = fourmis;
   }
 
   @Override

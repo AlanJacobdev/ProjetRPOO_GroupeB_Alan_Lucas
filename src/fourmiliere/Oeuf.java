@@ -4,16 +4,15 @@ public class Oeuf extends Etape {
 
   Integer age;
   Integer joursAvantLarve = 10;
-  Fourmiliere laFourmiliere;
+  Fourmis fourmis;
 
   /**
    * Constructeur d'un oeuf.
-   * @param fourmiliere La fourmilière.
+   * @param fourmis La fourmilière.
    */
-  public Oeuf(Fourmiliere fourmiliere) {
+  public Oeuf(Fourmis fourmis) {
     age = 0;
-    this.laFourmiliere = fourmiliere;
-    this.laFourmiliere.incrementerOeufs();
+    this.fourmis = fourmis;
   }
 
   public void step() {
@@ -23,8 +22,7 @@ public class Oeuf extends Etape {
   @Override
   protected Etape next() {
     if (this.age == this.joursAvantLarve) {
-      this.laFourmiliere.decrementerOeufs();
-      return new Larve(this.laFourmiliere);
+      return new Larve(this.fourmis);
     }
     return this;
   }
