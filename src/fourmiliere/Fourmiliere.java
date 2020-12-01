@@ -71,6 +71,10 @@ public class Fourmiliere {
    * @return Chaine de caractères contenant les informations.
    */
   public String toString() {
-    return this.infos.toString();
+    StringBuffer string = new StringBuffer();
+    string.append("Population : ");
+    string.append(this.lesFourmis.size() + "\n");
+    string.append(this.infos.toString());
+    return string.toString();
   }
 }

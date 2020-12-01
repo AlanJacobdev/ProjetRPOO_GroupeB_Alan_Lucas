@@ -13,7 +13,7 @@ public class SexueFemelle extends Sexue {
   public SexueFemelle(Adulte adulte) {
     super();
     this.age = 0;
-    this.esperanceVie = (int) (Math.random() * (547 - 913));
+    this.esperanceVie = (int) (Math.random() * (913 - 547)) + 547;
     this.stadeEvolution = adulte;
   }
 

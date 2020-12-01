@@ -37,8 +37,6 @@ public class Reine extends SexueFemelle {
 
   @Override
   protected Etape mourrir() {
-    System.out.println(age);
-    System.out.println(esperanceVie);
     if (this.age >= this.esperanceVie) {
       detruireFourmilliere();
       return new Mort(stadeEvolution.getFourmis());
