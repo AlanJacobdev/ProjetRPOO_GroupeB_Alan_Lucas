@@ -1,8 +1,8 @@
 package environnement;
 
-import java.io.File;
 import fourmis.Fourmis;
 import fourmis.Role;
+import java.io.File;
 import role.Reine;
 
 
