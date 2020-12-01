@@ -4,6 +4,8 @@ import fourmis.Etape;
 import fourmis.Role;
 import role.Ouvrier;
 import role.Sexue;
+import role.SexueFemelle;
+import role.SexueMale;
 import role.Soldat;
 
 public class Adulte extends Etape {
@@ -39,7 +41,10 @@ public class Adulte extends Etape {
     if (categorieFourmis < maximalPopulationSoldat) {
       return new Soldat();
     }
-    return new Sexue();
+    if ((boolean) (Math.random() > 0.5 ? 1 : 2 == 1)) {
+      return new SexueMale();
+    }
+    return new SexueFemelle();
   }
 
 }
