@@ -25,6 +25,7 @@ public class Main {
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
     while (true) {
       simulateur.getJournal().ecrire(laFourmiliere);
+      laFourmiliere.step();
       try {
         Thread.sleep(1000);
       } catch (InterruptedException e) {

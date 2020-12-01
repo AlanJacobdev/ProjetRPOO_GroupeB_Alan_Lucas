@@ -6,8 +6,8 @@ public class Fourmis {
   Fourmiliere saFourmiliere;
   
   public Fourmis(Fourmiliere fourmiliere) {
-    this.etape = new Oeuf(this);
     this.saFourmiliere = fourmiliere;
+    this.etape = new Oeuf(this);
   }
 
   /**

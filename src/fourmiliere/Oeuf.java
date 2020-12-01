@@ -3,7 +3,7 @@ package fourmiliere;
 public class Oeuf extends Etape {
 
   Integer age;
-  Integer joursAvantLarve = 10;
+  Integer joursAvantLarve = 3;
   Fourmis fourmis;
 
   /**
