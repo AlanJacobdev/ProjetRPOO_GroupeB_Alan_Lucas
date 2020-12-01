@@ -31,5 +31,7 @@ public class Fourmis {
     etape.step();
   }
 
-
+  public Fourmiliere getFourmiliere() {
+    return this.saFourmiliere;
+  }
 }

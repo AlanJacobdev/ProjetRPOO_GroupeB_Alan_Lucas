@@ -13,6 +13,9 @@ public class Oeuf extends Etape {
   public Oeuf(Fourmis fourmis) {
     age = 0;
     this.fourmis = fourmis;
+    if (this.fourmis.getFourmiliere() != null) {
+      this.fourmis.getFourmiliere().getInfos().incrementerOeufs();
+    }
   }
 
   public void step() {
@@ -22,6 +25,7 @@ public class Oeuf extends Etape {
   @Override
   protected Etape next() {
     if (this.age == this.joursAvantLarve) {
+      this.fourmis.getFourmiliere().getInfos().decrementerOeufs();
       return new Larve(this.fourmis);
     }
     return this;

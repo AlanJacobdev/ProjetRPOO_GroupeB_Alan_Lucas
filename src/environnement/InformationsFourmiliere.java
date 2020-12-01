@@ -1,17 +1,17 @@
 package environnement;
 
+import fourmiliere.Fourmis;
 import java.util.ArrayList;
 import java.util.List;
-import fourmiliere.Fourmis;
 
 public class InformationsFourmiliere {
-  Integer nbOeufs;
-  Integer nbLarves;
-  Integer nbNymphes;
-  Integer nbOuvrieres;
-  Integer nbSoldats;
-  Integer nbSexueFemelles;
-  Integer nbSexueMales;
+  int nbOeufs;
+  int nbLarves;
+  int nbNymphes;
+  int nbOuvrieres;
+  int nbSoldats;
+  int nbSexueFemelles;
+  int nbSexueMales;
   List<Fourmis> lesMorts;
   
   /**

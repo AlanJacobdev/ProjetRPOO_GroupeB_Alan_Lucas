@@ -38,6 +38,14 @@ public class Fourmiliere {
       this.lesFourmis.add(new Fourmis(this));
     }
   }
+  
+  public InformationsFourmiliere getInfos() {
+    return this.infos;
+  }
+  
+  public void removeFourmis(Fourmis fourmis) {
+    this.lesFourmis.remove(fourmis);
+  }
 
   /**
    * Affichage des informations de la fourmilière.

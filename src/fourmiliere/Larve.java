@@ -14,12 +14,14 @@ public class Larve extends Etape {
   public Larve(Fourmis fourmis) {
     age = 0;
     this.fourmis = fourmis;
+    this.fourmis.getFourmiliere().getInfos().incrementerLarves();
   }
 
 
   @Override
   protected Etape next() {
     if (this.age == this.joursAvantNymphe) {
+      this.fourmis.getFourmiliere().getInfos().decrementerLarves();
       return new Nymphe(this.fourmis);
     }
     return null;

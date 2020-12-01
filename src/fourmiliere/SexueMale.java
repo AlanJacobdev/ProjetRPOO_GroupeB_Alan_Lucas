@@ -25,7 +25,11 @@ public class SexueMale extends Sexue {
   @Override
   protected Etape mourrir() {
     if (this.age >= this.esperanceVie) {
-      return new Mort(stadeEvolution.getFourmis());
+      Fourmis fourmis = this.stadeEvolution.getFourmis();
+      fourmis.getFourmiliere().getInfos().addMort(fourmis);
+      fourmis.getFourmiliere().getInfos().decrementerSexueMale();
+      fourmis.getFourmiliere().removeFourmis(fourmis);
+      return new Mort(fourmis);
     }
     return stadeEvolution;
   }

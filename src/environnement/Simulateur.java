@@ -1,17 +1,17 @@
 package environnement;
 
-import java.io.File;
 import fourmiliere.Fourmiliere;
 import fourmiliere.Fourmis;
 import fourmiliere.Reine;
 import fourmiliere.Role;
-
+import java.io.File;
 
 public class Simulateur {
 
   Journal journal;
   File fichierJournal;
   Fourmiliere laFourmiliere;
+  Reine reine;
 
   /**
    * Simualteur.
@@ -26,31 +26,19 @@ public class Simulateur {
   private void creerReine() {
     Fourmis fourmis = new Fourmis(null).creerReine();
     Role role = fourmis.getRole();
-    Reine reine = (Reine) role; // ou instanceof
+    this.reine = (Reine) role; // ou instanceof
     this.laFourmiliere = reine.creerFourmiliere();
   }
-
-  /**
-   * Main.
-   * 
-   * @param args Arguments.
-   */
-  public void main(String[] args) {
-    Simulateur simulateur = new Simulateur();
-    
-    while (true) {
-      journal.ecrire(this.laFourmiliere);
-      try {
-        Thread.sleep(10000);
-      } catch (InterruptedException e) {
-        e.printStackTrace();
-      }
-
-    }
-
-
+  
+  public Reine getReine() {
+    return this.reine;
   }
-
-
-
+  
+  public Journal getJournal() {
+    return this.journal;
+  }
+  
+  public Fourmiliere getFourmiliere() {
+    return this.laFourmiliere;
+  }
 }
