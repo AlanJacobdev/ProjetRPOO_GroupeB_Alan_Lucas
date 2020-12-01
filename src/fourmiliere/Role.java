@@ -7,9 +7,9 @@ public abstract class Role {
   public Role() {
   }
   
-  abstract void step();
+  protected abstract void step();
 
-
+  protected abstract void mourrir();
   
 
 }

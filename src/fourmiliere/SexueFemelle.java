@@ -3,23 +3,29 @@ package fourmiliere;
 public class SexueFemelle extends Sexue {
   Integer age;
   Integer esperanceVie;
-  Fourmis fourmis;
+  Adulte stadeEvolution;
 
   /**
    * Constructeur.
    * 
-   * @param fourmis Fourmilliere
+   * @param adulte Fourmilliere
    */
-  public SexueFemelle(Fourmis fourmis) {
+  public SexueFemelle(Adulte adulte) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));
-    this.fourmis = fourmis;
+    this.stadeEvolution = adulte;
   }
 
   @Override
   protected void step() {
 
   }
-
+  
+  @Override
+  protected void mourrir() {
+    // TODO Auto-generated method stub
+    
+  }
+  
 }

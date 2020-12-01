@@ -3,23 +3,29 @@ package fourmiliere;
 public class Ouvrier extends Role {
   Integer age;
   Integer esperanceVie;
-  Fourmis fourmis;
+  Adulte stadeEvolution;
 
   /**
    * Constructeur.
    * 
-   * @param fourmis Fourmiliere
+   * @param adulte Fourmiliere
    */
-  public Ouvrier(Fourmis fourmis) {
+  public Ouvrier(Adulte adulte) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));
-    this.fourmis = fourmis;
+    this.stadeEvolution = adulte;
   }
 
   @Override
   protected void step() {
 
+  }
+
+  @Override
+  protected void mourrir() {
+    // TODO Auto-generated method stub
+    
   }
 
 }

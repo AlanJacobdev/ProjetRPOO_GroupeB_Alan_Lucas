@@ -29,15 +29,15 @@ public class Adulte extends Etape {
   public Role creerRole() {
     int categorieFourmis = (int) (Math.random() * (maximalPopulation - minimumPopulation));
     if (categorieFourmis < maximalPopulationOuvriere) {
-      return new Ouvrier(this.fourmis);
+      return new Ouvrier(this);
     }
     if (categorieFourmis < maximalPopulationSoldat) {
-      return new Soldat(this.fourmis);
+      return new Soldat(this);
     }
     if ((boolean) (Math.random() > 0.5 ? 1 : 2 == 1)) {
-      return new SexueMale(this.fourmis);
+      return new SexueMale(this);
     }
-    return new SexueFemelle(this.fourmis);
+    return new SexueFemelle(this);
   }
 
   public void attributionRoleReine() {

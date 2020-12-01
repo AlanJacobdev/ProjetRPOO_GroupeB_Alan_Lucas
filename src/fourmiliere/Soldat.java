@@ -3,17 +3,17 @@ package fourmiliere;
 public class Soldat extends Role {
   Integer age;
   Integer esperanceVie;
-  Fourmis fourmis;
+  Adulte stadeEvolution;
   
   /**
    * Constructeur.
-   * @param fourmis Fourmilliere 
+   * @param adulte Fourmilliere 
    */
-  public Soldat(Fourmis fourmis) {
+  public Soldat(Adulte adulte) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));
-    this.fourmis = fourmis;
+    this.stadeEvolution = adulte;
   }
 
   @Override
@@ -21,4 +21,8 @@ public class Soldat extends Role {
 
   }
 
+  @Override
+  protected void mourrir() {
+     
+  }
 }

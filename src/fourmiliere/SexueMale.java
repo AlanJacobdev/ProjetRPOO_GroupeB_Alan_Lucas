@@ -4,17 +4,17 @@ public class SexueMale extends Sexue {
 
   Integer age;
   Integer esperanceVie;
-  Fourmis fourmis;
+  Adulte stadeEvolution;
   
   /**
    * Constructeur.
-   * @param fourmis Fourmillière
+   * @param adulte Fourmillière
    */
-  public SexueMale(Fourmis fourmis) {
+  public SexueMale(Adulte adulte) {
     super();
     this.age = 0;
     this.esperanceVie = (int) (Math.random() * (547 - 913));
-    this.fourmis = fourmis;
+    this.stadeEvolution = adulte;
   }
 
   @Override
@@ -22,4 +22,9 @@ public class SexueMale extends Sexue {
 
   }
 
+  @Override
+  protected void mourrir() {
+    // TODO Auto-generated method stub
+    
+  }
 }
