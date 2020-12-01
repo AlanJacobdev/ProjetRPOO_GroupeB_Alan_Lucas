@@ -1,5 +1,6 @@
 package etape;
 
+import environnement.Fourmiliere;
 import fourmis.Etape;
 import fourmis.Role;
 import role.Ouvrier;
@@ -13,6 +14,7 @@ public class Adulte extends Etape {
   Role roleFourmis;
   Integer age;
   Integer esperanceVie;
+  Fourmiliere laFourmiliere;
 
   static int minimumPopulationOuvriere = 0;
   static int maximalPopulationOuvriere = 65;
@@ -25,8 +27,9 @@ public class Adulte extends Etape {
    * Adulte.
    * 
    */
-  public Adulte(Boolean isReine) {
+  public Adulte(Boolean isReine, Fourmiliere fourmiliere) {
     super();
+    this.laFourmiliere = fourmiliere;
     if (isReine) {
       this.attributionRoleReine();
       this.esperanceVie = (int) (Math.random() * (547 - 913));
@@ -48,14 +51,18 @@ public class Adulte extends Etape {
     int categorieFourmis =
         (int) (Math.random() * (maximalPopulationSexue - minimumPopulationOuvriere));
     if (categorieFourmis < maximalPopulationOuvriere) {
+      this.laFourmiliere.incrementerOuvrieres();
       return new Ouvrier();
     }
     if (categorieFourmis < maximalPopulationSoldat) {
+      this.laFourmiliere.incrementerSoldats();
       return new Soldat();
     }
     if ((boolean) (Math.random() > 0.5 ? 1 : 2 == 1)) {
+      this.laFourmiliere.incrementerSexueMale();
       return new SexueMale();
     }
+    this.laFourmiliere.incrementerSexueFemelle();
     return new SexueFemelle();
   }
 

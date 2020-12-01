@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import fourmis.Fourmis;
 
 public class Journal {
 
@@ -18,15 +19,14 @@ public class Journal {
    * Création d'une nouvelle ligne au journal d'activité.
    * 
    */
-  public void ecrire() {
+  public void ecrire(Fourmiliere fourmiliere) {
 
     FileWriter fw;
     try {
       fw = new FileWriter(journalActivite.getAbsoluteFile());
 
       BufferedWriter bw = new BufferedWriter(fw);
-      String nouvelLigne = "LOG";
-      bw.write(nouvelLigne);
+      bw.write(fourmiliere.toString());
       bw.close();
 
     } catch (IOException e) {

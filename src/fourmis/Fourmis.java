@@ -1,19 +1,15 @@
 package fourmis;
 
+import environnement.Fourmiliere;
 import etape.Adulte;
 import etape.Oeuf;
-import role.Reine;
 
 public class Fourmis {
 
   Etape etape;
 
-  public Fourmis() {
-    this.etape = new Oeuf();
-  }
-
-  public Fourmis(Etape etape) {
-    this.etape = etape;
+  public Fourmis(Fourmiliere fourmiliere) {
+    this.etape = new Oeuf(fourmiliere);
   }
 
   /**
@@ -21,7 +17,7 @@ public class Fourmis {
    * @return un Objet Fourmis dont l'étape est de type Adulte et le role est de type Reine.
    */
   public Fourmis creerReine() {
-    Adulte reine = new Adulte(true);
+    Adulte reine = new Adulte(true, null);
     reine.attributionRoleReine();
     this.etape = reine;
 

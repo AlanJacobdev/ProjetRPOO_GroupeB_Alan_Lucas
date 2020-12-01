@@ -20,7 +20,7 @@ public class Simulateur {
   }
   
   private void creerReine() {
-    Fourmis fourmis = new Fourmis().creerReine();
+    Fourmis fourmis = new Fourmis(null).creerReine();
     Role role = fourmis.getRole();
     Reine reine = (Reine) role; // ou instanceof
     reine.creerFourmiliere();
@@ -32,10 +32,10 @@ public class Simulateur {
    * @param args Arguments.
    */
   public void main(String[] args) {
-
-
+    Simulateur simulateur = new Simulateur();
+    
     while (true) {
-      journal.ecrire();
+      journal.ecrire(this.laFourmiliere);
       try {
         Thread.sleep(10000);
       } catch (InterruptedException e) {
