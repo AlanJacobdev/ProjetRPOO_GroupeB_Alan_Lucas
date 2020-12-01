@@ -12,11 +12,10 @@ public abstract class Etape {
 
   }
 
-  Etape next() {
-    nbJour++;
-    return this;
-  }
+  protected abstract Etape next();
 
   protected abstract void step();
+  
+  protected abstract Role getRole();
 
 }

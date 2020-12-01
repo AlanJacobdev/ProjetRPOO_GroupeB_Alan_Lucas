@@ -1,5 +1,11 @@
 package role;
 
-public class Reine extends SexueFemelle{
+import environnement.Fourmiliere;
 
+public class Reine extends SexueFemelle {
+
+  public Fourmiliere creerFourmiliere() {
+    Fourmiliere laFourmiliere = new Fourmiliere(this);
+    return laFourmiliere;
+  }
 }
