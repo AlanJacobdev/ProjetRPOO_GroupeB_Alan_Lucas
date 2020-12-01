@@ -12,6 +12,9 @@ public class Simulateur {
   File fichierJournal;
   Fourmiliere laFourmiliere;
 
+  /**
+   * Simualteur.
+   */
   public Simulateur() {
     File fichierJournal = new File("journal.txt");
     this.journal = new Journal(fichierJournal);

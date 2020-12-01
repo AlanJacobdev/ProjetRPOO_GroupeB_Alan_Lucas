@@ -14,12 +14,10 @@ public class Adulte extends Etape {
   Integer age;
   Integer esperanceVie;
 
-  static int minimumPopulationOuvriere = 0;
+  static int minimumPopulation = 0;
   static int maximalPopulationOuvriere = 65;
-  static int minimumPopulationSoldat = 65;
   static int maximalPopulationSoldat = 85;
-  static int minimumPopulationSexue = 85;
-  static int maximalPopulationSexue = 100;
+  static int maximalPopulation = 100;
 
   /**
    * Adulte.
@@ -46,7 +44,7 @@ public class Adulte extends Etape {
    */
   public Role creerRole() {
     int categorieFourmis =
-        (int) (Math.random() * (maximalPopulationSexue - minimumPopulationOuvriere));
+        (int) (Math.random() * (maximalPopulation - minimumPopulation));
     if (categorieFourmis < maximalPopulationOuvriere) {
       return new Ouvrier();
     }
