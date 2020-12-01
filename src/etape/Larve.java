@@ -34,7 +34,6 @@ public class Larve extends Etape {
 
   @Override
   protected Role getRole() {
-    // TODO Auto-generated method stub
     return null;
   }
 
