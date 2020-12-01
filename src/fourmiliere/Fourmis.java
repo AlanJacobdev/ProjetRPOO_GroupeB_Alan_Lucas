@@ -34,4 +34,8 @@ public class Fourmis {
   public Fourmiliere getFourmiliere() {
     return this.saFourmiliere;
   }
+  
+  public void setFourmilliere(Fourmiliere uneFourmilliere) {
+    this.saFourmiliere = uneFourmilliere;
+  }
 }

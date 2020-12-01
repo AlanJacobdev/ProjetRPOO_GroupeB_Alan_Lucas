@@ -18,7 +18,7 @@ public class Adulte extends Etape {
   public Adulte(Fourmis fourmis) {
     super();
     this.fourmis = fourmis;
-    if (fourmis != null) {
+    if (fourmis.saFourmiliere != null) {
       this.roleFourmis = this.creerRole();
     }
   }
@@ -47,7 +47,7 @@ public class Adulte extends Etape {
   }
 
   public void attributionRoleReine() {
-    this.roleFourmis = new Reine();
+    this.roleFourmis = new Reine(this);
   }
 
   public Fourmis getFourmis() {
