@@ -1,0 +1,20 @@
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+

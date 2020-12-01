@@ -1,6 +1,9 @@
 package environnement;
 
 import fourmiliere.Fourmiliere;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
 
 public class Main {
 
@@ -10,6 +13,14 @@ public class Main {
    */
   public static void main(String[] args) {
     Simulateur simulateur = new Simulateur();
+    PrintWriter pw;
+    try {
+      pw = new PrintWriter("journal.txt");
+      pw.close();
+    } catch (FileNotFoundException e1) {
+      e1.printStackTrace();
+    }
+    
     simulateur.getReine().pondre(10);
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
     while (true) {

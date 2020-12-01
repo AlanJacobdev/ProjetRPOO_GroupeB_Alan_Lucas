@@ -101,8 +101,8 @@ public class InformationsFourmiliere {
    */
   public String toString() {
     StringBuffer result = new StringBuffer();
-    result.append("Informations sur la fourmilière :\n");
-    result.append("- Nombre d'oeufs : ");
+    result.append("Informations sur la fourmilière :");
+    result.append("\n- Nombre d'oeufs : ");
     result.append(this.nbOeufs);
     result.append("\n- Nombre de larves : ");
     result.append(this.nbLarves);
@@ -117,7 +117,7 @@ public class InformationsFourmiliere {
     result.append("\n- Nombre de mâles : ");
     result.append(this.nbSexueMales);
     result.append("\n- Nombre de morts : ");
-    result.append(this.getNombreDeMorts());
+    result.append(this.getNombreDeMorts() + "\n\n");
     return result.toString();
   }
 }
