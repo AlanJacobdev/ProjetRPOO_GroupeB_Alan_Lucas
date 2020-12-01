@@ -1,5 +1,9 @@
 package environnement;
 
+import java.util.ArrayList;
+import java.util.List;
+import fourmiliere.Fourmis;
+
 public class InformationsFourmiliere {
   Integer nbOeufs;
   Integer nbLarves;
@@ -8,6 +12,7 @@ public class InformationsFourmiliere {
   Integer nbSoldats;
   Integer nbSexueFemelles;
   Integer nbSexueMales;
+  List<Fourmis> lesMorts;
   
   /**
    * Constructeur d'une classe contenant toutes les informations de mesure de la fourmiliere.
@@ -20,6 +25,7 @@ public class InformationsFourmiliere {
     this.nbSoldats = 0;
     this.nbSexueFemelles = 0;
     this.nbSexueMales = 0;
+    this.lesMorts = new ArrayList<Fourmis>();
   }
   
 
@@ -80,6 +86,14 @@ public class InformationsFourmiliere {
     this.nbSexueMales--;
   }
   
+  public void addMort(Fourmis fourmis) {
+    this.lesMorts.add(fourmis);
+  }
+  
+  public int getNombreDeMorts() {
+    return this.lesMorts.size();
+  }
+  
   /**
    * Affichage des informations de la fourmilière.
    * 
@@ -102,6 +116,8 @@ public class InformationsFourmiliere {
     result.append(this.nbSexueFemelles);
     result.append("\n- Nombre de mâles : ");
     result.append(this.nbSexueMales);
+    result.append("\n- Nombre de morts : ");
+    result.append(this.getNombreDeMorts());
     return result.toString();
   }
 }

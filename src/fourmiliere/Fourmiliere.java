@@ -7,9 +7,9 @@ import java.util.List;
 
 public class Fourmiliere {
 
-  List<Fourmis> lesFourmis;
-  Fourmis reine;
-  InformationsFourmiliere infos;
+  private List<Fourmis> lesFourmis;
+  private Fourmis reine;
+  private InformationsFourmiliere infos;
 
   /**
    * Constructeur d'une fourmilière.
@@ -26,6 +26,16 @@ public class Fourmiliere {
   public void step() {
     for (Fourmis uneFourmis : lesFourmis) {
       uneFourmis.step();
+    }
+  }
+  
+  /**
+   * Créer une portée de fourmis.
+   * @param nombre : Nombre de fourmis à créer.
+   */
+  public void nouvellesFourmis(Integer nombre) {
+    for (int i = 0; i < nombre; i++) {
+      this.lesFourmis.add(new Fourmis(this));
     }
   }
 

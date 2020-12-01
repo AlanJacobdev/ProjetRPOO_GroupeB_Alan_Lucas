@@ -2,9 +2,9 @@ package fourmiliere;
 
 public class Reine extends SexueFemelle {
 
-  Integer age;
-  Integer esperanceVie;
-  Fourmiliere saFourmilliere;
+  private Integer age;
+  private Integer esperanceVie;
+  private Fourmiliere saFourmilliere;
   
   /**
    * Constructeur.
@@ -37,6 +37,14 @@ public class Reine extends SexueFemelle {
   }
   
   public void detruireFourmilliere() {
-    
+    this.saFourmilliere = null;
+  }
+  
+  /**
+   * Créer une portée de fourmis.
+   * @param nombre : Nombre de fourmis à créer.
+   */
+  public void pondre(Integer nombre) {
+    this.saFourmilliere.nouvellesFourmis(nombre);
   }
 }
