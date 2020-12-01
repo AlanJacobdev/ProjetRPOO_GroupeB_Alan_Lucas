@@ -1,5 +1,6 @@
 package etape;
 
+import environnement.Fourmiliere;
 import fourmis.Etape;
 import fourmis.Role;
 
@@ -7,9 +8,16 @@ public class Nymphe extends Etape {
 
   Integer age;
   Integer joursAvantFourmis = 10;
+  Fourmiliere laFourmiliere;
   
-  public Nymphe() {
+  /**
+   * Constructeur d'une nymphe.
+   * @param fourmiliere La fourmilière.
+   */
+  public Nymphe(Fourmiliere fourmiliere) {
     age = 0;
+    this.laFourmiliere = fourmiliere;
+    this.laFourmiliere.incrementerNymphes();
   }
 
   public void step() {
@@ -19,7 +27,8 @@ public class Nymphe extends Etape {
   @Override
   protected Etape next() {
     if (age == joursAvantFourmis) {
-      return new Adulte(false);
+      this.laFourmiliere.decrementerNymphes();
+      return new Adulte(false, this.laFourmiliere);
     }
     return this;
   }
