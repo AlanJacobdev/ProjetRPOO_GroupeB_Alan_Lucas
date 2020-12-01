@@ -26,7 +26,7 @@ public class Simulateur {
     Fourmis fourmis = new Fourmis(null).creerReine();
     Role role = fourmis.getRole();
     Reine reine = (Reine) role; // ou instanceof
-    reine.creerFourmiliere();
+    this.laFourmiliere = reine.creerFourmiliere();
   }
 
   /**
