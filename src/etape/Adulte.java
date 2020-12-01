@@ -3,7 +3,6 @@ package etape;
 import fourmis.Etape;
 import fourmis.Role;
 import role.Ouvrier;
-import role.Sexue;
 import role.SexueFemelle;
 import role.SexueMale;
 import role.Soldat;
@@ -11,7 +10,9 @@ import role.Soldat;
 public class Adulte extends Etape {
 
   Role roleFourmis;
-
+  Integer age;
+  Integer esperanceDeVie;
+  
   static int minimumPopulationOuvriere = 0;
   static int maximalPopulationOuvriere = 65;
   static int minimumPopulationSoldat = 65;
@@ -21,6 +22,8 @@ public class Adulte extends Etape {
 
   public Adulte() {
     this.roleFourmis = this.creerRole();
+    this.age = 0;
+    this.esperanceDeVie = 
   }
 
 
