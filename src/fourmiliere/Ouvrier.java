@@ -19,7 +19,7 @@ public class Ouvrier extends Role {
 
   @Override
   protected void step() {
-
+    age++;
   }
 
   @Override

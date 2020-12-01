@@ -18,7 +18,7 @@ public class Soldat extends Role {
 
   @Override
   protected void step() {
-
+    age++;
   }
 
   @Override

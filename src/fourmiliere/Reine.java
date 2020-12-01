@@ -26,7 +26,11 @@ public class Reine extends SexueFemelle {
     
   }
   
-
+  @Override
+  protected void step() {
+    age++;
+  }
+  
   @Override
   protected Etape mourrir() {
     if (this.age >= this.esperanceVie) {
