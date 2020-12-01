@@ -38,7 +38,7 @@ public class Adulte extends Etape {
       this.fourmis.getFourmiliere().getInfos().incrementerSoldats();
       return new Soldat(this);
     }
-    if ((boolean) (Math.random() > 0.5 ? 1 : 2 == 1)) {
+    if ((Math.random() > 0.5 ? 1 : 2) == 1) {
       this.fourmis.getFourmiliere().getInfos().incrementerSexueMale();
       return new SexueMale(this);
     }

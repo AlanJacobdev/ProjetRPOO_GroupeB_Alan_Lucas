@@ -12,7 +12,7 @@ public class Larve extends Etape {
    * @param fourmis La fourmilière.
    */
   public Larve(Fourmis fourmis) {
-    age = 0;
+    this.age = 0;
     this.fourmis = fourmis;
     this.fourmis.getFourmiliere().getInfos().incrementerLarves();
   }
@@ -20,11 +20,11 @@ public class Larve extends Etape {
 
   @Override
   protected Etape next() {
-    if (this.age == this.joursAvantNymphe) {
+    if (this.age >= this.joursAvantNymphe) {
       this.fourmis.getFourmiliere().getInfos().decrementerLarves();
       return new Nymphe(this.fourmis);
     }
-    return null;
+    return this;
   }
 
 

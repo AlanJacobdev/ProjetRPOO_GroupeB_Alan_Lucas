@@ -13,6 +13,7 @@ public class Fourmiliere {
 
   /**
    * Constructeur d'une fourmilière.
+   * 
    * @param reine La fourmis reine.
    */
   public Fourmiliere(Reine reine) {
@@ -28,9 +29,10 @@ public class Fourmiliere {
       uneFourmis.step();
     }
   }
-  
+
   /**
    * Créer une portée de fourmis.
+   * 
    * @param nombre : Nombre de fourmis à créer.
    */
   public void nouvellesFourmis(Integer nombre) {
@@ -38,13 +40,17 @@ public class Fourmiliere {
       this.lesFourmis.add(new Fourmis(this));
     }
   }
-  
+
   public InformationsFourmiliere getInfos() {
     return this.infos;
   }
-  
+
   public void removeFourmis(Fourmis fourmis) {
     this.lesFourmis.remove(fourmis);
+  }
+
+  public List<Fourmis> getFourmis() {
+    return this.lesFourmis;
   }
 
   /**

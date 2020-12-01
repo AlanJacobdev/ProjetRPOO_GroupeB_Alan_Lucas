@@ -29,8 +29,8 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Informations sur la fourmilière :
-- Nombre d'oeufs : 10
-- Nombre de larves : 0
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -45,6 +45,196 @@ Informations sur la fourmilière :
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 10
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 10
+- Nombre d'ouvrières : 0
+- Nombre de soldats : 0
+- Nombre de femelles : 0
+- Nombre de mâles : 0
+- Nombre de morts : 0
+
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 8
+- Nombre de soldats : 1
+- Nombre de femelles : 1
 - Nombre de mâles : 0
 - Nombre de morts : 0
 
