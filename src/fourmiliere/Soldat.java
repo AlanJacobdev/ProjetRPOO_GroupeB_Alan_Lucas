@@ -22,7 +22,11 @@ public class Soldat extends Role {
   }
 
   @Override
-  protected void mourrir() {
-     
+  protected Etape mourrir() {
+    if (this.age >= this.esperanceVie) {
+      return new Mort(stadeEvolution.getFourmis());
+    }
+    return stadeEvolution;
   }
+
 }

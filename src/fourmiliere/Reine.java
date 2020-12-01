@@ -26,6 +26,16 @@ public class Reine extends SexueFemelle {
     
   }
   
+
+  @Override
+  protected Etape mourrir() {
+    if (this.age >= this.esperanceVie) {
+      detruireFourmilliere();
+      return new Mort(stadeEvolution.getFourmis());
+    }
+    return stadeEvolution;
+  }
+  
   public void detruireFourmilliere() {
     
   }

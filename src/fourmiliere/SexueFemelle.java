@@ -23,9 +23,12 @@ public class SexueFemelle extends Sexue {
   }
   
   @Override
-  protected void mourrir() {
-    // TODO Auto-generated method stub
-    
+  protected Etape mourrir() {
+    if (this.age >= this.esperanceVie) {
+      return new Mort(stadeEvolution.getFourmis());
+    }
+    return stadeEvolution;
   }
+
   
 }

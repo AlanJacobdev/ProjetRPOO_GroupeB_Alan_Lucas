@@ -2,9 +2,9 @@ package fourmiliere;
 
 public class Adulte extends Etape {
 
-  Role roleFourmis;
+  protected Role roleFourmis;
 
-  Fourmis fourmis;
+  protected Fourmis fourmis;
 
   static int minimumPopulation = 0;
   static int maximalPopulationOuvriere = 65;
@@ -44,6 +44,10 @@ public class Adulte extends Etape {
     this.roleFourmis = new Reine();
   }
 
+  public Fourmis getFourmis() {
+    return this.fourmis;
+  }
+  
   @Override
   protected Role getRole() {
     return this.roleFourmis;
@@ -51,7 +55,7 @@ public class Adulte extends Etape {
 
   @Override
   protected Etape next() {
-    return this;
+    return this.getRole().mourrir();
   }
 
   @Override
