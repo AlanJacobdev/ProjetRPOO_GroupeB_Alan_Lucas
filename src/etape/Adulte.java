@@ -35,16 +35,21 @@ public class Adulte extends Etape {
 
   }
 
+  /**
+   * Incrémentation du temps.
+   */
   public void step() {
-
+    age++;
+    if (this.roleFourmis instanceof Reine && age == esperanceVie) {
+      ((Reine) this.roleFourmis).detruireFourmilliere();
+    }
   }
 
   /**
    * Attribue un rôle à une fourmis adulte.
    */
   public Role creerRole() {
-    int categorieFourmis =
-        (int) (Math.random() * (maximalPopulation - minimumPopulation));
+    int categorieFourmis = (int) (Math.random() * (maximalPopulation - minimumPopulation));
     if (categorieFourmis < maximalPopulationOuvriere) {
       return new Ouvrier();
     }
