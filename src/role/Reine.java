@@ -1,5 +1,5 @@
 package role;
 
-public class Reine extends Sexue{
+public class Reine extends SexueFemelle{
 
 }
