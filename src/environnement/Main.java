@@ -10,16 +10,16 @@ public class Main {
    */
   public static void main(String[] args) {
     Simulateur simulateur = new Simulateur();
-//    simulateur.getReine().pondre(10);
-//    while (true) {
-//      Fourmiliere laFourmiliere = simulateur.getFourmiliere();
-//      simulateur.getJournal().ecrire(laFourmiliere);
-//      try {
-//        Thread.sleep(10000);
-//      } catch (InterruptedException e) {
-//        e.printStackTrace();
-//      }
-//    }
+    simulateur.getReine().pondre(10);
+    Fourmiliere laFourmiliere = simulateur.getFourmiliere();
+    while (true) {
+      simulateur.getJournal().ecrire(laFourmiliere);
+      try {
+        Thread.sleep(1000);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+    }
   }
 
 }

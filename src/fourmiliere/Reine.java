@@ -47,7 +47,7 @@ public class Reine extends SexueFemelle {
   }
 
   public void detruireFourmilliere() {
-    this.saFourmilliere = null;
+    this.stadeEvolution.getFourmis().setFourmilliere(null);
   }
 
   /**
@@ -56,6 +56,6 @@ public class Reine extends SexueFemelle {
    * @param nombre : Nombre de fourmis à créer.
    */
   public void pondre(Integer nombre) {
-    this.saFourmilliere.nouvellesFourmis(nombre);
+    this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(nombre);
   }
 }

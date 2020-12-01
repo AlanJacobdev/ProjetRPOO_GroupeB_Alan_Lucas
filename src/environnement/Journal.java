@@ -23,11 +23,9 @@ public class Journal {
 
     FileWriter fw;
     try {
-      fw = new FileWriter(journalActivite.getAbsoluteFile());
-
-      BufferedWriter bw = new BufferedWriter(fw);
-      bw.write(fourmiliere.toString());
-      bw.close();
+      fw = new FileWriter(journalActivite.getAbsoluteFile(), true);
+      fw.write(fourmiliere.toString());
+      fw.close();
 
     } catch (IOException e) {
       e.printStackTrace();
