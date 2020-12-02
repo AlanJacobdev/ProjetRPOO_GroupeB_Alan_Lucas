@@ -6,9 +6,8 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
-import java.util.List;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+
+import environnement.InformationsFourmiliere;
 import environnement.Saison;
 import environnement.Simulateur;
 import fourmiliere.Adulte;
@@ -17,8 +16,15 @@ import fourmiliere.Fourmis;
 import fourmiliere.Larve;
 import fourmiliere.Nymphe;
 import fourmiliere.Oeuf;
+import fourmiliere.Ouvrier;
 import fourmiliere.SexueFemelle;
+import fourmiliere.SexueMale;
+import fourmiliere.Soldat;
 import fourmiliere.Terrain;
+import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
 
 
 class testFourmiliere {
@@ -46,6 +52,14 @@ class testFourmiliere {
       saison.incrementerJour();
     }
   }
+  
+  private void avancerTemps(Terrain terrain, Saison saison) {
+    for(int i = 0; i < 130; i++) {
+      terrain.step();
+      terrain.renseignementFourmiliere();
+      saison.incrementerJour();
+    }
+  }
 
   @BeforeEach
   void setUp() throws Exception {}
@@ -61,7 +75,7 @@ class testFourmiliere {
   }
   
   @Test
-  void testFourmiliere() {
+  void testFourmiliereInstance() {
     Simulateur simulateur = new Simulateur();
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
     assertNotNull(laFourmiliere);
@@ -142,6 +156,58 @@ class testFourmiliere {
     assertTrue(lesFourmis.get(lesFourmis.size() - 1).getEtape() instanceof Oeuf);
     int nbOeufsPondus = simulateur.getReine().getOeufsPondus();
     assertTrue(nbOeufsPondus == lesFourmis.size());
+  }
+  
+  @Test
+  void testRole() {
+    Simulateur simulateur = new Simulateur();
+    this.pondre(simulateur.getFourmiliere().getLeTerrain().getLesSaisons());
+    assertTrue(simulateur.getFourmiliere().getLeTerrain().getLesSaisons().isPrintemps());
+    List<Fourmis> lesFourmis = simulateur.getFourmiliere().getFourmis();
+    int nbOeufsPondus = simulateur.getReine().getOeufsPondus();
+    assertTrue(nbOeufsPondus == lesFourmis.size());
+    Terrain terrain = simulateur.getLeTerrain();
+    Saison saison = terrain.getLesSaisons();
+    this.avancerTemps(terrain, saison);
+    InformationsFourmiliere lesInfos = terrain.getInfos();
+    assertNotNull(lesInfos);
+    
+    int nbOeufs = lesInfos.getNbOeufs();
+    assertTrue(nbOeufs == 0);
+    int nbLarves = lesInfos.getNbLarves();
+    assertTrue(nbLarves == 0);
+    int nbNymphes = lesInfos.getNbNymphes();
+    assertTrue(nbNymphes == 0);
+    int nbOuvriere = lesInfos.getNbOuvrieres();
+    assertFalse(nbOuvriere == 0);
+    int nbSoldats = lesInfos.getNbSoldats();
+    assertFalse(nbSoldats == 0);
+    int nbFemelle = lesInfos.getNbSexueFemelles();
+    assertFalse(nbFemelle == 0);
+    int nbMale = lesInfos.getNbSexueMales();
+    assertFalse(nbMale == 0);
+    int nbMorts = lesInfos.getNombreDeMorts();
+    assertTrue(nbMorts == 0);
+    
+    int calculNbOuvriere = 0;
+    int calculNbSoldats = 0;
+    int calculNbFemelle = 0;
+    int calculNbMale = 0;
+    for (Fourmis fourmis : lesFourmis) {
+      if (fourmis.getRole() instanceof Ouvrier) {
+        calculNbOuvriere++;
+      } else if (fourmis.getRole() instanceof Soldat) {
+        calculNbSoldats++;
+      } else if (fourmis.getRole() instanceof SexueFemelle) {
+        calculNbFemelle++;
+      } else if (fourmis.getRole() instanceof SexueMale) {
+        calculNbMale++;
+      }
+    }
+    assertTrue(calculNbOuvriere == lesInfos.getNbOuvrieres());
+    assertTrue(calculNbSoldats == lesInfos.getNbSoldats());
+    assertTrue(calculNbFemelle == lesInfos.getNbSexueFemelles());
+    assertTrue(calculNbMale == lesInfos.getNbSexueMales());
   }
 
 }
