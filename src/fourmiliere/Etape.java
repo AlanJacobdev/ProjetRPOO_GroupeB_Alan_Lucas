@@ -11,4 +11,5 @@ public abstract class Etape {
   
   protected abstract Role getRole();
 
+  protected abstract void renseignerInformations();
 }

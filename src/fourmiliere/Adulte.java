@@ -31,18 +31,14 @@ public class Adulte extends Etape {
   public Role creerRole() {
     int categorieFourmis = (int) (Math.random() * (maximalPopulation - minimumPopulation));
     if (categorieFourmis < maximalPopulationOuvriere) {
-      this.fourmis.getFourmiliere().getInfos().incrementerOuvrieres();
       return new Ouvrier(this);
     }
     if (categorieFourmis < maximalPopulationSoldat) {
-      this.fourmis.getFourmiliere().getInfos().incrementerSoldats();
       return new Soldat(this);
     }
     if ((Math.random() > 0.5 ? 1 : 2) == 1) {
-      this.fourmis.getFourmiliere().getInfos().incrementerSexueMale();
       return new SexueMale(this);
     }
-    this.fourmis.getFourmiliere().getInfos().incrementerSexueFemelle();
     return new SexueFemelle(this);
   }
 
@@ -68,6 +64,11 @@ public class Adulte extends Etape {
   protected void step() {
     this.getRole().step();
     
+  }
+  
+  @Override
+  protected void renseignerInformations() {
+    this.fourmis.getRole().renseignerInformations();
   }
 
 }

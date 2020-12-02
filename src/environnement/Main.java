@@ -1,19 +1,22 @@
 package environnement;
 
 import fourmiliere.Fourmiliere;
+import fourmiliere.Terrain;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import vue.VueFourmiliere;
+import vue.VueTerrain;
+
 
 
 public class Main {
 
   /**
-   * main.
+   * Main.
    * 
-   * @param args : jdbfhjsufvsb
+   * @param args Arguments
    */
   public static void main(String[] args) {
-    Simulateur simulateur = new Simulateur();
     
     PrintWriter pw;
     int jour = 0;
@@ -23,16 +26,24 @@ public class Main {
     } catch (FileNotFoundException e1) {
       e1.printStackTrace();
     }
-
+    Simulateur simulateur = new Simulateur();
     simulateur.getReine().pondre();
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
-    InformationsFourmiliere lesInfos = laFourmiliere.getInfos();
+    
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
+    Terrain leTerrain = simulateur.getLeTerrain();
+    InformationsFourmiliere lesInfos = leTerrain.getInfos();
+    VueTerrain leTerrainVue = new VueTerrain(leTerrain);
+    leTerrainVue.open();
+    VueFourmiliere laFourmiliereVue = new VueFourmiliere(laFourmiliere);
+    leTerrainVue.addFourmiliere(laFourmiliereVue);
+    
+    
     while (printemps.getNbTempsEcoule() < 365
         || (lesInfos.getNbOeufs() > 0 || lesInfos.getNbLarves() > 0)
         || lesInfos.getNbNymphes() > 0) {
       jour = printemps.getNbTempsEcoule();
-      simulateur.getLeTerrain().step();
+      leTerrain.step();
       simulateur.getJournal().ecrire(laFourmiliere, jour);
       printemps.incrementerJour();
       try {

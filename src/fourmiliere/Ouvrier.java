@@ -26,12 +26,15 @@ public class Ouvrier extends Role {
   protected Etape mourrir() {
     if (this.age >= this.esperanceVie) {
       Fourmis fourmis = this.stadeEvolution.getFourmis();
-      fourmis.getFourmiliere().getInfos().addMort(fourmis);
-      fourmis.getFourmiliere().getInfos().decrementerOuvrieres();
       fourmis.getFourmiliere().ajoutFourmisMorte(fourmis);
       return new Mort(fourmis);
     }
     return stadeEvolution;
+  }
+  
+  @Override
+  protected void renseignerInformations() {
+    this.stadeEvolution.getFourmis().getFourmiliere().getInfos().incrementerOuvrieres();
   }
 
 

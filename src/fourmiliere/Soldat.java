@@ -25,12 +25,14 @@ public class Soldat extends Role {
   protected Etape mourrir() {
     if (this.age >= this.esperanceVie) {
       Fourmis fourmis = this.stadeEvolution.getFourmis();
-      fourmis.getFourmiliere().getInfos().addMort(fourmis);
-      fourmis.getFourmiliere().getInfos().decrementerSoldats();
       fourmis.getFourmiliere().ajoutFourmisMorte(fourmis);
       return new Mort(fourmis);
     }
     return stadeEvolution;
   }
 
+  @Override
+  protected void renseignerInformations() {
+    this.stadeEvolution.getFourmis().getFourmiliere().getInfos().incrementerSoldats();
+  }
 }

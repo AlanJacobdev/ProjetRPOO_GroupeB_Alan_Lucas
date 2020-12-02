@@ -22,4 +22,9 @@ public class Mort extends Etape {
     return null;
   }
   
+  @Override
+  protected void renseignerInformations() {
+    this.fourmisMorte.getFourmiliere().getInfos().addMort(fourmisMorte);
+  }
+  
 }
