@@ -14,8 +14,8 @@ public class Fourmiliere {
   private InformationsFourmiliere infos;
   private Terrain leTerrain;
   private Point positionFourmiliere;
-  
-  
+
+
 
   /**
    * Constructeur d'une fourmilière.
@@ -36,7 +36,7 @@ public class Fourmiliere {
   public void step() {
     this.infos = leTerrain.getInfos();
     for (Fourmis uneFourmis : lesFourmis) {
-      uneFourmis.getRole().renseignerInformations();
+      uneFourmis.get
       uneFourmis.step();
       
     }
@@ -60,7 +60,7 @@ public class Fourmiliere {
   public InformationsFourmiliere getInfos() {
     return this.infos;
   }
-  
+
   public void ajoutFourmisMorte(Fourmis fourmis) {
     this.lesFourmisMortes.add(fourmis);
   }
@@ -83,13 +83,17 @@ public class Fourmiliere {
   public void setLeTerrain(Terrain leTerrain) {
     this.leTerrain = leTerrain;
   }
-  
+
   public Point getPositionFourmiliere() {
     return positionFourmiliere;
   }
 
   public void setPositionFourmiliere(Point positionFourmiliere) {
     this.positionFourmiliere = positionFourmiliere;
+  }
+
+  public List<Fourmis> getLesFourmisMortes() {
+    return this.lesFourmisMortes;
   }
 
   /**
@@ -104,4 +108,6 @@ public class Fourmiliere {
     string.append(this.leTerrain.getInfos().toString());
     return string.toString();
   }
+
+
 }
