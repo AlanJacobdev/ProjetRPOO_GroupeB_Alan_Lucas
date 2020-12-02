@@ -13,7 +13,6 @@ import java.awt.Point;
 public class VueTerrain {
 
   GSpace leTerrainVue;
-  GRect laFourmiliere;
   Dimension dimensionsTerrain;
 
   /**

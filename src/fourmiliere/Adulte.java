@@ -2,6 +2,7 @@ package fourmiliere;
 
 import environnement.InformationsFourmiliere;
 import graphicLayer.GOval;
+import java.awt.Dimension;
 import java.awt.Point;
 
 
@@ -25,14 +26,15 @@ public class Adulte extends Etape {
   public Adulte(Fourmis fourmis) {
     super();
     this.fourmis = fourmis;
-    
+
     if (fourmis.saFourmiliere != null) {
       this.roleFourmis = this.creerRole();
       this.coordonneesActuelle =
-          new Point(this.getFourmis().getFourmiliere().getPositionFourmiliere().x + 5,
-              this.getFourmis().getFourmiliere().getPositionFourmiliere().y + 5);
+          new Point(this.getFourmis().getFourmiliere().getPositionFourmiliere().x / 2,
+              this.getFourmis().getFourmiliere().getPositionFourmiliere().y / 2);
       this.representationGraphique = new GOval();
       this.representationGraphique.setPosition(coordonneesActuelle);
+      this.representationGraphique.setDimension(new Dimension(10, 10));
       this.getFourmis().getFourmiliere().getLeTerrain()
           .ajouterFourmisGraphique(representationGraphique);
     }
@@ -78,6 +80,10 @@ public class Adulte extends Etape {
   @Override
   protected void step() {
     this.getRole().step();
+    if (this.getFourmis().getRole() instanceof Reine) {
+      this.prochainePosition();
+    }
+
 
   }
 
