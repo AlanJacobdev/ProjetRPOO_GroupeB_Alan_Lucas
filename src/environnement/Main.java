@@ -33,7 +33,6 @@ public class Main {
         || lesInfos.getNbNymphes() > 0) {
       jour = printemps.getNbTempsEcoule();
       simulateur.getLeTerrain().step();
-      simulateur.getReine().pondre();
       simulateur.getJournal().ecrire(laFourmiliere, jour);
       printemps.incrementerJour();
       try {

@@ -19,10 +19,11 @@ public class Fourmiliere {
    * 
    * @param reine La fourmis reine.
    */
-  public Fourmiliere(Reine reine) {
+  public Fourmiliere(Fourmis reine) {
     this.lesFourmis = new ArrayList<>();
     this.infos = new InformationsFourmiliere();
     this.lesFourmisMortes = new ArrayList<>();
+    this.reine = reine;
   }
 
   /**
@@ -32,6 +33,7 @@ public class Fourmiliere {
     for (Fourmis uneFourmis : lesFourmis) {
       uneFourmis.step();
     }
+    this.reine.step();
     if (this.lesFourmisMortes.size() > 0) {
       this.removeFourmis();
     }

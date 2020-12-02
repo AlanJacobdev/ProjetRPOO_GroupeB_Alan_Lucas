@@ -27,7 +27,7 @@ public class Reine extends SexueFemelle {
    * @return
    */
   public Fourmiliere creerFourmiliere() {
-    Fourmiliere laFourmiliere = new Fourmiliere(this);
+    Fourmiliere laFourmiliere = new Fourmiliere(this.stadeEvolution.getFourmis());
     Fourmis fourmis = this.stadeEvolution.getFourmis();
     fourmis.setFourmilliere(laFourmiliere);
     return laFourmiliere;
@@ -36,6 +36,8 @@ public class Reine extends SexueFemelle {
   @Override
   protected void step() {
     age++;
+    this.pondre();
+    
   }
 
   @Override
