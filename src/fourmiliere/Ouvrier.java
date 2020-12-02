@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public class Ouvrier extends Role {
   Integer age;
   Integer esperanceVie;
@@ -31,11 +33,12 @@ public class Ouvrier extends Role {
     }
     return stadeEvolution;
   }
-  
+
   @Override
-  protected void renseignerInformations() {
-    this.stadeEvolution.getFourmis().getFourmiliere().getInfos().incrementerOuvrieres();
+  protected void renseignerInformations(InformationsFourmiliere infos) {
+    infos.incrementerOuvrieres();
   }
+  
 
 
 }

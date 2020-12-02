@@ -56,7 +56,6 @@ class testFourmiliere {
     assertNotNull(laFourmiliere);
     assertNotNull(laFourmiliere.getFourmis());
     assertTrue(laFourmiliere.getFourmis().size() == 0);
-    assertNotNull(laFourmiliere.getInfos());
     assertNotNull(laFourmiliere.getLeTerrain());
     assertNotNull(laFourmiliere.getLesFourmisMortes());
     assertTrue(laFourmiliere.getLesFourmisMortes().size() == 0);

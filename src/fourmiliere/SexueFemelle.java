@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public class SexueFemelle extends Sexue {
   Integer age;
   Integer esperanceVie;
@@ -33,8 +35,8 @@ public class SexueFemelle extends Sexue {
   }
 
   @Override
-  protected void renseignerInformations() {
-    this.stadeEvolution.getFourmis().getFourmiliere().getInfos().incrementerSexueFemelle();
+  protected void renseignerInformations(InformationsFourmiliere infos) {
+    infos.incrementerSexueFemelle();
   }
   
 }

@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public class Adulte extends Etape {
 
   protected Role roleFourmis;
@@ -65,10 +67,14 @@ public class Adulte extends Etape {
     this.getRole().step();
     
   }
-  
+
+
+
   @Override
-  protected void renseignerInformations() {
-    this.fourmis.getRole().renseignerInformations();
+  protected void renseignerInformations(InformationsFourmiliere infos) {
+    this.fourmis.getRole().renseignerInformations(infos);
   }
+  
+
 
 }

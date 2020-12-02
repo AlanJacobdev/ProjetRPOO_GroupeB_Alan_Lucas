@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public abstract class Etape {
 
   public Etape() {
@@ -11,5 +13,5 @@ public abstract class Etape {
   
   protected abstract Role getRole();
 
-  protected abstract void renseignerInformations();
+  protected abstract void renseignerInformations(InformationsFourmiliere infos);
 }

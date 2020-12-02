@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public class Larve extends Etape {
 
   Integer age;
@@ -37,10 +39,13 @@ public class Larve extends Etape {
   protected void step() {
     age++;
   }
-  
+
+
   @Override
-  protected void renseignerInformations() {
-    this.fourmis.getFourmiliere().getInfos().incrementerLarves();
+  protected void renseignerInformations(InformationsFourmiliere infos) {
+    infos.incrementerLarves();
   }
+  
+ 
   
 }

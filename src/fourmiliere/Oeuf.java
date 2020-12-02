@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public class Oeuf extends Etape {
 
   Integer age;
@@ -8,14 +10,12 @@ public class Oeuf extends Etape {
 
   /**
    * Constructeur d'un oeuf.
+   * 
    * @param fourmis La fourmilière.
    */
   public Oeuf(Fourmis fourmis) {
     age = 0;
     this.fourmis = fourmis;
-    if (this.fourmis.getFourmiliere() != null) {
-
-    }
   }
 
   public void step() {
@@ -36,8 +36,9 @@ public class Oeuf extends Etape {
   }
 
   @Override
-  protected void renseignerInformations() {
-    this.fourmis.getFourmiliere().getInfos().incrementerOeufs();
+  protected void renseignerInformations(InformationsFourmiliere infos) {
+    infos.incrementerOeufs();
   }
+  
 
 }

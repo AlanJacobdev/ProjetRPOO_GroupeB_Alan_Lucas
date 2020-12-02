@@ -1,5 +1,6 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
 
 public abstract class Role {
 
@@ -16,6 +17,6 @@ public abstract class Role {
   protected abstract Etape mourrir();
 
   
-  protected abstract void renseignerInformations();
+  protected abstract void renseignerInformations(InformationsFourmiliere infos);
   
 }

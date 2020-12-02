@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public class Fourmis {
 
   Etape etape;
@@ -31,6 +33,10 @@ public class Fourmis {
   public void step() {
     this.etape = etape.next();
     etape.step();
+  }
+  
+  public void renseignementFourmiliere(InformationsFourmiliere infos) {
+    this.getEtape().renseignerInformations(infos);
   }
 
   public Fourmiliere getFourmiliere() {

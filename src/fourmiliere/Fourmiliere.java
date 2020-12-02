@@ -11,7 +11,6 @@ public class Fourmiliere {
   private List<Fourmis> lesFourmis;
   private List<Fourmis> lesFourmisMortes;
   private Fourmis reine;
-  private InformationsFourmiliere infos;
   private Terrain leTerrain;
   private Point positionFourmiliere;
 
@@ -34,11 +33,8 @@ public class Fourmiliere {
    * .
    */
   public void step() {
-    this.infos = leTerrain.getInfos();
     for (Fourmis uneFourmis : lesFourmis) {
-      uneFourmis.get
       uneFourmis.step();
-      
     }
     this.reine.step();
     if (this.lesFourmisMortes.size() > 0) {
@@ -55,10 +51,6 @@ public class Fourmiliere {
     for (int i = 0; i < nombre; i++) {
       this.lesFourmis.add(new Fourmis(this));
     }
-  }
-
-  public InformationsFourmiliere getInfos() {
-    return this.infos;
   }
 
   public void ajoutFourmisMorte(Fourmis fourmis) {
@@ -97,6 +89,16 @@ public class Fourmiliere {
   }
 
   /**
+   * .
+   * @param infos .
+   */
+  public void renseignementFourmiliere(InformationsFourmiliere infos) {
+    for (Fourmis f : lesFourmis) {
+      f.renseignementFourmiliere(infos);
+    }
+  }
+
+  /**
    * Affichage des informations de la fourmilière.
    * 
    * @return Chaine de caractères contenant les informations.
@@ -105,7 +107,6 @@ public class Fourmiliere {
     StringBuffer string = new StringBuffer();
     string.append("Population : ");
     string.append(this.lesFourmis.size() + "\n");
-    string.append(this.leTerrain.getInfos().toString());
     return string.toString();
   }
 

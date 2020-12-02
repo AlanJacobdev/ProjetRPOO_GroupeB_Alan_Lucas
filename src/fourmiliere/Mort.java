@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import environnement.InformationsFourmiliere;
+
 public class Mort extends Etape {
 
   Fourmis fourmisMorte;
@@ -22,9 +24,10 @@ public class Mort extends Etape {
     return null;
   }
   
+    
   @Override
-  protected void renseignerInformations() {
-    this.fourmisMorte.getFourmiliere().getInfos().addMort(fourmisMorte);
+  protected void renseignerInformations(InformationsFourmiliere infos) {
+    infos.addMort(fourmisMorte);
   }
   
 }

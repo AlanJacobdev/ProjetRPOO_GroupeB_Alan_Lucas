@@ -55,8 +55,21 @@ public class Terrain {
    */
   public void step() {
     this.laFourmiliere.step();
-    this.infos = new InformationsFourmiliere();
+    
   }
+  
+  public void renseignementFourmiliere() {
+    this.infos = new InformationsFourmiliere();
+    this.laFourmiliere.renseignementFourmiliere(infos);
+  }
+
+  @Override
+  public String toString() {
+    String s = laFourmiliere.toString() + infos.toString();
+    return s;
+  }
+  
+  
   
   
 
