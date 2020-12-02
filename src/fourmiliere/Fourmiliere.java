@@ -11,6 +11,8 @@ public class Fourmiliere {
   private List<Fourmis> lesFourmisMortes;
   private Fourmis reine;
   private InformationsFourmiliere infos;
+  private Terrain leTerrain;
+  
 
   /**
    * Constructeur d'une fourmilière.
@@ -63,6 +65,14 @@ public class Fourmiliere {
 
   public List<Fourmis> getFourmis() {
     return this.lesFourmis;
+  }
+
+  public Terrain getLeTerrain() {
+    return leTerrain;
+  }
+
+  public void setLeTerrain(Terrain leTerrain) {
+    this.leTerrain = leTerrain;
   }
 
   /**

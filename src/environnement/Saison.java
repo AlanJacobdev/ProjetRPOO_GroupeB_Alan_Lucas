@@ -7,17 +7,36 @@ public class Saison {
   private final int automne = 266;
   private final int hiver = 356;
   private int nbTempsEcoule;
-  
+  private int jourDeLannee;
+
   public Saison() {
-    this.nbTempsEcoule = 0;
+    this.nbTempsEcoule = 1;
+    this.jourDeLannee = 1;
   }
-  
+
+  /**
+   * Incrementation du tempsEcoulé.
+   * 
+   * @return le jour de l'année
+   */
   public int incrementerJour() {
     this.nbTempsEcoule++;
-    if(this.nbTempsEcoule > 365) {
-      this.nbTempsEcoule = 1;
+    this.jourDeLannee = nbTempsEcoule % 365;
+    if (jourDeLannee == 0) {
+      return 1;
     }
-    
-    return this.nbTempsEcoule;
+    return this.jourDeLannee;
+  }
+
+  /**
+   * Savoir si la saison est Priintemps.
+   * 
+   * @return <b>true</b> si la saison est printemps sinon <b>false</b>
+   */
+  public boolean isPrintemps() {
+    if (jourDeLannee >= printemps && jourDeLannee < ete) {
+      return true;
+    }
+    return false;
   }
 }

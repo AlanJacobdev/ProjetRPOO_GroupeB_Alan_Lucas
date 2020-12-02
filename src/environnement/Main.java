@@ -9,24 +9,28 @@ public class Main {
 
   /**
    * main.
+   * 
    * @param args : jdbfhjsufvsb
    */
   public static void main(String[] args) {
     Simulateur simulateur = new Simulateur();
+    Saison printemps = new Saison();
     PrintWriter pw;
+    int jour = 0;
     try {
       pw = new PrintWriter("journal.txt");
       pw.close();
     } catch (FileNotFoundException e1) {
       e1.printStackTrace();
     }
-    
+
     simulateur.getReine().pondre();
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
-    int jour = 0;
-    while (true) {
-      jour++;
-      laFourmiliere.step();
+    InformationsFourmiliere lesInfos = laFourmiliere.getInfos();
+    while ((lesInfos.getNbOeufs() > 0 || lesInfos.getNbLarves() > 0)
+        || lesInfos.getNbNymphes() > 0) {
+      jour = printemps.incrementerJour();
+      simulateur.getLeTerrain().step();
       simulateur.getJournal().ecrire(laFourmiliere, jour);
       try {
         Thread.sleep(10);

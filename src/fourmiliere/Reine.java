@@ -1,10 +1,13 @@
 package fourmiliere;
 
+import environnement.Saison;
+
 public class Reine extends SexueFemelle {
 
   private Integer age;
   private Integer esperanceVie;
   private Adulte stadeEvolution;
+  private int oeufsPondus;
 
   /**
    * Constructeur.
@@ -49,11 +52,30 @@ public class Reine extends SexueFemelle {
   }
 
   /**
+   * Savoir si la reine est vivante.
+   * 
+   * @return <b>true</b> si la reine est vivante sinon <b>false</b>
+   */
+  public boolean isAlive() {
+    if (age < esperanceVie) {
+      return true;
+    }
+    return false;
+  }
+
+  /**
    * Créer une portée de fourmis.
    * 
    */
   public void pondre() {
-    int oeufsPondus = this.esperanceVie = (int) (Math.random() * (20 - 10)) + 10;
-    this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
+    Fourmis fourmis = this.stadeEvolution.getFourmis();
+    Fourmiliere fourmiliere = fourmis.getFourmiliere();
+    Saison laSaison = fourmiliere.getLeTerrain().getLesSaisons();
+    if (laSaison.isPrintemps()) {
+      oeufsPondus = (int) (Math.random() * (20 - 10)) + 10;
+      this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
+    }
+    
   }
+  
 }

@@ -94,6 +94,35 @@ public class InformationsFourmiliere {
     return this.lesMorts.size();
   }
   
+  public int getNbOeufs() {
+    return nbOeufs;
+  }
+
+  public int getNbLarves() {
+    return nbLarves;
+  }
+
+  public int getNbNymphes() {
+    return nbNymphes;
+  }
+
+  public int getNbOuvrieres() {
+    return nbOuvrieres;
+  }
+
+  public int getNbSoldats() {
+    return nbSoldats;
+  }
+
+  public int getNbSexueFemelles() {
+    return nbSexueFemelles;
+  }
+
+  public int getNbSexueMales() {
+    return nbSexueMales;
+  }
+
+  
   /**
    * Affichage des informations de la fourmilière.
    * 
