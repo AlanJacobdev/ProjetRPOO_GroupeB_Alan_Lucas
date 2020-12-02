@@ -76,6 +76,10 @@ public class Fourmiliere {
   public void setLeTerrain(Terrain leTerrain) {
     this.leTerrain = leTerrain;
   }
+  
+  public List<Fourmis> getLesFourmisMortes(){
+    return this.lesFourmisMortes;
+  }
 
   /**
    * Affichage des informations de la fourmilière.

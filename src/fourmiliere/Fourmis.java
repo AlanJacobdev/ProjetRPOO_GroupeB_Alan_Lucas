@@ -40,4 +40,8 @@ public class Fourmis {
   public void setFourmilliere(Fourmiliere uneFourmilliere) {
     this.saFourmiliere = uneFourmilliere;
   }
+  
+  public Etape getEtape() {
+    return this.etape;
+  }
 }

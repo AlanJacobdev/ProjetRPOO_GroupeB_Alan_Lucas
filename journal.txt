@@ -947,9 +947,9 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°80
-Population : 17
+Population : 18
 Informations sur la fourmilière :
-- Nombre d'oeufs : 17
+- Nombre d'oeufs : 18
 - Nombre de larves : 0
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
@@ -959,9 +959,9 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°81
-Population : 31
+Population : 29
 Informations sur la fourmilière :
-- Nombre d'oeufs : 31
+- Nombre d'oeufs : 29
 - Nombre de larves : 0
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
@@ -971,9 +971,9 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°82
-Population : 42
+Population : 41
 Informations sur la fourmilière :
-- Nombre d'oeufs : 42
+- Nombre d'oeufs : 41
 - Nombre de larves : 0
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
@@ -983,9 +983,9 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°83
-Population : 60
+Population : 51
 Informations sur la fourmilière :
-- Nombre d'oeufs : 60
+- Nombre d'oeufs : 51
 - Nombre de larves : 0
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
@@ -995,10 +995,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°84
-Population : 76
+Population : 70
 Informations sur la fourmilière :
-- Nombre d'oeufs : 59
-- Nombre de larves : 17
+- Nombre d'oeufs : 52
+- Nombre de larves : 18
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1007,10 +1007,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°85
-Population : 88
+Population : 81
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 31
+- Nombre d'oeufs : 52
+- Nombre de larves : 29
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1019,10 +1019,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°86
-Population : 103
+Population : 93
 Informations sur la fourmilière :
-- Nombre d'oeufs : 61
-- Nombre de larves : 42
+- Nombre d'oeufs : 52
+- Nombre de larves : 41
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1031,10 +1031,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°87
-Population : 115
+Population : 112
 Informations sur la fourmilière :
-- Nombre d'oeufs : 55
-- Nombre de larves : 60
+- Nombre d'oeufs : 61
+- Nombre de larves : 51
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1043,10 +1043,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°88
-Population : 127
+Population : 122
 Informations sur la fourmilière :
-- Nombre d'oeufs : 51
-- Nombre de larves : 76
+- Nombre d'oeufs : 52
+- Nombre de larves : 70
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1055,10 +1055,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°89
-Population : 139
+Population : 140
 Informations sur la fourmilière :
-- Nombre d'oeufs : 51
-- Nombre de larves : 88
+- Nombre d'oeufs : 59
+- Nombre de larves : 81
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1067,10 +1067,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°90
-Population : 154
+Population : 152
 Informations sur la fourmilière :
-- Nombre d'oeufs : 51
-- Nombre de larves : 103
+- Nombre d'oeufs : 59
+- Nombre de larves : 93
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1079,10 +1079,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°91
-Population : 169
+Population : 171
 Informations sur la fourmilière :
-- Nombre d'oeufs : 54
-- Nombre de larves : 115
+- Nombre d'oeufs : 59
+- Nombre de larves : 112
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1091,10 +1091,10 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°92
-Population : 182
+Population : 183
 Informations sur la fourmilière :
-- Nombre d'oeufs : 55
-- Nombre de larves : 127
+- Nombre d'oeufs : 61
+- Nombre de larves : 122
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1105,8 +1105,8 @@ Informations sur la fourmilière :
 Jour n°93
 Population : 195
 Informations sur la fourmilière :
-- Nombre d'oeufs : 56
-- Nombre de larves : 139
+- Nombre d'oeufs : 55
+- Nombre de larves : 140
 - Nombre de nymphes : 0
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
@@ -1117,9 +1117,9 @@ Informations sur la fourmilière :
 Jour n°94
 Population : 208
 Informations sur la fourmilière :
-- Nombre d'oeufs : 54
-- Nombre de larves : 137
-- Nombre de nymphes : 17
+- Nombre d'oeufs : 56
+- Nombre de larves : 134
+- Nombre de nymphes : 18
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1127,11 +1127,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°95
-Population : 226
+Population : 227
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 138
-- Nombre de nymphes : 31
+- Nombre d'oeufs : 56
+- Nombre de larves : 142
+- Nombre de nymphes : 29
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1139,11 +1139,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°96
-Population : 243
+Population : 237
 Informations sur la fourmilière :
-- Nombre d'oeufs : 61
-- Nombre de larves : 140
-- Nombre de nymphes : 42
+- Nombre d'oeufs : 54
+- Nombre de larves : 142
+- Nombre de nymphes : 41
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1151,11 +1151,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°97
-Population : 260
+Population : 253
 Informations sur la fourmilière :
-- Nombre d'oeufs : 65
-- Nombre de larves : 135
-- Nombre de nymphes : 60
+- Nombre d'oeufs : 58
+- Nombre de larves : 144
+- Nombre de nymphes : 51
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1163,11 +1163,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°98
-Population : 273
+Population : 270
 Informations sur la fourmilière :
-- Nombre d'oeufs : 65
-- Nombre de larves : 132
-- Nombre de nymphes : 76
+- Nombre d'oeufs : 62
+- Nombre de larves : 138
+- Nombre de nymphes : 70
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1175,11 +1175,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°99
-Population : 292
+Population : 280
 Informations sur la fourmilière :
-- Nombre d'oeufs : 66
-- Nombre de larves : 138
-- Nombre de nymphes : 88
+- Nombre d'oeufs : 53
+- Nombre de larves : 146
+- Nombre de nymphes : 81
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1187,11 +1187,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°100
-Population : 303
+Population : 291
 Informations sur la fourmilière :
-- Nombre d'oeufs : 60
-- Nombre de larves : 140
-- Nombre de nymphes : 103
+- Nombre d'oeufs : 54
+- Nombre de larves : 144
+- Nombre de nymphes : 93
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1199,11 +1199,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°101
-Population : 313
+Population : 304
 Informations sur la fourmilière :
-- Nombre d'oeufs : 53
-- Nombre de larves : 145
-- Nombre de nymphes : 115
+- Nombre d'oeufs : 51
+- Nombre de larves : 141
+- Nombre de nymphes : 112
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1211,11 +1211,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°102
-Population : 328
+Population : 323
 Informations sur la fourmilière :
-- Nombre d'oeufs : 55
-- Nombre de larves : 146
-- Nombre de nymphes : 127
+- Nombre d'oeufs : 53
+- Nombre de larves : 148
+- Nombre de nymphes : 122
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1223,11 +1223,11 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°103
-Population : 346
+Population : 333
 Informations sur la fourmilière :
-- Nombre d'oeufs : 54
-- Nombre de larves : 153
-- Nombre de nymphes : 139
+- Nombre d'oeufs : 53
+- Nombre de larves : 140
+- Nombre de nymphes : 140
 - Nombre d'ouvrières : 0
 - Nombre de soldats : 0
 - Nombre de femelles : 0
@@ -1235,3134 +1235,3134 @@ Informations sur la fourmilière :
 - Nombre de morts : 0
 
 Jour n°104
-Population : 365
+Population : 352
 Informations sur la fourmilière :
-- Nombre d'oeufs : 62
-- Nombre de larves : 149
-- Nombre de nymphes : 137
-- Nombre d'ouvrières : 8
-- Nombre de soldats : 4
-- Nombre de femelles : 4
+- Nombre d'oeufs : 61
+- Nombre de larves : 139
+- Nombre de nymphes : 134
+- Nombre d'ouvrières : 10
+- Nombre de soldats : 5
+- Nombre de femelles : 2
 - Nombre de mâles : 1
 - Nombre de morts : 0
 
 Jour n°105
-Population : 376
+Population : 367
 Informations sur la fourmilière :
 - Nombre d'oeufs : 63
-- Nombre de larves : 144
-- Nombre de nymphes : 138
-- Nombre d'ouvrières : 15
+- Nombre de larves : 133
+- Nombre de nymphes : 142
+- Nombre d'ouvrières : 16
 - Nombre de soldats : 8
-- Nombre de femelles : 6
+- Nombre de femelles : 3
 - Nombre de mâles : 2
 - Nombre de morts : 0
 
 Jour n°106
-Population : 392
+Population : 380
 Informations sur la fourmilière :
-- Nombre d'oeufs : 64
-- Nombre de larves : 146
-- Nombre de nymphes : 140
+- Nombre d'oeufs : 57
+- Nombre de larves : 140
+- Nombre de nymphes : 142
 - Nombre d'ouvrières : 23
-- Nombre de soldats : 9
-- Nombre de femelles : 6
-- Nombre de mâles : 4
+- Nombre de soldats : 11
+- Nombre de femelles : 4
+- Nombre de mâles : 3
 - Nombre de morts : 0
 
 Jour n°107
-Population : 404
+Population : 399
 Informations sur la fourmilière :
-- Nombre d'oeufs : 58
-- Nombre de larves : 151
-- Nombre de nymphes : 135
-- Nombre d'ouvrières : 38
-- Nombre de soldats : 10
-- Nombre de femelles : 7
-- Nombre de mâles : 5
+- Nombre d'oeufs : 66
+- Nombre de larves : 138
+- Nombre de nymphes : 144
+- Nombre d'ouvrières : 28
+- Nombre de soldats : 14
+- Nombre de femelles : 5
+- Nombre de mâles : 4
 - Nombre de morts : 0
 
 Jour n°108
-Population : 422
+Population : 416
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 157
-- Nombre de nymphes : 132
-- Nombre d'ouvrières : 46
-- Nombre de soldats : 16
-- Nombre de femelles : 7
-- Nombre de mâles : 7
+- Nombre d'oeufs : 64
+- Nombre de larves : 144
+- Nombre de nymphes : 138
+- Nombre d'ouvrières : 41
+- Nombre de soldats : 18
+- Nombre de femelles : 5
+- Nombre de mâles : 6
 - Nombre de morts : 0
 
 Jour n°109
-Population : 432
+Population : 431
 Informations sur la fourmilière :
-- Nombre d'oeufs : 56
-- Nombre de larves : 150
-- Nombre de nymphes : 138
-- Nombre d'ouvrières : 55
-- Nombre de soldats : 17
-- Nombre de femelles : 8
-- Nombre de mâles : 8
+- Nombre d'oeufs : 64
+- Nombre de larves : 140
+- Nombre de nymphes : 146
+- Nombre d'ouvrières : 49
+- Nombre de soldats : 20
+- Nombre de femelles : 5
+- Nombre de mâles : 7
 - Nombre de morts : 0
 
 Jour n°110
-Population : 442
+Population : 443
 Informations sur la fourmilière :
-- Nombre d'oeufs : 50
-- Nombre de larves : 149
-- Nombre de nymphes : 140
-- Nombre d'ouvrières : 65
-- Nombre de soldats : 19
-- Nombre de femelles : 9
-- Nombre de mâles : 10
+- Nombre d'oeufs : 63
+- Nombre de larves : 143
+- Nombre de nymphes : 144
+- Nombre d'ouvrières : 57
+- Nombre de soldats : 23
+- Nombre de femelles : 5
+- Nombre de mâles : 8
 - Nombre de morts : 0
 
 Jour n°111
-Population : 461
+Population : 457
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 144
-- Nombre de nymphes : 145
-- Nombre d'ouvrières : 71
-- Nombre de soldats : 23
-- Nombre de femelles : 10
-- Nombre de mâles : 11
+- Nombre d'oeufs : 58
+- Nombre de larves : 146
+- Nombre de nymphes : 141
+- Nombre d'ouvrières : 69
+- Nombre de soldats : 27
+- Nombre de femelles : 7
+- Nombre de mâles : 9
 - Nombre de morts : 0
 
 Jour n°112
-Population : 479
+Population : 468
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 149
-- Nombre de nymphes : 146
-- Nombre d'ouvrières : 76
-- Nombre de soldats : 26
+- Nombre d'oeufs : 52
+- Nombre de larves : 146
+- Nombre de nymphes : 148
+- Nombre d'ouvrières : 72
+- Nombre de soldats : 28
 - Nombre de femelles : 11
-- Nombre de mâles : 14
+- Nombre de mâles : 11
 - Nombre de morts : 0
 
 Jour n°113
-Population : 495
+Population : 483
 Informations sur la fourmilière :
-- Nombre d'oeufs : 63
-- Nombre de larves : 140
-- Nombre de nymphes : 153
-- Nombre d'ouvrières : 85
-- Nombre de soldats : 29
-- Nombre de femelles : 11
-- Nombre de mâles : 14
+- Nombre d'oeufs : 52
+- Nombre de larves : 151
+- Nombre de nymphes : 140
+- Nombre d'ouvrières : 82
+- Nombre de soldats : 31
+- Nombre de femelles : 15
+- Nombre de mâles : 12
 - Nombre de morts : 0
 
 Jour n°114
-Population : 514
+Population : 501
 Informations sur la fourmilière :
-- Nombre d'oeufs : 72
-- Nombre de larves : 139
-- Nombre de nymphes : 149
-- Nombre d'ouvrières : 92
-- Nombre de soldats : 34
-- Nombre de femelles : 13
-- Nombre de mâles : 15
+- Nombre d'oeufs : 58
+- Nombre de larves : 152
+- Nombre de nymphes : 139
+- Nombre d'ouvrières : 90
+- Nombre de soldats : 33
+- Nombre de femelles : 17
+- Nombre de mâles : 12
 - Nombre de morts : 0
 
 Jour n°115
-Population : 525
+Population : 516
 Informations sur la fourmilière :
-- Nombre d'oeufs : 64
-- Nombre de larves : 148
-- Nombre de nymphes : 144
-- Nombre d'ouvrières : 102
-- Nombre de soldats : 39
-- Nombre de femelles : 13
-- Nombre de mâles : 15
+- Nombre d'oeufs : 59
+- Nombre de larves : 153
+- Nombre de nymphes : 133
+- Nombre d'ouvrières : 104
+- Nombre de soldats : 37
+- Nombre de femelles : 18
+- Nombre de mâles : 12
 - Nombre de morts : 0
 
 Jour n°116
-Population : 541
+Population : 533
 Informations sur la fourmilière :
-- Nombre d'oeufs : 62
-- Nombre de larves : 151
-- Nombre de nymphes : 146
+- Nombre d'oeufs : 65
+- Nombre de larves : 145
+- Nombre de nymphes : 140
 - Nombre d'ouvrières : 111
-- Nombre de soldats : 40
-- Nombre de femelles : 14
-- Nombre de mâles : 17
+- Nombre de soldats : 41
+- Nombre de femelles : 19
+- Nombre de mâles : 12
 - Nombre de morts : 0
 
 Jour n°117
-Population : 555
+Population : 550
 Informations sur la fourmilière :
-- Nombre d'oeufs : 60
-- Nombre de larves : 149
-- Nombre de nymphes : 151
-- Nombre d'ouvrières : 117
-- Nombre de soldats : 43
-- Nombre de femelles : 15
-- Nombre de mâles : 20
+- Nombre d'oeufs : 67
+- Nombre de larves : 150
+- Nombre de nymphes : 138
+- Nombre d'ouvrières : 120
+- Nombre de soldats : 42
+- Nombre de femelles : 20
+- Nombre de mâles : 13
 - Nombre de morts : 0
 
 Jour n°118
-Population : 570
-Informations sur la fourmilière :
-- Nombre d'oeufs : 56
-- Nombre de larves : 149
-- Nombre de nymphes : 157
-- Nombre d'ouvrières : 126
-- Nombre de soldats : 47
-- Nombre de femelles : 15
-- Nombre de mâles : 20
-- Nombre de morts : 0
-
-Jour n°119
-Population : 588
+Population : 564
 Informations sur la fourmilière :
 - Nombre d'oeufs : 63
 - Nombre de larves : 149
-- Nombre de nymphes : 150
-- Nombre d'ouvrières : 140
-- Nombre de soldats : 51
-- Nombre de femelles : 15
-- Nombre de mâles : 20
+- Nombre de nymphes : 144
+- Nombre d'ouvrières : 127
+- Nombre de soldats : 45
+- Nombre de femelles : 22
+- Nombre de mâles : 14
+- Nombre de morts : 0
+
+Jour n°119
+Population : 579
+Informations sur la fourmilière :
+- Nombre d'oeufs : 63
+- Nombre de larves : 149
+- Nombre de nymphes : 140
+- Nombre d'ouvrières : 138
+- Nombre de soldats : 52
+- Nombre de femelles : 22
+- Nombre de mâles : 15
 - Nombre de morts : 0
 
 Jour n°120
-Population : 602
+Population : 595
 Informations sur la fourmilière :
-- Nombre d'oeufs : 61
-- Nombre de larves : 149
-- Nombre de nymphes : 149
-- Nombre d'ouvrières : 156
-- Nombre de soldats : 51
-- Nombre de femelles : 15
-- Nombre de mâles : 21
+- Nombre d'oeufs : 62
+- Nombre de larves : 153
+- Nombre de nymphes : 143
+- Nombre d'ouvrières : 145
+- Nombre de soldats : 54
+- Nombre de femelles : 23
+- Nombre de mâles : 15
 - Nombre de morts : 0
 
 Jour n°121
 Population : 614
 Informations sur la fourmilière :
-- Nombre d'oeufs : 59
+- Nombre d'oeufs : 64
 - Nombre de larves : 151
-- Nombre de nymphes : 144
-- Nombre d'ouvrières : 168
-- Nombre de soldats : 55
-- Nombre de femelles : 15
-- Nombre de mâles : 22
+- Nombre de nymphes : 146
+- Nombre d'ouvrières : 157
+- Nombre de soldats : 58
+- Nombre de femelles : 23
+- Nombre de mâles : 15
 - Nombre de morts : 0
 
 Jour n°122
-Population : 633
+Population : 631
 Informations sur la fourmilière :
-- Nombre d'oeufs : 63
+- Nombre d'oeufs : 67
 - Nombre de larves : 148
-- Nombre de nymphes : 149
-- Nombre d'ouvrières : 178
-- Nombre de soldats : 55
-- Nombre de femelles : 16
-- Nombre de mâles : 24
+- Nombre de nymphes : 146
+- Nombre d'ouvrières : 167
+- Nombre de soldats : 64
+- Nombre de femelles : 23
+- Nombre de mâles : 16
 - Nombre de morts : 0
 
 Jour n°123
-Population : 646
+Population : 644
 Informations sur la fourmilière :
-- Nombre d'oeufs : 58
-- Nombre de larves : 156
-- Nombre de nymphes : 140
-- Nombre d'ouvrières : 189
-- Nombre de soldats : 61
-- Nombre de femelles : 16
-- Nombre de mâles : 26
+- Nombre d'oeufs : 65
+- Nombre de larves : 148
+- Nombre de nymphes : 151
+- Nombre d'ouvrières : 175
+- Nombre de soldats : 65
+- Nombre de femelles : 23
+- Nombre de mâles : 17
 - Nombre de morts : 0
 
 Jour n°124
-Population : 659
+Population : 654
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 160
-- Nombre de nymphes : 139
-- Nombre d'ouvrières : 196
-- Nombre de soldats : 64
-- Nombre de femelles : 17
-- Nombre de mâles : 26
+- Nombre d'oeufs : 59
+- Nombre de larves : 152
+- Nombre de nymphes : 152
+- Nombre d'ouvrières : 183
+- Nombre de soldats : 67
+- Nombre de femelles : 23
+- Nombre de mâles : 18
 - Nombre de morts : 0
 
 Jour n°125
-Population : 669
+Population : 668
 Informations sur la fourmilière :
-- Nombre d'oeufs : 55
-- Nombre de larves : 153
-- Nombre de nymphes : 148
-- Nombre d'ouvrières : 202
-- Nombre de soldats : 66
-- Nombre de femelles : 18
-- Nombre de mâles : 27
+- Nombre d'oeufs : 54
+- Nombre de larves : 157
+- Nombre de nymphes : 153
+- Nombre d'ouvrières : 192
+- Nombre de soldats : 68
+- Nombre de femelles : 25
+- Nombre de mâles : 19
 - Nombre de morts : 0
 
 Jour n°126
-Population : 685
+Population : 678
 Informations sur la fourmilière :
-- Nombre d'oeufs : 52
-- Nombre de larves : 154
-- Nombre de nymphes : 151
-- Nombre d'ouvrières : 210
-- Nombre de soldats : 70
-- Nombre de femelles : 19
-- Nombre de mâles : 29
+- Nombre d'oeufs : 47
+- Nombre de larves : 163
+- Nombre de nymphes : 145
+- Nombre d'ouvrières : 205
+- Nombre de soldats : 72
+- Nombre de femelles : 25
+- Nombre de mâles : 21
 - Nombre de morts : 0
 
 Jour n°127
-Population : 696
+Population : 691
 Informations sur la fourmilière :
-- Nombre d'oeufs : 50
-- Nombre de larves : 151
-- Nombre de nymphes : 149
-- Nombre d'ouvrières : 217
+- Nombre d'oeufs : 47
+- Nombre de larves : 161
+- Nombre de nymphes : 150
+- Nombre d'ouvrières : 209
 - Nombre de soldats : 76
-- Nombre de femelles : 20
-- Nombre de mâles : 33
+- Nombre de femelles : 26
+- Nombre de mâles : 22
 - Nombre de morts : 0
 
 Jour n°128
-Population : 711
+Population : 702
 Informations sur la fourmilière :
-- Nombre d'oeufs : 52
-- Nombre de larves : 145
+- Nombre d'oeufs : 48
+- Nombre de larves : 153
 - Nombre de nymphes : 149
-- Nombre d'ouvrières : 230
-- Nombre de soldats : 79
-- Nombre de femelles : 23
-- Nombre de mâles : 33
+- Nombre d'ouvrières : 225
+- Nombre de soldats : 76
+- Nombre de femelles : 29
+- Nombre de mâles : 22
 - Nombre de morts : 0
 
 Jour n°129
-Population : 725
+Population : 721
 Informations sur la fourmilière :
-- Nombre d'oeufs : 56
-- Nombre de larves : 144
+- Nombre d'oeufs : 53
+- Nombre de larves : 152
 - Nombre de nymphes : 149
-- Nombre d'ouvrières : 236
+- Nombre d'ouvrières : 231
 - Nombre de soldats : 82
-- Nombre de femelles : 25
-- Nombre de mâles : 33
+- Nombre de femelles : 30
+- Nombre de mâles : 24
 - Nombre de morts : 0
 
 Jour n°130
-Population : 738
+Population : 734
 Informations sur la fourmilière :
-- Nombre d'oeufs : 53
-- Nombre de larves : 144
-- Nombre de nymphes : 149
-- Nombre d'ouvrières : 245
+- Nombre d'oeufs : 56
+- Nombre de larves : 145
+- Nombre de nymphes : 153
+- Nombre d'ouvrières : 241
 - Nombre de soldats : 84
-- Nombre de femelles : 29
-- Nombre de mâles : 34
+- Nombre de femelles : 31
+- Nombre de mâles : 24
 - Nombre de morts : 0
 
 Jour n°131
-Population : 754
+Population : 747
 Informations sur la fourmilière :
-- Nombre d'oeufs : 58
+- Nombre d'oeufs : 56
 - Nombre de larves : 141
 - Nombre de nymphes : 151
-- Nombre d'ouvrières : 252
-- Nombre de soldats : 86
+- Nombre d'ouvrières : 255
+- Nombre de soldats : 87
 - Nombre de femelles : 31
-- Nombre de mâles : 35
+- Nombre de mâles : 26
 - Nombre de morts : 0
 
 Jour n°132
-Population : 765
+Population : 766
 Informations sur la fourmilière :
-- Nombre d'oeufs : 54
-- Nombre de larves : 141
+- Nombre d'oeufs : 64
+- Nombre de larves : 138
 - Nombre de nymphes : 148
-- Nombre d'ouvrières : 263
+- Nombre d'ouvrières : 264
 - Nombre de soldats : 92
 - Nombre de femelles : 32
-- Nombre de mâles : 35
+- Nombre de mâles : 28
 - Nombre de morts : 0
 
 Jour n°133
-Population : 780
+Population : 785
 Informations sur la fourmilière :
-- Nombre d'oeufs : 55
-- Nombre de larves : 137
-- Nombre de nymphes : 156
-- Nombre d'ouvrières : 270
-- Nombre de soldats : 92
+- Nombre d'oeufs : 64
+- Nombre de larves : 142
+- Nombre de nymphes : 148
+- Nombre d'ouvrières : 273
+- Nombre de soldats : 96
 - Nombre de femelles : 33
-- Nombre de mâles : 37
+- Nombre de mâles : 29
 - Nombre de morts : 0
 
 Jour n°134
-Population : 799
+Population : 796
 Informations sur la fourmilière :
-- Nombre d'oeufs : 61
-- Nombre de larves : 136
-- Nombre de nymphes : 160
-- Nombre d'ouvrières : 275
-- Nombre de soldats : 94
+- Nombre d'oeufs : 62
+- Nombre de larves : 139
+- Nombre de nymphes : 152
+- Nombre d'ouvrières : 281
+- Nombre de soldats : 98
 - Nombre de femelles : 34
-- Nombre de mâles : 39
+- Nombre de mâles : 30
 - Nombre de morts : 0
 
 Jour n°135
-Population : 817
+Population : 815
 Informations sur la fourmilière :
-- Nombre d'oeufs : 63
-- Nombre de larves : 140
-- Nombre de nymphes : 153
-- Nombre d'ouvrières : 290
-- Nombre de soldats : 97
-- Nombre de femelles : 34
-- Nombre de mâles : 40
+- Nombre d'oeufs : 68
+- Nombre de larves : 133
+- Nombre de nymphes : 157
+- Nombre d'ouvrières : 288
+- Nombre de soldats : 102
+- Nombre de femelles : 35
+- Nombre de mâles : 32
 - Nombre de morts : 0
 
 Jour n°136
-Population : 836
+Population : 826
 Informations sur la fourmilière :
-- Nombre d'oeufs : 71
-- Nombre de larves : 132
-- Nombre de nymphes : 154
-- Nombre d'ouvrières : 298
-- Nombre de soldats : 100
+- Nombre d'oeufs : 60
+- Nombre de larves : 135
+- Nombre de nymphes : 163
+- Nombre d'ouvrières : 297
+- Nombre de soldats : 103
+- Nombre de femelles : 35
+- Nombre de mâles : 33
+- Nombre de morts : 0
+
+Jour n°137
+Population : 838
+Informations sur la fourmilière :
+- Nombre d'oeufs : 53
+- Nombre de larves : 141
+- Nombre de nymphes : 161
+- Nombre d'ouvrières : 307
+- Nombre de soldats : 106
+- Nombre de femelles : 36
+- Nombre de mâles : 34
+- Nombre de morts : 0
+
+Jour n°138
+Population : 852
+Informations sur la fourmilière :
+- Nombre d'oeufs : 56
+- Nombre de larves : 142
+- Nombre de nymphes : 153
+- Nombre d'ouvrières : 317
+- Nombre de soldats : 113
+- Nombre de femelles : 36
+- Nombre de mâles : 35
+- Nombre de morts : 0
+
+Jour n°139
+Population : 868
+Informations sur la fourmilière :
+- Nombre d'oeufs : 53
+- Nombre de larves : 147
+- Nombre de nymphes : 152
+- Nombre d'ouvrières : 329
+- Nombre de soldats : 115
+- Nombre de femelles : 36
+- Nombre de mâles : 36
+- Nombre de morts : 0
+
+Jour n°140
+Population : 882
+Informations sur la fourmilière :
+- Nombre d'oeufs : 56
+- Nombre de larves : 148
+- Nombre de nymphes : 145
+- Nombre d'ouvrières : 342
+- Nombre de soldats : 116
+- Nombre de femelles : 37
+- Nombre de mâles : 38
+- Nombre de morts : 0
+
+Jour n°141
+Population : 897
+Informations sur la fourmilière :
+- Nombre d'oeufs : 59
+- Nombre de larves : 147
+- Nombre de nymphes : 141
+- Nombre d'ouvrières : 350
+- Nombre de soldats : 119
 - Nombre de femelles : 38
 - Nombre de mâles : 43
 - Nombre de morts : 0
 
-Jour n°137
-Population : 853
-Informations sur la fourmilière :
-- Nombre d'oeufs : 73
-- Nombre de larves : 134
-- Nombre de nymphes : 151
-- Nombre d'ouvrières : 309
-- Nombre de soldats : 103
-- Nombre de femelles : 39
-- Nombre de mâles : 44
-- Nombre de morts : 0
-
-Jour n°138
-Population : 870
-Informations sur la fourmilière :
-- Nombre d'oeufs : 71
-- Nombre de larves : 140
-- Nombre de nymphes : 145
-- Nombre d'ouvrières : 324
-- Nombre de soldats : 106
-- Nombre de femelles : 40
-- Nombre de mâles : 44
-- Nombre de morts : 0
-
-Jour n°139
-Population : 880
-Informations sur la fourmilière :
-- Nombre d'oeufs : 63
-- Nombre de larves : 148
-- Nombre de nymphes : 144
-- Nombre d'ouvrières : 330
-- Nombre de soldats : 109
-- Nombre de femelles : 41
-- Nombre de mâles : 45
-- Nombre de morts : 0
-
-Jour n°140
-Population : 898
-Informations sur la fourmilière :
-- Nombre d'oeufs : 62
-- Nombre de larves : 151
-- Nombre de nymphes : 144
-- Nombre d'ouvrières : 340
-- Nombre de soldats : 113
-- Nombre de femelles : 41
-- Nombre de mâles : 47
-- Nombre de morts : 0
-
-Jour n°141
-Population : 911
-Informations sur la fourmilière :
-- Nombre d'oeufs : 58
-- Nombre de larves : 157
-- Nombre de nymphes : 141
-- Nombre d'ouvrières : 352
-- Nombre de soldats : 114
-- Nombre de femelles : 42
-- Nombre de mâles : 47
-- Nombre de morts : 0
-
 Jour n°142
-Population : 929
+Population : 907
 Informations sur la fourmilière :
-- Nombre d'oeufs : 59
-- Nombre de larves : 159
-- Nombre de nymphes : 141
-- Nombre d'ouvrières : 362
-- Nombre de soldats : 117
-- Nombre de femelles : 42
-- Nombre de mâles : 49
+- Nombre d'oeufs : 55
+- Nombre de larves : 150
+- Nombre de nymphes : 138
+- Nombre d'ouvrières : 356
+- Nombre de soldats : 123
+- Nombre de femelles : 41
+- Nombre de mâles : 44
 - Nombre de morts : 0
 
 Jour n°143
-Population : 940
+Population : 922
 Informations sur la fourmilière :
-- Nombre d'oeufs : 60
-- Nombre de larves : 155
-- Nombre de nymphes : 137
-- Nombre d'ouvrières : 371
-- Nombre de soldats : 121
-- Nombre de femelles : 45
-- Nombre de mâles : 51
+- Nombre d'oeufs : 54
+- Nombre de larves : 147
+- Nombre de nymphes : 142
+- Nombre d'ouvrières : 363
+- Nombre de soldats : 128
+- Nombre de femelles : 42
+- Nombre de mâles : 46
 - Nombre de morts : 0
 
 Jour n°144
-Population : 951
+Population : 939
 Informations sur la fourmilière :
-- Nombre d'oeufs : 53
-- Nombre de larves : 160
-- Nombre de nymphes : 136
-- Nombre d'ouvrières : 377
-- Nombre de soldats : 125
-- Nombre de femelles : 48
-- Nombre de mâles : 52
+- Nombre d'oeufs : 57
+- Nombre de larves : 148
+- Nombre de nymphes : 139
+- Nombre d'ouvrières : 373
+- Nombre de soldats : 131
+- Nombre de femelles : 43
+- Nombre de mâles : 48
 - Nombre de morts : 0
 
 Jour n°145
-Population : 970
+Population : 958
 Informations sur la fourmilière :
-- Nombre d'oeufs : 59
-- Nombre de larves : 157
-- Nombre de nymphes : 140
+- Nombre d'oeufs : 61
+- Nombre de larves : 150
+- Nombre de nymphes : 133
 - Nombre d'ouvrières : 384
-- Nombre de soldats : 128
-- Nombre de femelles : 50
-- Nombre de mâles : 52
+- Nombre de soldats : 138
+- Nombre de femelles : 44
+- Nombre de mâles : 48
 - Nombre de morts : 0
 
 Jour n°146
-Population : 981
+Population : 968
 Informations sur la fourmilière :
-- Nombre d'oeufs : 52
-- Nombre de larves : 164
-- Nombre de nymphes : 132
-- Nombre d'ouvrières : 398
-- Nombre de soldats : 129
-- Nombre de femelles : 52
-- Nombre de mâles : 54
+- Nombre d'oeufs : 61
+- Nombre de larves : 141
+- Nombre de nymphes : 135
+- Nombre d'ouvrières : 396
+- Nombre de soldats : 143
+- Nombre de femelles : 44
+- Nombre de mâles : 48
 - Nombre de morts : 0
 
 Jour n°147
-Population : 996
+Population : 985
 Informations sur la fourmilière :
-- Nombre d'oeufs : 56
-- Nombre de larves : 160
-- Nombre de nymphes : 134
-- Nombre d'ouvrières : 406
-- Nombre de soldats : 129
-- Nombre de femelles : 54
-- Nombre de mâles : 57
+- Nombre d'oeufs : 63
+- Nombre de larves : 137
+- Nombre de nymphes : 141
+- Nombre d'ouvrières : 404
+- Nombre de soldats : 147
+- Nombre de femelles : 44
+- Nombre de mâles : 49
 - Nombre de morts : 0
 
 Jour n°148
-Population : 1012
+Population : 996
 Informations sur la fourmilière :
-- Nombre d'oeufs : 61
-- Nombre de larves : 152
-- Nombre de nymphes : 140
-- Nombre d'ouvrières : 418
-- Nombre de soldats : 130
-- Nombre de femelles : 54
-- Nombre de mâles : 57
+- Nombre d'oeufs : 57
+- Nombre de larves : 143
+- Nombre de nymphes : 142
+- Nombre d'ouvrières : 409
+- Nombre de soldats : 152
+- Nombre de femelles : 44
+- Nombre de mâles : 49
 - Nombre de morts : 0
 
 Jour n°149
-Population : 1024
+Population : 1015
 Informations sur la fourmilière :
-- Nombre d'oeufs : 54
-- Nombre de larves : 153
-- Nombre de nymphes : 148
-- Nombre d'ouvrières : 426
-- Nombre de soldats : 132
-- Nombre de femelles : 54
-- Nombre de mâles : 57
+- Nombre d'oeufs : 57
+- Nombre de larves : 143
+- Nombre de nymphes : 147
+- Nombre d'ouvrières : 419
+- Nombre de soldats : 155
+- Nombre de femelles : 45
+- Nombre de mâles : 49
 - Nombre de morts : 0
 
 Jour n°150
-Population : 1039
+Population : 1030
 Informations sur la fourmilière :
-- Nombre d'oeufs : 58
-- Nombre de larves : 145
-- Nombre de nymphes : 151
-- Nombre d'ouvrières : 434
-- Nombre de soldats : 137
-- Nombre de femelles : 56
-- Nombre de mâles : 58
+- Nombre d'oeufs : 62
+- Nombre de larves : 142
+- Nombre de nymphes : 148
+- Nombre d'ouvrières : 428
+- Nombre de soldats : 155
+- Nombre de femelles : 46
+- Nombre de mâles : 49
 - Nombre de morts : 0
 
 Jour n°151
-Population : 1054
+Population : 1041
 Informations sur la fourmilière :
-- Nombre d'oeufs : 58
-- Nombre de larves : 143
-- Nombre de nymphes : 157
-- Nombre d'ouvrières : 440
-- Nombre de soldats : 140
-- Nombre de femelles : 57
-- Nombre de mâles : 59
+- Nombre d'oeufs : 56
+- Nombre de larves : 147
+- Nombre de nymphes : 147
+- Nombre d'ouvrières : 437
+- Nombre de soldats : 159
+- Nombre de femelles : 46
+- Nombre de mâles : 49
 - Nombre de morts : 0
 
 Jour n°152
-Population : 1069
+Population : 1058
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 142
-- Nombre de nymphes : 159
-- Nombre d'ouvrières : 449
-- Nombre de soldats : 143
-- Nombre de femelles : 59
-- Nombre de mâles : 60
+- Nombre d'oeufs : 62
+- Nombre de larves : 144
+- Nombre de nymphes : 150
+- Nombre d'ouvrières : 445
+- Nombre de soldats : 161
+- Nombre de femelles : 46
+- Nombre de mâles : 50
 - Nombre de morts : 0
 
 Jour n°153
-Population : 1080
+Population : 1069
 Informations sur la fourmilière :
-- Nombre d'oeufs : 56
-- Nombre de larves : 144
-- Nombre de nymphes : 155
-- Nombre d'ouvrières : 458
-- Nombre de soldats : 147
-- Nombre de femelles : 60
-- Nombre de mâles : 60
+- Nombre d'oeufs : 54
+- Nombre de larves : 147
+- Nombre de nymphes : 147
+- Nombre d'ouvrières : 459
+- Nombre de soldats : 165
+- Nombre de femelles : 47
+- Nombre de mâles : 50
 - Nombre de morts : 0
 
 Jour n°154
-Population : 1098
+Population : 1088
 Informations sur la fourmilière :
-- Nombre d'oeufs : 59
-- Nombre de larves : 141
-- Nombre de nymphes : 160
-- Nombre d'ouvrières : 464
-- Nombre de soldats : 151
-- Nombre de femelles : 60
-- Nombre de mâles : 63
+- Nombre d'oeufs : 58
+- Nombre de larves : 148
+- Nombre de nymphes : 148
+- Nombre d'ouvrières : 466
+- Nombre de soldats : 168
+- Nombre de femelles : 49
+- Nombre de mâles : 51
 - Nombre de morts : 0
 
 Jour n°155
-Population : 1109
+Population : 1104
 Informations sur la fourmilière :
-- Nombre d'oeufs : 55
-- Nombre de larves : 143
-- Nombre de nymphes : 157
-- Nombre d'ouvrières : 475
-- Nombre de soldats : 153
-- Nombre de femelles : 62
-- Nombre de mâles : 64
+- Nombre d'oeufs : 63
+- Nombre de larves : 144
+- Nombre de nymphes : 150
+- Nombre d'ouvrières : 477
+- Nombre de soldats : 169
+- Nombre de femelles : 50
+- Nombre de mâles : 51
 - Nombre de morts : 0
 
 Jour n°156
-Population : 1120
+Population : 1123
 Informations sur la fourmilière :
-- Nombre d'oeufs : 51
-- Nombre de larves : 140
-- Nombre de nymphes : 164
-- Nombre d'ouvrières : 480
-- Nombre de soldats : 157
-- Nombre de femelles : 62
-- Nombre de mâles : 66
+- Nombre d'oeufs : 65
+- Nombre de larves : 151
+- Nombre de nymphes : 141
+- Nombre d'ouvrières : 488
+- Nombre de soldats : 176
+- Nombre de femelles : 51
+- Nombre de mâles : 51
 - Nombre de morts : 0
 
 Jour n°157
-Population : 1139
+Population : 1133
 Informations sur la fourmilière :
-- Nombre d'oeufs : 59
-- Nombre de larves : 140
-- Nombre de nymphes : 160
-- Nombre d'ouvrières : 490
-- Nombre de soldats : 158
-- Nombre de femelles : 63
-- Nombre de mâles : 69
+- Nombre d'oeufs : 64
+- Nombre de larves : 147
+- Nombre de nymphes : 137
+- Nombre d'ouvrières : 501
+- Nombre de soldats : 180
+- Nombre de femelles : 53
+- Nombre de mâles : 51
 - Nombre de morts : 0
 
 Jour n°158
 Population : 1152
 Informations sur la fourmilière :
-- Nombre d'oeufs : 54
-- Nombre de larves : 147
-- Nombre de nymphes : 152
-- Nombre d'ouvrières : 500
-- Nombre de soldats : 164
-- Nombre de femelles : 65
-- Nombre de mâles : 70
+- Nombre d'oeufs : 64
+- Nombre de larves : 149
+- Nombre de nymphes : 143
+- Nombre d'ouvrières : 511
+- Nombre de soldats : 180
+- Nombre de femelles : 54
+- Nombre de mâles : 51
 - Nombre de morts : 0
 
 Jour n°159
-Population : 1166
+Population : 1171
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 139
-- Nombre de nymphes : 153
-- Nombre d'ouvrières : 510
-- Nombre de soldats : 168
-- Nombre de femelles : 68
-- Nombre de mâles : 71
+- Nombre d'oeufs : 67
+- Nombre de larves : 146
+- Nombre de nymphes : 143
+- Nombre d'ouvrières : 523
+- Nombre de soldats : 182
+- Nombre de femelles : 57
+- Nombre de mâles : 53
 - Nombre de morts : 0
 
 Jour n°160
-Population : 1177
+Population : 1190
 Informations sur la fourmilière :
-- Nombre d'oeufs : 57
-- Nombre de larves : 139
-- Nombre de nymphes : 145
-- Nombre d'ouvrières : 518
-- Nombre de soldats : 174
-- Nombre de femelles : 71
-- Nombre de mâles : 73
+- Nombre d'oeufs : 67
+- Nombre de larves : 155
+- Nombre de nymphes : 142
+- Nombre d'ouvrières : 533
+- Nombre de soldats : 182
+- Nombre de femelles : 57
+- Nombre de mâles : 54
 - Nombre de morts : 0
 
 Jour n°161
-Population : 1191
+Population : 1200
 Informations sur la fourmilière :
-- Nombre d'oeufs : 52
-- Nombre de larves : 143
-- Nombre de nymphes : 143
-- Nombre d'ouvrières : 530
-- Nombre de soldats : 176
-- Nombre de femelles : 73
-- Nombre de mâles : 74
+- Nombre d'oeufs : 67
+- Nombre de larves : 148
+- Nombre de nymphes : 147
+- Nombre d'ouvrières : 542
+- Nombre de soldats : 182
+- Nombre de femelles : 58
+- Nombre de mâles : 56
 - Nombre de morts : 0
 
 Jour n°162
-Population : 1207
+Population : 1217
 Informations sur la fourmilière :
-- Nombre d'oeufs : 55
-- Nombre de larves : 140
-- Nombre de nymphes : 142
-- Nombre d'ouvrières : 541
-- Nombre de soldats : 181
-- Nombre de femelles : 73
-- Nombre de mâles : 75
+- Nombre d'oeufs : 65
+- Nombre de larves : 156
+- Nombre de nymphes : 144
+- Nombre d'ouvrières : 552
+- Nombre de soldats : 183
+- Nombre de femelles : 61
+- Nombre de mâles : 56
 - Nombre de morts : 0
 
 Jour n°163
-Population : 1225
+Population : 1228
 Informations sur la fourmilière :
-- Nombre d'oeufs : 59
-- Nombre de larves : 142
-- Nombre de nymphes : 144
-- Nombre d'ouvrières : 550
-- Nombre de soldats : 182
-- Nombre de femelles : 73
-- Nombre de mâles : 75
+- Nombre d'oeufs : 57
+- Nombre de larves : 156
+- Nombre de nymphes : 147
+- Nombre d'ouvrières : 563
+- Nombre de soldats : 186
+- Nombre de femelles : 62
+- Nombre de mâles : 57
 - Nombre de morts : 0
 
 Jour n°164
-Population : 1241
+Population : 1240
 Informations sur la fourmilière :
-- Nombre d'oeufs : 64
-- Nombre de larves : 138
-- Nombre de nymphes : 141
-- Nombre d'ouvrières : 562
-- Nombre de soldats : 186
-- Nombre de femelles : 74
-- Nombre de mâles : 76
+- Nombre d'oeufs : 50
+- Nombre de larves : 160
+- Nombre de nymphes : 148
+- Nombre d'ouvrières : 575
+- Nombre de soldats : 187
+- Nombre de femelles : 63
+- Nombre de mâles : 57
 - Nombre de morts : 0
 
 Jour n°165
 Population : 1251
 Informations sur la fourmilière :
-- Nombre d'oeufs : 60
-- Nombre de larves : 137
-- Nombre de nymphes : 143
-- Nombre d'ouvrières : 570
-- Nombre de soldats : 188
-- Nombre de femelles : 75
-- Nombre de mâles : 78
+- Nombre d'oeufs : 51
+- Nombre de larves : 159
+- Nombre de nymphes : 144
+- Nombre d'ouvrières : 585
+- Nombre de soldats : 191
+- Nombre de femelles : 63
+- Nombre de mâles : 58
 - Nombre de morts : 0
 
 Jour n°166
-Population : 1263
+Population : 1265
 Informations sur la fourmilière :
-- Nombre d'oeufs : 56
-- Nombre de larves : 138
-- Nombre de nymphes : 140
-- Nombre d'ouvrières : 585
-- Nombre de soldats : 189
-- Nombre de femelles : 75
-- Nombre de mâles : 80
+- Nombre d'oeufs : 48
+- Nombre de larves : 159
+- Nombre de nymphes : 151
+- Nombre d'ouvrières : 593
+- Nombre de soldats : 193
+- Nombre de femelles : 63
+- Nombre de mâles : 58
 - Nombre de morts : 0
 
 Jour n°167
 Population : 1277
 Informations sur la fourmilière :
-- Nombre d'oeufs : 52
-- Nombre de larves : 145
-- Nombre de nymphes : 140
-- Nombre d'ouvrières : 592
-- Nombre de soldats : 191
-- Nombre de femelles : 76
-- Nombre de mâles : 81
+- Nombre d'oeufs : 49
+- Nombre de larves : 159
+- Nombre de nymphes : 147
+- Nombre d'ouvrières : 603
+- Nombre de soldats : 196
+- Nombre de femelles : 63
+- Nombre de mâles : 60
 - Nombre de morts : 0
 
 Jour n°168
-Population : 1292
+Population : 1291
 Informations sur la fourmilière :
 - Nombre d'oeufs : 51
-- Nombre de larves : 143
-- Nombre de nymphes : 147
-- Nombre d'ouvrières : 599
-- Nombre de soldats : 192
-- Nombre de femelles : 77
-- Nombre de mâles : 83
+- Nombre de larves : 152
+- Nombre de nymphes : 149
+- Nombre d'ouvrières : 610
+- Nombre de soldats : 204
+- Nombre de femelles : 64
+- Nombre de mâles : 61
 - Nombre de morts : 0
 
 Jour n°169
-Population : 1302
+Population : 1304
 Informations sur la fourmilière :
-- Nombre d'oeufs : 51
-- Nombre de larves : 142
-- Nombre de nymphes : 139
-- Nombre d'ouvrières : 613
-- Nombre de soldats : 195
-- Nombre de femelles : 79
-- Nombre de mâles : 83
+- Nombre d'oeufs : 53
+- Nombre de larves : 147
+- Nombre de nymphes : 146
+- Nombre d'ouvrières : 622
+- Nombre de soldats : 208
+- Nombre de femelles : 65
+- Nombre de mâles : 63
 - Nombre de morts : 0
 
 Jour n°170
-Population : 1314
+Population : 1322
 Informations sur la fourmilière :
-- Nombre d'oeufs : 51
-- Nombre de larves : 143
-- Nombre de nymphes : 139
-- Nombre d'ouvrières : 620
-- Nombre de soldats : 199
-- Nombre de femelles : 79
-- Nombre de mâles : 83
+- Nombre d'oeufs : 57
+- Nombre de larves : 142
+- Nombre de nymphes : 155
+- Nombre d'ouvrières : 630
+- Nombre de soldats : 210
+- Nombre de femelles : 65
+- Nombre de mâles : 63
 - Nombre de morts : 0
 
 Jour n°171
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
-- Nombre d'oeufs : 50
-- Nombre de larves : 138
-- Nombre de nymphes : 143
-- Nombre d'ouvrières : 629
-- Nombre de soldats : 202
-- Nombre de femelles : 82
-- Nombre de mâles : 83
+- Nombre d'oeufs : 58
+- Nombre de larves : 144
+- Nombre de nymphes : 148
+- Nombre d'ouvrières : 638
+- Nombre de soldats : 213
+- Nombre de femelles : 67
+- Nombre de mâles : 67
 - Nombre de morts : 0
 
 Jour n°172
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
-- Nombre d'oeufs : 35
-- Nombre de larves : 140
-- Nombre de nymphes : 140
-- Nombre d'ouvrières : 639
-- Nombre de soldats : 207
-- Nombre de femelles : 82
-- Nombre de mâles : 84
+- Nombre d'oeufs : 44
+- Nombre de larves : 139
+- Nombre de nymphes : 156
+- Nombre d'ouvrières : 644
+- Nombre de soldats : 217
+- Nombre de femelles : 68
+- Nombre de mâles : 67
 - Nombre de morts : 0
 
 Jour n°173
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
-- Nombre d'oeufs : 25
-- Nombre de larves : 136
-- Nombre de nymphes : 142
-- Nombre d'ouvrières : 646
-- Nombre de soldats : 211
-- Nombre de femelles : 83
-- Nombre de mâles : 84
+- Nombre d'oeufs : 31
+- Nombre de larves : 133
+- Nombre de nymphes : 156
+- Nombre d'ouvrières : 661
+- Nombre de soldats : 217
+- Nombre de femelles : 70
+- Nombre de mâles : 67
 - Nombre de morts : 0
 
 Jour n°174
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 13
-- Nombre de larves : 137
-- Nombre de nymphes : 138
-- Nombre d'ouvrières : 654
-- Nombre de soldats : 216
-- Nombre de femelles : 83
-- Nombre de mâles : 86
+- Nombre de larves : 132
+- Nombre de nymphes : 160
+- Nombre d'ouvrières : 672
+- Nombre de soldats : 220
+- Nombre de femelles : 70
+- Nombre de mâles : 68
 - Nombre de morts : 0
 
 Jour n°175
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 136
-- Nombre de nymphes : 137
-- Nombre d'ouvrières : 661
-- Nombre de soldats : 219
-- Nombre de femelles : 87
-- Nombre de mâles : 87
+- Nombre de larves : 135
+- Nombre de nymphes : 159
+- Nombre d'ouvrières : 682
+- Nombre de soldats : 220
+- Nombre de femelles : 71
+- Nombre de mâles : 68
 - Nombre de morts : 0
 
 Jour n°176
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 120
-- Nombre de nymphes : 138
-- Nombre d'ouvrières : 670
-- Nombre de soldats : 224
-- Nombre de femelles : 88
-- Nombre de mâles : 87
+- Nombre de larves : 118
+- Nombre de nymphes : 159
+- Nombre d'ouvrières : 693
+- Nombre de soldats : 223
+- Nombre de femelles : 74
+- Nombre de mâles : 68
 - Nombre de morts : 0
 
 Jour n°177
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 102
-- Nombre de nymphes : 145
-- Nombre d'ouvrières : 675
-- Nombre de soldats : 227
-- Nombre de femelles : 91
-- Nombre de mâles : 87
+- Nombre de larves : 107
+- Nombre de nymphes : 159
+- Nombre d'ouvrières : 703
+- Nombre de soldats : 224
+- Nombre de femelles : 74
+- Nombre de mâles : 68
 - Nombre de morts : 0
 
 Jour n°178
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 86
-- Nombre de nymphes : 143
-- Nombre d'ouvrières : 685
+- Nombre de larves : 95
+- Nombre de nymphes : 152
+- Nombre d'ouvrières : 713
 - Nombre de soldats : 231
-- Nombre de femelles : 93
-- Nombre de mâles : 89
+- Nombre de femelles : 74
+- Nombre de mâles : 70
 - Nombre de morts : 0
 
 Jour n°179
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 76
-- Nombre de nymphes : 142
-- Nombre d'ouvrières : 694
-- Nombre de soldats : 231
-- Nombre de femelles : 93
-- Nombre de mâles : 91
+- Nombre de larves : 84
+- Nombre de nymphes : 147
+- Nombre d'ouvrières : 723
+- Nombre de soldats : 233
+- Nombre de femelles : 78
+- Nombre de mâles : 70
 - Nombre de morts : 0
 
 Jour n°180
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 64
-- Nombre de nymphes : 143
-- Nombre d'ouvrières : 702
-- Nombre de soldats : 233
-- Nombre de femelles : 93
-- Nombre de mâles : 92
+- Nombre de larves : 70
+- Nombre de nymphes : 142
+- Nombre d'ouvrières : 735
+- Nombre de soldats : 237
+- Nombre de femelles : 79
+- Nombre de mâles : 72
 - Nombre de morts : 0
 
 Jour n°181
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 50
-- Nombre de nymphes : 138
-- Nombre d'ouvrières : 712
-- Nombre de soldats : 236
-- Nombre de femelles : 97
-- Nombre de mâles : 94
+- Nombre de larves : 58
+- Nombre de nymphes : 144
+- Nombre d'ouvrières : 741
+- Nombre de soldats : 241
+- Nombre de femelles : 79
+- Nombre de mâles : 72
 - Nombre de morts : 0
 
 Jour n°182
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 35
-- Nombre de nymphes : 140
-- Nombre d'ouvrières : 721
-- Nombre de soldats : 237
-- Nombre de femelles : 98
-- Nombre de mâles : 96
+- Nombre de larves : 44
+- Nombre de nymphes : 139
+- Nombre d'ouvrières : 756
+- Nombre de soldats : 244
+- Nombre de femelles : 80
+- Nombre de mâles : 72
 - Nombre de morts : 0
 
 Jour n°183
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
-- Nombre de larves : 25
-- Nombre de nymphes : 136
-- Nombre d'ouvrières : 730
-- Nombre de soldats : 239
-- Nombre de femelles : 100
-- Nombre de mâles : 97
+- Nombre de larves : 31
+- Nombre de nymphes : 133
+- Nombre d'ouvrières : 768
+- Nombre de soldats : 249
+- Nombre de femelles : 81
+- Nombre de mâles : 73
 - Nombre de morts : 0
 
 Jour n°184
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 13
-- Nombre de nymphes : 137
-- Nombre d'ouvrières : 733
-- Nombre de soldats : 244
-- Nombre de femelles : 103
-- Nombre de mâles : 97
+- Nombre de nymphes : 132
+- Nombre d'ouvrières : 780
+- Nombre de soldats : 254
+- Nombre de femelles : 83
+- Nombre de mâles : 73
 - Nombre de morts : 0
 
 Jour n°185
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 136
-- Nombre d'ouvrières : 743
-- Nombre de soldats : 247
-- Nombre de femelles : 103
-- Nombre de mâles : 98
+- Nombre de nymphes : 135
+- Nombre d'ouvrières : 786
+- Nombre de soldats : 256
+- Nombre de femelles : 84
+- Nombre de mâles : 74
 - Nombre de morts : 0
 
 Jour n°186
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 120
-- Nombre d'ouvrières : 753
-- Nombre de soldats : 248
-- Nombre de femelles : 106
-- Nombre de mâles : 100
+- Nombre de nymphes : 118
+- Nombre d'ouvrières : 800
+- Nombre de soldats : 259
+- Nombre de femelles : 84
+- Nombre de mâles : 74
 - Nombre de morts : 0
 
 Jour n°187
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 102
-- Nombre d'ouvrières : 764
-- Nombre de soldats : 253
-- Nombre de femelles : 107
-- Nombre de mâles : 101
+- Nombre de nymphes : 107
+- Nombre d'ouvrières : 808
+- Nombre de soldats : 261
+- Nombre de femelles : 85
+- Nombre de mâles : 74
 - Nombre de morts : 0
 
 Jour n°188
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 86
-- Nombre d'ouvrières : 774
-- Nombre de soldats : 255
-- Nombre de femelles : 109
-- Nombre de mâles : 103
+- Nombre de nymphes : 95
+- Nombre d'ouvrières : 815
+- Nombre de soldats : 265
+- Nombre de femelles : 86
+- Nombre de mâles : 74
 - Nombre de morts : 0
 
 Jour n°189
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 76
-- Nombre d'ouvrières : 779
-- Nombre de soldats : 260
-- Nombre de femelles : 109
-- Nombre de mâles : 103
+- Nombre de nymphes : 84
+- Nombre d'ouvrières : 823
+- Nombre de soldats : 268
+- Nombre de femelles : 86
+- Nombre de mâles : 74
 - Nombre de morts : 0
 
 Jour n°190
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 64
-- Nombre d'ouvrières : 789
-- Nombre de soldats : 260
-- Nombre de femelles : 110
-- Nombre de mâles : 104
+- Nombre de nymphes : 70
+- Nombre d'ouvrières : 830
+- Nombre de soldats : 273
+- Nombre de femelles : 86
+- Nombre de mâles : 76
 - Nombre de morts : 0
 
 Jour n°191
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 50
-- Nombre d'ouvrières : 799
-- Nombre de soldats : 262
-- Nombre de femelles : 110
-- Nombre de mâles : 106
+- Nombre de nymphes : 58
+- Nombre d'ouvrières : 838
+- Nombre de soldats : 277
+- Nombre de femelles : 86
+- Nombre de mâles : 76
 - Nombre de morts : 0
 
 Jour n°192
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 35
-- Nombre d'ouvrières : 810
-- Nombre de soldats : 264
-- Nombre de femelles : 110
-- Nombre de mâles : 108
+- Nombre de nymphes : 44
+- Nombre d'ouvrières : 847
+- Nombre de soldats : 279
+- Nombre de femelles : 88
+- Nombre de mâles : 77
 - Nombre de morts : 0
 
 Jour n°193
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
-- Nombre de nymphes : 25
-- Nombre d'ouvrières : 817
-- Nombre de soldats : 266
-- Nombre de femelles : 110
-- Nombre de mâles : 109
+- Nombre de nymphes : 31
+- Nombre d'ouvrières : 857
+- Nombre de soldats : 280
+- Nombre de femelles : 89
+- Nombre de mâles : 78
 - Nombre de morts : 0
 
 Jour n°194
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 13
-- Nombre d'ouvrières : 825
-- Nombre de soldats : 268
-- Nombre de femelles : 111
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 867
+- Nombre de soldats : 285
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°195
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°196
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°197
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°198
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°199
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°200
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°201
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°202
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°203
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°204
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°205
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°206
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°207
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°208
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°209
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°210
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°211
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°212
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°213
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°214
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°215
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°216
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°217
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°218
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°219
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°220
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°221
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°222
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°223
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°224
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°225
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°226
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°227
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°228
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°229
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°230
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°231
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°232
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°233
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°234
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°235
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°236
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°237
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°238
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°239
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°240
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°241
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°242
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°243
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°244
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°245
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°246
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°247
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°248
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°249
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°250
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°251
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°252
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°253
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°254
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°255
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°256
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°257
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°258
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°259
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°260
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°261
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°262
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°263
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°264
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°265
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°266
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°267
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°268
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°269
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°270
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°271
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°272
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°273
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°274
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°275
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°276
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°277
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°278
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°279
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°280
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°281
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°282
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°283
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°284
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°285
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°286
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°287
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°288
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°289
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°290
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°291
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°292
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°293
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°294
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°295
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°296
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°297
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°298
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°299
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°300
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°301
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°302
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°303
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°304
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°305
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°306
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°307
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°308
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°309
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°310
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°311
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°312
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°313
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°314
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°315
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°316
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°317
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°318
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°319
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°320
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°321
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°322
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°323
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°324
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°325
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°326
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°327
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°328
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°329
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°330
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°331
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°332
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°333
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°334
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°335
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°336
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°337
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°338
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°339
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°340
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°341
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°342
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°343
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°344
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°345
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°346
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°347
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°348
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°349
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°350
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°351
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°352
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°353
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°354
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°355
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°356
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°357
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°358
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°359
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°360
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°361
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°362
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°363
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
 Jour n°364
-Population : 1327
+Population : 1335
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
 - Nombre de nymphes : 0
-- Nombre d'ouvrières : 833
-- Nombre de soldats : 271
-- Nombre de femelles : 113
-- Nombre de mâles : 110
+- Nombre d'ouvrières : 877
+- Nombre de soldats : 288
+- Nombre de femelles : 90
+- Nombre de mâles : 80
 - Nombre de morts : 0
 
