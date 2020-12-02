@@ -51,9 +51,9 @@ public class Reine extends SexueFemelle {
   /**
    * Créer une portée de fourmis.
    * 
-   * @param nombre : Nombre de fourmis à créer.
    */
-  public void pondre(Integer nombre) {
-    this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(nombre);
+  public void pondre() {
+    int oeufsPondus = this.esperanceVie = (int) (Math.random() * (20 - 10)) + 10;
+    this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
   }
 }
