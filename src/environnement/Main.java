@@ -14,7 +14,7 @@ public class Main {
    */
   public static void main(String[] args) {
     Simulateur simulateur = new Simulateur();
-    Saison printemps = new Saison();
+    
     PrintWriter pw;
     int jour = 0;
     try {
@@ -27,11 +27,15 @@ public class Main {
     simulateur.getReine().pondre();
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
     InformationsFourmiliere lesInfos = laFourmiliere.getInfos();
-    while ((lesInfos.getNbOeufs() > 0 || lesInfos.getNbLarves() > 0)
+    Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
+    while (printemps.getNbTempsEcoule() < 365
+        || (lesInfos.getNbOeufs() > 0 || lesInfos.getNbLarves() > 0)
         || lesInfos.getNbNymphes() > 0) {
-      jour = printemps.incrementerJour();
+      jour = printemps.getNbTempsEcoule();
       simulateur.getLeTerrain().step();
+      simulateur.getReine().pondre();
       simulateur.getJournal().ecrire(laFourmiliere, jour);
+      printemps.incrementerJour();
       try {
         Thread.sleep(10);
       } catch (InterruptedException e) {

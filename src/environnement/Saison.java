@@ -14,18 +14,23 @@ public class Saison {
     this.jourDeLannee = 1;
   }
 
+  
+  public int getNbTempsEcoule() {
+    return nbTempsEcoule;
+  }
+
+  
   /**
    * Incrementation du tempsEcoulé.
    * 
-   * @return le jour de l'année
    */
-  public int incrementerJour() {
-    this.nbTempsEcoule++;
+  public void incrementerJour() {
+    this.nbTempsEcoule++; 
     this.jourDeLannee = nbTempsEcoule % 365;
+    
     if (jourDeLannee == 0) {
-      return 1;
+      jourDeLannee = 1;
     }
-    return this.jourDeLannee;
   }
 
   /**
@@ -34,6 +39,7 @@ public class Saison {
    * @return <b>true</b> si la saison est printemps sinon <b>false</b>
    */
   public boolean isPrintemps() {
+   
     if (jourDeLannee >= printemps && jourDeLannee < ete) {
       return true;
     }
