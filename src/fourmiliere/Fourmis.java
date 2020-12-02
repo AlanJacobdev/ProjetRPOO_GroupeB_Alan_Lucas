@@ -1,12 +1,15 @@
 package fourmiliere;
 
 import environnement.InformationsFourmiliere;
+import java.awt.Point;
+
 
 public class Fourmis {
 
   Etape etape;
   Fourmiliere saFourmiliere;
-
+  Point coordonnees;
+  
   public Fourmis(Fourmiliere fourmiliere) {
     this.saFourmiliere = fourmiliere;
     this.etape = new Oeuf(this);

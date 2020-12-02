@@ -12,6 +12,7 @@ public class Terrain {
   private Fourmiliere laFourmiliere;
   private InformationsFourmiliere infos;
   
+  
   public Terrain() {
     this.lesSaisons = new Saison();
     this.tailleTerrain = new Dimension(400,400);
