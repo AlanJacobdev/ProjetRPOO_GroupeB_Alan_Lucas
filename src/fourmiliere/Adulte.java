@@ -98,7 +98,6 @@ public class Adulte extends Etape {
    */
   public void prochainePosition() {
     int deplacement = (int) (Math.random() * (100 - 0));
-    System.out.println(deplacement);
     if (!(coordonneesActuelle.x > this.getFourmis().getFourmiliere().getPositionFourmiliere().x
         + 200
         || coordonneesActuelle.y > this.getFourmis().getFourmiliere().getPositionFourmiliere().y
