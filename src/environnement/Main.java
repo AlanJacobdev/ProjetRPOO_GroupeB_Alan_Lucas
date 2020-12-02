@@ -17,7 +17,7 @@ public class Main {
    * @param args Arguments
    */
   public static void main(String[] args) {
-    
+
     PrintWriter pw;
     int jour = 0;
     try {
@@ -30,15 +30,15 @@ public class Main {
     simulateur.getReine().pondre();
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
-    
+
     Terrain leTerrain = simulateur.getLeTerrain();
-    InformationsFourmiliere lesInfos = leTerrain.getInfos();
+
     VueTerrain leTerrainVue = new VueTerrain(leTerrain);
     leTerrainVue.open();
     VueFourmiliere laFourmiliereVue = new VueFourmiliere(laFourmiliere);
     leTerrainVue.addFourmiliere(laFourmiliereVue);
-    
-    
+
+
     while (printemps.getNbTempsEcoule() < 365) {
       jour = printemps.getNbTempsEcoule();
       leTerrain.step();
