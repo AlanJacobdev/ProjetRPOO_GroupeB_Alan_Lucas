@@ -32,11 +32,8 @@ public class Main {
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
 
     Terrain leTerrain = simulateur.getLeTerrain();
-
-    VueTerrain leTerrainVue = new VueTerrain(leTerrain);
-    leTerrainVue.open();
-    VueFourmiliere laFourmiliereVue = new VueFourmiliere(laFourmiliere);
-    leTerrainVue.addFourmiliere(laFourmiliereVue);
+    leTerrain.ajouterFourmiliereGraphique(laFourmiliere);
+    leTerrain.open();
 
 
     while (printemps.getNbTempsEcoule() < 365) {

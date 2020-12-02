@@ -2,6 +2,7 @@ package fourmiliere;
 
 import environnement.InformationsFourmiliere;
 import environnement.Saison;
+import vue.VueTerrain;
 import java.awt.Dimension;
 
 
@@ -11,13 +12,20 @@ public class Terrain {
   private Dimension tailleTerrain;
   private Fourmiliere laFourmiliere;
   private InformationsFourmiliere infos;
-  
-  
+  private VueTerrain leTerrain;
+
+  /**
+   * Constructeur.
+   */
   public Terrain() {
     this.lesSaisons = new Saison();
-    this.tailleTerrain = new Dimension(400,400);
+    this.leTerrain = new VueTerrain(new Dimension(400, 400));
   }
 
+  public void afficherTerrain() {
+    leTerrain.open();
+  }
+  
   public Fourmiliere getLaFourmiliere() {
     return laFourmiliere;
   }
@@ -34,7 +42,7 @@ public class Terrain {
   public void setLesSaisons(Saison lesSaisons) {
     this.lesSaisons = lesSaisons;
   }
-  
+
   public Dimension getTailleTerrain() {
     return tailleTerrain;
   }
@@ -51,14 +59,25 @@ public class Terrain {
     this.infos = infos;
   }
 
+  public VueTerrain getLeTerrain() {
+    return leTerrain;
+  }
+
+  public void ajouterFourmiliereGraphique(Fourmiliere f) {
+    this.getLeTerrain().addFourmiliere(f.getVueFourmiliere());
+  }
+  
+  public void ajouterFourmisGraphique(Fourmis f) {
+    this.getLeTerrain().addFourmis(f.representationGraphique);
+  }
+  
   /**
    * .
    */
   public void step() {
     this.laFourmiliere.step();
-    
   }
-  
+
   public void renseignementFourmiliere() {
     this.infos = new InformationsFourmiliere();
     this.laFourmiliere.renseignementFourmiliere(infos);
@@ -69,9 +88,14 @@ public class Terrain {
     String s = laFourmiliere.toString() + infos.toString();
     return s;
   }
-  
-  
-  
-  
+
+  public void open() {
+    this.leTerrain.open();
+    
+  }
+
+  public void rafraichirIhm() {
+    this.leTerrain.rafraichirTerrain();
+  }
 
 }

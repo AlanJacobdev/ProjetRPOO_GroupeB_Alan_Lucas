@@ -4,8 +4,6 @@ public class Saison {
   private final int annee = 365;
   private final int printemps = 80;
   private final int ete = 172;
-  private final int automne = 266;
-  private final int hiver = 356;
   private int nbTempsEcoule;
   private int jourDeLannee;
 
@@ -26,7 +24,7 @@ public class Saison {
    */
   public void incrementerJour() {
     this.nbTempsEcoule++; 
-    this.jourDeLannee = nbTempsEcoule % 365;
+    this.jourDeLannee = nbTempsEcoule % annee;
     
     if (jourDeLannee == 0) {
       jourDeLannee = 1;

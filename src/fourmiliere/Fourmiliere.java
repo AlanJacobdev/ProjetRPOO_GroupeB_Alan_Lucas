@@ -4,15 +4,19 @@ import environnement.InformationsFourmiliere;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.List;
+import vue.VueFourmiliere;
+
 
 
 public class Fourmiliere {
 
+  private final int rayonTerritoire = 200;
   private List<Fourmis> lesFourmis;
   private List<Fourmis> lesFourmisMortes;
   private Fourmis reine;
   private Terrain leTerrain;
   private Point positionFourmiliere;
+  private VueFourmiliere vueFourmiliere;
 
 
 
@@ -25,6 +29,7 @@ public class Fourmiliere {
     this.lesFourmis = new ArrayList<>();
     this.lesFourmisMortes = new ArrayList<>();
     this.reine = reine;
+    this.vueFourmiliere = new VueFourmiliere(this);
     this.leTerrain = null;
     this.positionFourmiliere = null;
   }
@@ -86,6 +91,10 @@ public class Fourmiliere {
 
   public List<Fourmis> getLesFourmisMortes() {
     return this.lesFourmisMortes;
+  }
+
+  public VueFourmiliere getVueFourmiliere() {
+    return vueFourmiliere;
   }
 
   /**

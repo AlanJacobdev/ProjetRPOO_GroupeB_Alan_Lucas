@@ -1,9 +1,9 @@
 package vue;
 
+import fourmiliere.Fourmiliere;
 import graphicLayer.GRect;
 import java.awt.Color;
 import java.awt.Dimension;
-import fourmiliere.Fourmiliere;
 
 
 public class VueFourmiliere {
@@ -18,7 +18,7 @@ public class VueFourmiliere {
     this.laFourmiliere = uneFourmiliere;
     this.laFourmiliereVue = new GRect();
     this.laFourmiliereVue.setColor(Color.YELLOW);
-    this.laFourmiliereVue.setDimension(new Dimension(10, 10));
+    this.laFourmiliereVue.setDimension(new Dimension(20, 20));
   }
 
   public GRect getLaFourmiliereVue() {
