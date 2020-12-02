@@ -2,6 +2,8 @@ package fourmiliere;
 
 import environnement.InformationsFourmiliere;
 import environnement.Saison;
+import graphicLayer.GOval;
+import graphicLayer.GRect;
 import vue.VueTerrain;
 import java.awt.Dimension;
 
@@ -19,13 +21,14 @@ public class Terrain {
    */
   public Terrain() {
     this.lesSaisons = new Saison();
-    this.leTerrain = new VueTerrain(new Dimension(400, 400));
+    this.tailleTerrain = new Dimension(400, 400);
+    this.leTerrain = new VueTerrain(tailleTerrain);
   }
 
   public void afficherTerrain() {
     leTerrain.open();
   }
-  
+
   public Fourmiliere getLaFourmiliere() {
     return laFourmiliere;
   }
@@ -63,14 +66,14 @@ public class Terrain {
     return leTerrain;
   }
 
-  public void ajouterFourmiliereGraphique(Fourmiliere f) {
-    this.getLeTerrain().addFourmiliere(f.getVueFourmiliere());
+  public void ajouterFourmiliereGraphique(GRect representationGraphique) {
+    this.getLeTerrain().addFourmiliere(representationGraphique);
   }
-  
-  public void ajouterFourmisGraphique(Fourmis f) {
-    this.getLeTerrain().addFourmis(f.representationGraphique);
+
+  public void ajouterFourmisGraphique(GOval fourmis) {
+    this.getLeTerrain().addFourmis(fourmis);
   }
-  
+
   /**
    * .
    */
@@ -91,7 +94,7 @@ public class Terrain {
 
   public void open() {
     this.leTerrain.open();
-    
+
   }
 
   public void rafraichirIhm() {

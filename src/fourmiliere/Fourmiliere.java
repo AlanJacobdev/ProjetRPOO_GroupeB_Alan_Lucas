@@ -1,10 +1,11 @@
 package fourmiliere;
 
 import environnement.InformationsFourmiliere;
+import graphicLayer.GRect;
+import java.awt.Color;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.List;
-import vue.VueFourmiliere;
 
 
 
@@ -16,8 +17,7 @@ public class Fourmiliere {
   private Fourmis reine;
   private Terrain leTerrain;
   private Point positionFourmiliere;
-  private VueFourmiliere vueFourmiliere;
-
+  private GRect representationGraphique;
 
 
   /**
@@ -29,9 +29,10 @@ public class Fourmiliere {
     this.lesFourmis = new ArrayList<>();
     this.lesFourmisMortes = new ArrayList<>();
     this.reine = reine;
-    this.vueFourmiliere = new VueFourmiliere(this);
     this.leTerrain = null;
     this.positionFourmiliere = null;
+    this.representationGraphique = new GRect();
+    this.representationGraphique.setColor(Color.red);
   }
 
   /**
@@ -93,10 +94,16 @@ public class Fourmiliere {
     return this.lesFourmisMortes;
   }
 
-  public VueFourmiliere getVueFourmiliere() {
-    return vueFourmiliere;
+  public GRect getRepresentationGraphique() {
+    return representationGraphique;
   }
 
+  public void setRepresentationGraphique(GRect representationGraphique) {
+    this.representationGraphique = representationGraphique;
+  }
+
+  
+  
   /**
    * .
    * @param infos .
