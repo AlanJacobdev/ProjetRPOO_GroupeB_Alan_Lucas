@@ -5,7 +5,6 @@ import fourmiliere.Terrain;
 import java.awt.Point;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
-import vue.VueTerrain;
 
 
 
@@ -37,6 +36,7 @@ public class Main {
     leTerrain.ajouterFourmiliereGraphique(laFourmiliere.getRepresentationGraphique());
     leTerrain.open();
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
+    
     simulateur.getReine().pondre();
     while (printemps.getNbTempsEcoule() < 365) {
       jour = printemps.getNbTempsEcoule();

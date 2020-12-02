@@ -80,7 +80,7 @@ public class Adulte extends Etape {
   @Override
   protected void step() {
     this.getRole().step();
-    if (this.getFourmis().getRole() instanceof Reine) {
+    if (this.coordonneesActuelle != null) {
       this.prochainePosition();
     }
 
@@ -95,32 +95,28 @@ public class Adulte extends Etape {
   /**
    * Déplacement aléatoire de la fourmis.
    * 
-   * @return la coordonnée
    */
-  public Point prochainePosition() {
+  public void prochainePosition() {
     int deplacement = (int) (Math.random() * (100 - 0));
+    System.out.println(deplacement);
     if (!(coordonneesActuelle.x > this.getFourmis().getFourmiliere().getPositionFourmiliere().x
         + 200
         || coordonneesActuelle.y > this.getFourmis().getFourmiliere().getPositionFourmiliere().y
             + 200)) {
       if (deplacement <= 25) {
-        this.representationGraphique
-            .setPosition(new Point(coordonneesActuelle.x, coordonneesActuelle.y + 1));
-      }
-      if (deplacement <= 50) {
-        this.representationGraphique
-            .setPosition(new Point(coordonneesActuelle.x, coordonneesActuelle.y - 1));
-      }
-      if (deplacement <= 75) {
-        this.representationGraphique
-            .setPosition(new Point(coordonneesActuelle.x + 1, coordonneesActuelle.y));
-      }
-      if (deplacement <= 100) {
-        this.representationGraphique
-            .setPosition(new Point(coordonneesActuelle.x - 1, coordonneesActuelle.y));
+        this.coordonneesActuelle = new Point(coordonneesActuelle.x, coordonneesActuelle.y + 5);
+        this.representationGraphique.setPosition(coordonneesActuelle);
+      } else if (deplacement <= 50) {
+        this.coordonneesActuelle = new Point(coordonneesActuelle.x, coordonneesActuelle.y - 5);
+        this.representationGraphique.setPosition(coordonneesActuelle);
+      } else if (deplacement <= 75) {
+        this.coordonneesActuelle = new Point(coordonneesActuelle.x + 5, coordonneesActuelle.y);
+        this.representationGraphique.setPosition(coordonneesActuelle);
+      } else if (deplacement <= 100) {
+        this.coordonneesActuelle = new Point(coordonneesActuelle.x - 5, coordonneesActuelle.y);
+        this.representationGraphique.setPosition(coordonneesActuelle);
       }
     }
-    return coordonneesActuelle;
 
   }
 
