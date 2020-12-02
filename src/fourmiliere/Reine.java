@@ -77,7 +77,10 @@ public class Reine extends SexueFemelle {
       oeufsPondus = (int) (Math.random() * (20 - 10)) + 10;
       this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
     }
-    
+  }
+  
+  public int getOeufsPondus() {
+    return this.oeufsPondus;
   }
   
 }

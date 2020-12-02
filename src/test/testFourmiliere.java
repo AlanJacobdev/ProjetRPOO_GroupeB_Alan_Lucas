@@ -1,12 +1,15 @@
 package test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertTrue;
+import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import environnement.Saison;
 import environnement.Simulateur;
 import fourmiliere.Adulte;
 import fourmiliere.Fourmiliere;
@@ -14,12 +17,14 @@ import fourmiliere.Fourmis;
 import fourmiliere.Larve;
 import fourmiliere.Nymphe;
 import fourmiliere.Oeuf;
+import fourmiliere.SexueFemelle;
 import fourmiliere.Terrain;
+
 
 class testFourmiliere {
   
   private void oeufToLarve(Fourmis fourmis) {
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 4; i++) {
       fourmis.step();
     }
   }
@@ -33,6 +38,12 @@ class testFourmiliere {
   private void NympheToAdulte(Fourmis fourmis) {
     for (int i = 0; i < 10; i++) {
       fourmis.step();
+    }
+  }
+  
+  private void pondre(Saison saison) {
+    for(int i = 0; i < 90; i++) {
+      saison.incrementerJour();
     }
   }
 
@@ -104,7 +115,33 @@ class testFourmiliere {
   
   @Test
   void testCreerReine() {
-    
+    Simulateur simulateur = new Simulateur();
+    assertNotNull(simulateur.getReine());
+    assertTrue(simulateur.getReine() instanceof SexueFemelle);
+    assertTrue(simulateur.getReine().isAlive());
+    simulateur.getReine().pondre();
+    assertTrue(simulateur.getReine().getOeufsPondus() == 0);
+    Fourmiliere fourmiliere = simulateur.getFourmiliere();
+    assertNotNull(fourmiliere);
+    assertNotNull(fourmiliere.getFourmis());
+    assertTrue(fourmiliere.getFourmis().size() == 0);
+  }
+  
+  @Test
+  void testPonte() {
+    Simulateur simulateur = new Simulateur();
+    assertNotNull(simulateur.getReine());
+    this.pondre(simulateur.getFourmiliere().getLeTerrain().getLesSaisons());
+    assertTrue(simulateur.getFourmiliere().getLeTerrain().getLesSaisons().isPrintemps());
+    simulateur.getReine().pondre();
+    assertFalse(simulateur.getReine().getOeufsPondus() == 0);
+    assertNotNull(simulateur.getFourmiliere().getFourmis());
+    assertFalse(simulateur.getFourmiliere().getFourmis().size() == 0);
+    List<Fourmis> lesFourmis = simulateur.getFourmiliere().getFourmis();
+    assertTrue(lesFourmis.get(0).getEtape() instanceof Oeuf);
+    assertTrue(lesFourmis.get(lesFourmis.size() - 1).getEtape() instanceof Oeuf);
+    int nbOeufsPondus = simulateur.getReine().getOeufsPondus();
+    assertTrue(nbOeufsPondus == lesFourmis.size());
   }
 
 }
