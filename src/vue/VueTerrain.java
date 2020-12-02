@@ -1,7 +1,5 @@
 package vue;
 
-import fourmiliere.Fourmiliere;
-import fourmiliere.Fourmis;
 import graphicLayer.GOval;
 import graphicLayer.GRect;
 import graphicLayer.GSpace;

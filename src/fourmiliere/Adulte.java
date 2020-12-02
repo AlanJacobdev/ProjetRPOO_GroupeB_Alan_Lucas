@@ -25,9 +25,9 @@ public class Adulte extends Etape {
   public Adulte(Fourmis fourmis) {
     super();
     this.fourmis = fourmis;
+    
     if (fourmis.saFourmiliere != null) {
       this.roleFourmis = this.creerRole();
-
       this.coordonneesActuelle =
           new Point(this.getFourmis().getFourmiliere().getPositionFourmiliere().x + 5,
               this.getFourmis().getFourmiliere().getPositionFourmiliere().y + 5);

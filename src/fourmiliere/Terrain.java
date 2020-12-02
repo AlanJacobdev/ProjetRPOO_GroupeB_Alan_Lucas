@@ -79,6 +79,7 @@ public class Terrain {
    */
   public void step() {
     this.laFourmiliere.step();
+    this.leTerrain.rafraichirTerrain();
   }
 
   public void renseignementFourmiliere() {
