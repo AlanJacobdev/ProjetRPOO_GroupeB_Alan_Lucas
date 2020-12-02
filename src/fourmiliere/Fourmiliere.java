@@ -1,6 +1,7 @@
 package fourmiliere;
 
 import environnement.InformationsFourmiliere;
+import java.awt.Point;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +13,8 @@ public class Fourmiliere {
   private Fourmis reine;
   private InformationsFourmiliere infos;
   private Terrain leTerrain;
+  private Point positionFourmiliere;
+  
   
 
   /**
@@ -21,17 +24,21 @@ public class Fourmiliere {
    */
   public Fourmiliere(Fourmis reine) {
     this.lesFourmis = new ArrayList<>();
-    this.infos = new InformationsFourmiliere();
     this.lesFourmisMortes = new ArrayList<>();
     this.reine = reine;
+    this.leTerrain = null;
+    this.positionFourmiliere = null;
   }
 
   /**
    * .
    */
   public void step() {
+    this.infos = leTerrain.getInfos();
     for (Fourmis uneFourmis : lesFourmis) {
+      uneFourmis.getRole().renseignerInformations();
       uneFourmis.step();
+      
     }
     this.reine.step();
     if (this.lesFourmisMortes.size() > 0) {
@@ -77,8 +84,12 @@ public class Fourmiliere {
     this.leTerrain = leTerrain;
   }
   
-  public List<Fourmis> getLesFourmisMortes(){
-    return this.lesFourmisMortes;
+  public Point getPositionFourmiliere() {
+    return positionFourmiliere;
+  }
+
+  public void setPositionFourmiliere(Point positionFourmiliere) {
+    this.positionFourmiliere = positionFourmiliere;
   }
 
   /**
@@ -90,7 +101,7 @@ public class Fourmiliere {
     StringBuffer string = new StringBuffer();
     string.append("Population : ");
     string.append(this.lesFourmis.size() + "\n");
-    string.append(this.infos.toString());
+    string.append(this.leTerrain.getInfos().toString());
     return string.toString();
   }
 }

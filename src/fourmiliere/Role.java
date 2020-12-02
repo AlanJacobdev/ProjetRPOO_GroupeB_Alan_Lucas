@@ -16,5 +16,6 @@ public abstract class Role {
   protected abstract Etape mourrir();
 
   
-
+  protected abstract void renseignerInformations();
+  
 }
