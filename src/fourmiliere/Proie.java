@@ -22,9 +22,10 @@ public class Proie {
     int y = (int) (Math.random() * (terrain.getTailleTerrain().width - 0));
     this.positionActuelle = new Point(x, y);
     this.representationGraphique = new GRect();
-    this.representationGraphique.setColor(Color.ORANGE);
-    this.representationGraphique.setDimension(new Dimension(10, 10));
+    this.representationGraphique.setColor(Color.WHITE);
+    this.representationGraphique.setDimension(new Dimension(5, 5));
     this.representationGraphique.setPosition(positionActuelle);
+    this.representationGraphique.setBorderColor(Color.WHITE.darker());
   }
 
   public Point getPositionActuelle() {
@@ -78,7 +79,6 @@ public class Proie {
       }
 
     } else {
-      System.out.println("test");
       this.terrain.supprimerProie(this);
     }
 

@@ -105,15 +105,17 @@ public class Terrain {
   public void supprimerProie(Proie proie) {
     this.lesProiesMortes.add(proie);
   }
-  
+
   /**
    * .
    */
   public void step() {
     this.laFourmiliere.step();
-    int tirage = (int) (Math.random() * (50 - 0));
+    int tirage = (int) (Math.random() * (10 - 0));
     if (tirage == 1) {
-      this.ajouterProie();
+      if (this.lesProies.size() < this.laFourmiliere.getFourmis().size() * 0.05) {
+        this.ajouterProie();
+      }
     }
     this.deplacementProies();
     if (this.lesProiesMortes.size() > 0) {
@@ -149,7 +151,7 @@ public class Terrain {
       p.prochainePosition();
     }
   }
-  
+
   public void rafraichirIhm() {
     this.leTerrain.rafraichirTerrain();
   }
