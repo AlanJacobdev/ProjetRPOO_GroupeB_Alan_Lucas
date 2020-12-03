@@ -1,13 +1,13 @@
 package fourmiliere;
 
-import java.awt.Dimension;
-import java.awt.Point;
-import java.util.ArrayList;
-import java.util.List;
 import environnement.InformationsFourmiliere;
 import environnement.Saison;
 import graphicLayer.GOval;
 import graphicLayer.GRect;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.util.ArrayList;
+import java.util.List;
 import vue.VueTerrain;
 
 
@@ -95,11 +95,16 @@ public class Terrain {
   }
 
   private void ajouterProie() {
-    Proie proie = new Proie(this.getTailleTerrain());
+    Proie proie = new Proie(this);
     this.lesProies.add(proie);
     this.leTerrain.addProie(proie.getRepresentationGraphique());
   }
 
+  public void supprimerProie(Proie proie) {
+    this.leTerrain.delProie(proie.getRepresentationGraphique());
+    this.lesProies.remove(proie);
+  }
+  
   /**
    * .
    */

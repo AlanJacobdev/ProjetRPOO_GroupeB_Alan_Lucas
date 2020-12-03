@@ -74,7 +74,7 @@ public class Reine extends SexueFemelle {
     Fourmiliere fourmiliere = fourmis.getFourmiliere();
     Saison laSaison = fourmiliere.getLeTerrain().getLesSaisons();
     if (laSaison.isPrintemps()) {
-      oeufsPondus = (int) (Math.random() * (5 - 1)) + 1;
+      oeufsPondus = (int) (Math.random() * (3 - 1)) + 1;
       this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
     }
   }

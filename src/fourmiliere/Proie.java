@@ -6,20 +6,20 @@ import java.awt.Point;
 import graphicLayer.GRect;
 
 public class Proie {
-  private Dimension tailleTerrain;
+  private Terrain terrain;
   private Point positionActuelle;
   private GRect representationGraphique;
 
   /**
    * Constructeur Proie.
    * 
-   * @param tailleTerrain .
+   * @param terrain .
    * 
    */
-  public Proie(Dimension tailleTerrain) {
-    this.tailleTerrain = tailleTerrain;
-    int x = (int) (Math.random() * (500 - 0));
-    int y = (int) (Math.random() * (500 - 0));
+  public Proie(Terrain terrain) {
+    this.terrain = terrain;
+    int x = (int) (Math.random() * (terrain.getTailleTerrain().height - 0));
+    int y = (int) (Math.random() * (terrain.getTailleTerrain().width - 0));
     this.positionActuelle = new Point(x, y);
     this.representationGraphique = new GRect();
     this.representationGraphique.setColor(Color.ORANGE);
@@ -48,9 +48,8 @@ public class Proie {
    */
   public void prochainePosition() {
     int deplacement = (int) (Math.random() * (100 - 0));
-    System.out.println(deplacement);
-    if (!(positionActuelle.x > this.tailleTerrain.width || positionActuelle.x < 0
-        || positionActuelle.y > this.tailleTerrain.height || positionActuelle.x < 0)) {
+    if (!(positionActuelle.x > this.terrain.getTailleTerrain().width || positionActuelle.x < 0
+        || positionActuelle.y > this.terrain.getTailleTerrain().height || positionActuelle.x < 0)) {
       if (deplacement <= 25) {
         this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y + 5);
         this.representationGraphique.setPosition(positionActuelle);
@@ -65,7 +64,10 @@ public class Proie {
         this.representationGraphique.setPosition(positionActuelle);
       }
 
+    } else {
+      this.terrain.supprimerProie(this);
     }
+    
   }
 
 }

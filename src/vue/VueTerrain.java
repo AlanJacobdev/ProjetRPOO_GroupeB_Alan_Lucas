@@ -46,6 +46,10 @@ public class VueTerrain {
   public void addProie(GRect proie) {
     leTerrainVue.addElement(proie);
   }
+  
+  public void delProie(GRect proie) {
+    leTerrainVue.removeElement(proie);
+  }
 
 
   /**
