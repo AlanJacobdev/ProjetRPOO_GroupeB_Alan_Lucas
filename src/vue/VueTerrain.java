@@ -20,7 +20,7 @@ public class VueTerrain {
   public VueTerrain(Dimension dimensionsTerrain) {
     this.dimensionsTerrain = dimensionsTerrain;
     this.leTerrainVue = new GSpace("Pelouse de Lucas", dimensionsTerrain);
-    this.leTerrainVue.setColor(Color.GREEN.darker());
+    this.leTerrainVue.setColor(Color.GREEN.darker().darker());
   }
 
   public void open() {
