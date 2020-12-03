@@ -5,7 +5,6 @@ import graphicLayer.GRect;
 import graphicLayer.GSpace;
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.Point;
 
 
 
@@ -44,7 +43,7 @@ public class VueTerrain {
   /**
    * Ajouter une proie au terrain.
    * 
-   * @param Proie la Proie
+   * @param proie la Proie
    */
   public void addProie(GRect proie) {
     leTerrainVue.addElement(proie);
