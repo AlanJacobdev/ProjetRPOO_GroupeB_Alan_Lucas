@@ -4,9 +4,9 @@ import environnement.InformationsFourmiliere;
 
 public class Nymphe extends Etape {
 
-  Integer age;
-  Integer joursAvantFourmis = 10;
-  Fourmis fourmis;
+  protected int  age;
+  protected final int joursAvantFourmis = 10;
+  protected Fourmis fourmis;
 
   /**
    * Constructeur d'une nymphe.
@@ -14,7 +14,7 @@ public class Nymphe extends Etape {
    * @param fourmis La fourmilière.
    */
   public Nymphe(Fourmis fourmis) {
-    age = 0;
+    this.age = 0;
     this.fourmis = fourmis;
   }
 
@@ -35,7 +35,6 @@ public class Nymphe extends Etape {
   protected void step() {
     age++;
   }
-  
   
   @Override
   protected void renseignerInformations(InformationsFourmiliere infos) {

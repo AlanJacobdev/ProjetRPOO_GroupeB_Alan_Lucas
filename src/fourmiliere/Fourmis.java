@@ -9,7 +9,6 @@ public class Fourmis {
   Etape etape;
   Fourmiliere saFourmiliere;
 
-
   /**
    * Constructeur d'une fourmis.
    * 
@@ -19,7 +18,7 @@ public class Fourmis {
     this.saFourmiliere = fourmiliere;
     this.etape = new Oeuf(this);
   }
-  
+
   public Role getRole() {
     return this.etape.getRole();
   }
@@ -49,12 +48,20 @@ public class Fourmis {
     return this;
   }
 
-  /** . */
+  /**
+   * Avance d'une certaine duree le temps.
+   */
   public void step() {
     this.etape = etape.next();
     etape.step();
   }
 
+  /**
+   * Permet de récupérer des informations sur la fourmiliere. Fait circuler le bilan des
+   * informations dans aux fourmis prsentent dans la fourmilliere.
+   * 
+   * @param infos Bilan des informations de la fourmiliere.
+   */
   public void renseignementFourmiliere(InformationsFourmiliere infos) {
     this.getEtape().renseignerInformations(infos);
   }

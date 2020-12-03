@@ -14,8 +14,9 @@ public class VueTerrain {
   Dimension dimensionsTerrain;
 
   /**
-   * Constructeur.
+   * Constructeur d'un terrain graphique. 
    * 
+   * @param dimensionsTerrain Les dimension du terrain graphique
    */
   public VueTerrain(Dimension dimensionsTerrain) {
     this.dimensionsTerrain = dimensionsTerrain;
@@ -23,6 +24,9 @@ public class VueTerrain {
     this.leTerrainVue.setColor(Color.GREEN.darker().darker());
   }
 
+  /**
+   * Afficher le terrain.
+   */
   public void open() {
     leTerrainVue.open();
   }
@@ -40,13 +44,16 @@ public class VueTerrain {
 
   /**
    * Ajouter une proie au terrain.
-   * 
    * @param proie la Proie
    */
   public void addProie(GRect proie) {
     leTerrainVue.addElement(proie);
   }
   
+  /**
+   * Suppresion d'une proie sur le terrain.
+   * @param proie la proie a supprimer
+   */
   public void delProie(GRect proie) {
     leTerrainVue.removeElement(proie);
   }
@@ -54,17 +61,23 @@ public class VueTerrain {
 
   /**
    * Ajout d'une fourmis au terrain.
-   * 
+   * @param fourmis la fourmis a ajouter
    */
   public void addFourmis(GOval fourmis) {
     this.leTerrainVue.addElement(fourmis);
   }
   
+  /**
+   * Permet la suppression de fourmis sur le terrain.
+   * @param fourmis la fourmis a supprimer
+   */
   public void delFourmis(GOval fourmis) {
     this.leTerrainVue.removeElement(fourmis);
   }
 
-
+  /**
+   * Permet de rafraichir le terrain.
+   */
   public void rafraichirTerrain() {
     leTerrainVue.repaint();
   }

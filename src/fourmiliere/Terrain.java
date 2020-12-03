@@ -10,31 +10,26 @@ import java.util.ArrayList;
 import java.util.List;
 import vue.VueTerrain;
 
-
-
 public class Terrain {
 
-  private Saison lesSaisons;
-  private Dimension tailleTerrain;
-  private Fourmiliere laFourmiliere;
-  private InformationsFourmiliere infos;
-  private VueTerrain leTerrain;
-  private List<Proie> lesProies;
-  private List<Proie> lesProiesMortes;
+  protected final int coteTerrain = 500;
+  protected Saison lesSaisons;
+  protected Dimension tailleTerrain;
+  protected Fourmiliere laFourmiliere;
+  protected InformationsFourmiliere infos;
+  protected VueTerrain leTerrain;
+  protected List<Proie> lesProies;
+  protected List<Proie> lesProiesMortes;
 
   /**
-   * Constructeur.
+   * Constructeur d'un terrain.
    */
   public Terrain() {
     this.lesSaisons = new Saison();
-    this.tailleTerrain = new Dimension(500, 500);
+    this.tailleTerrain = new Dimension(coteTerrain, coteTerrain);
     this.leTerrain = new VueTerrain(tailleTerrain);
     this.lesProies = new ArrayList<Proie>();
     this.lesProiesMortes = new ArrayList<Proie>();
-  }
-
-  public void afficherTerrain() {
-    leTerrain.open();
   }
 
   public Fourmiliere getLaFourmiliere() {
@@ -75,9 +70,17 @@ public class Terrain {
   }
 
   /**
+   * Afficher la vue graphique du terrain.
+   */
+  public void afficherTerrain() {
+    leTerrain.open();
+  }
+
+  /**
    * Ajout d'une fourilière au centre du terain.
    * 
-   * @param representationGraphique .
+   * @param representationGraphique representation graphique de la fourmiliere
+   * @param representationTerritoire representation graphique du territoire de la fourmiliere
    */
   public void ajouterFourmiliereGraphique(GRect representationGraphique,
       GRect representationTerritoire) {
@@ -92,26 +95,44 @@ public class Terrain {
     this.getLeTerrain().addFourmiliere(representationTerritoire, representationGraphique);
   }
 
+  /**
+   * Ajouter une fourmis au terrain graphique.
+   * 
+   * @param fourmis Une fourmis grapique (GOval)
+   */
   public void ajouterFourmisGraphique(GOval fourmis) {
     this.getLeTerrain().addFourmis(fourmis);
   }
-  
+
+  /**
+   * Supprimer une fourmis au terrain graphique.
+   * 
+   * @param fourmis Une fourmis graphique (GOval)
+   */
   public void supprimerFourmisGraphique(GOval fourmis) {
     this.getLeTerrain().delFourmis(fourmis);
   }
 
+  /**
+   * Ajouter une proie au terrain graphique.
+   */
   private void ajouterProie() {
     Proie proie = new Proie(this);
     this.lesProies.add(proie);
     this.leTerrain.addProie(proie.getRepresentationGraphique());
   }
 
+  /**
+   * Supprimer une proie du terrain graphique.
+   * 
+   * @param proie La Proie a supprimer
+   */
   public void supprimerProie(Proie proie) {
     this.lesProiesMortes.add(proie);
   }
 
   /**
-   * .
+   * Avance d'une certaine durée le temps.
    */
   public void step() {
     this.laFourmiliere.step();
@@ -131,20 +152,20 @@ public class Terrain {
     this.leTerrain.rafraichirTerrain();
   }
 
+  /**
+   * Permet de récupérer des informations sur la fourmiliere. Fait circuler le bilan des
+   * informations dans aux fourmis presentent dans la fourmilliere.
+   */
   public void renseignementFourmiliere() {
     this.infos = new InformationsFourmiliere();
     this.laFourmiliere.renseignementFourmiliere(infos);
   }
-
-  @Override
-  public String toString() {
-    String s = laFourmiliere.toString() + infos.toString();
-    return s;
-  }
-
+  
+  /**
+   * Affiche le terrain graphique.
+   */
   public void open() {
     this.leTerrain.open();
-
   }
 
   /**
@@ -156,10 +177,21 @@ public class Terrain {
     }
   }
 
+  /**
+   * Rafraichit l'affichage du terrain graphique.
+   */
   public void rafraichirIhm() {
     this.leTerrain.rafraichirTerrain();
   }
 
-
+  
+  /**
+   * Afiiche les informations relatives à la fourmilière.
+   */
+  @Override
+  public String toString() {
+    String s = laFourmiliere.toString() + infos.toString();
+    return s;
+  }
 
 }

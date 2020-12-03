@@ -1,20 +1,20 @@
 package fourmiliere;
 
+import graphicLayer.GRect;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
-import graphicLayer.GRect;
+
 
 public class Proie {
-  private Terrain terrain;
-  private Point positionActuelle;
-  private GRect representationGraphique;
+  protected Terrain terrain;
+  protected Point positionActuelle;
+  protected GRect representationGraphique;
 
   /**
-   * Constructeur Proie.
+   * Constructeur d'une proie.
    * 
-   * @param terrain .
-   * 
+   * @param terrain Terrain sur lequel la proie évolue
    */
   public Proie(Terrain terrain) {
     this.terrain = terrain;
@@ -45,9 +45,8 @@ public class Proie {
   }
 
   /**
-   * Savoir si la proie est dans le terrain.
-   * 
-   * @return
+   * Savoir si la proie est dans le terrain ou non.
+   * @return <b>true</b> si la proie se situe dans le terrain sinon <b>false</b>
    */
   public Boolean dansTerrain() {
     if (positionActuelle.x < this.terrain.getTailleTerrain().width && positionActuelle.x > 0
@@ -59,7 +58,7 @@ public class Proie {
   }
 
   /**
-   * Déplacement aléatoire d'une proie.
+   * Déplacement aléatoire d'une proie, suprresion si elle sort du terrain visible.
    */
   public void prochainePosition() {
     int deplacement = (int) (Math.random() * (100 - 0));

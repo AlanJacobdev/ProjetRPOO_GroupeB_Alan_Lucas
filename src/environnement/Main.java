@@ -1,6 +1,8 @@
 package environnement;
 
 import fourmiliere.Fourmiliere;
+import fourmiliere.Fourmis;
+import fourmiliere.Reine;
 import fourmiliere.Terrain;
 import java.awt.Point;
 import java.io.FileNotFoundException;
@@ -11,7 +13,7 @@ import java.io.PrintWriter;
 public class Main {
 
   /**
-   * Main.
+   * Lancement de l'application.
    * 
    * @param args Arguments
    */
@@ -37,9 +39,9 @@ public class Main {
         laFourmiliere.getRepresentationTerritoire());
     leTerrain.open();
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
-
-    simulateur.getReine().pondre();
-    while (printemps.getNbTempsEcoule() < 1050) {
+    Reine reine = simulateur.getReine();
+    reine.pondre();
+    while (reine.isAlive() || laFourmiliere.getFourmis().size() != 0) {
       jour = printemps.getNbTempsEcoule();
       leTerrain.step();
       leTerrain.renseignementFourmiliere();

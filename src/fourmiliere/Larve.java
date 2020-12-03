@@ -4,9 +4,9 @@ import environnement.InformationsFourmiliere;
 
 public class Larve extends Etape {
 
-  Integer age;
-  Integer joursAvantNymphe = 10;
-  Fourmis fourmis;
+  protected int age;
+  protected final int joursAvantNymphe = 10;
+  protected Fourmis fourmis;
 
   /**
    * Constructeur d'une larve.
@@ -26,8 +26,6 @@ public class Larve extends Etape {
     }
     return this;
   }
-
-
 
   @Override
   protected Role getRole() {

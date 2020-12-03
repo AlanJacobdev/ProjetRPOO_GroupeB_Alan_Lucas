@@ -1,28 +1,24 @@
 package fourmiliere;
 
 import environnement.InformationsFourmiliere;
-import graphicLayer.GOval;
-import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Point;
 
-
-
 public class Adulte extends Etape {
-
+  
+  static final int minimumPopulation = 0;
+  static final int maximalPopulationOuvriere = 65;
+  static final int maximalPopulationSoldat = 85;
+  static final int maximalPopulation = 100;
   protected Role roleFourmis;
-
   protected Fourmis fourmis;
   protected Point coordonneesActuelle;
   protected FourmisGraphique representationGraphique;
-  static int minimumPopulation = 0;
-  static int maximalPopulationOuvriere = 65;
-  static int maximalPopulationSoldat = 85;
-  static int maximalPopulation = 100;
+  
 
   /**
-   * Adulte.
+   * Constructeur permettant de faire évoluer une fourmis en adulte.
    * 
+   * @param fourmis Une fourmis
    */
   public Adulte(Fourmis fourmis) {
     super();
@@ -34,10 +30,22 @@ public class Adulte extends Etape {
     }
   }
 
+  public FourmisGraphique getRepresentationGraphique() {
+    return this.representationGraphique;
+  }
 
+  public Fourmis getFourmis() {
+    return this.fourmis;
+  }
+
+  @Override
+  protected Role getRole() {
+    return this.roleFourmis;
+  }
 
   /**
    * Attribue un rôle à une fourmis adulte.
+   * @return le Role de la fourmis.
    */
   public Role creerRole() {
     int categorieFourmis = (int) (Math.random() * (maximalPopulation - minimumPopulation));
@@ -53,22 +61,23 @@ public class Adulte extends Etape {
     return new SexueFemelle(this);
   }
 
+  /**
+   * Forcer le role d'une fourmis à reine.
+   */
   public void attributionRoleReine() {
     this.roleFourmis = new Reine(this);
   }
 
-  public Fourmis getFourmis() {
-    return this.fourmis;
-  }
-
-  @Override
-  protected Role getRole() {
-    return this.roleFourmis;
+  /**
+   * Déplacement aléatoire de la fourmis.
+   */
+  public void prochainePosition() {
+    this.representationGraphique.prochainePosition();
   }
 
   @Override
   protected Etape next() {
-    return this.getRole().mourrir();
+    return this.getRole().mourir();
   }
 
   @Override
@@ -84,16 +93,6 @@ public class Adulte extends Etape {
     this.fourmis.getRole().renseignerInformations(infos);
   }
 
-  /**
-   * Déplacement aléatoire de la fourmis.
-   * 
-   */
-  public void prochainePosition() {
-    this.representationGraphique.prochainePosition();
-  }
 
-  public FourmisGraphique getRepresentationGraphique() {
-    return this.representationGraphique;
-  }
 
 }

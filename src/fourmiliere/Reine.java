@@ -4,15 +4,16 @@ import environnement.Saison;
 
 public class Reine extends SexueFemelle {
 
-  private Integer age;
-  private Integer esperanceVie;
-  private Adulte stadeEvolution;
-  private int oeufsPondus;
+  protected Integer age;
+  protected Integer esperanceVie;
+  protected Adulte stadeEvolution;
+  protected int oeufsPondus;
 
   /**
-   * Constructeur.
+   * Constructeur du rôle Reine pour une fourmis adulte.
+   * Une fourmilliere ne peut en contenir qu'une.
+   * @param adulte Fourmis étant adulte
    */
-
   public Reine(Adulte adulte) {
     super(adulte);
     this.stadeEvolution = adulte;
@@ -20,11 +21,13 @@ public class Reine extends SexueFemelle {
     this.esperanceVie = (int) (Math.random() * (3652 - 1461)) + 1461;
   }
 
+  public int getOeufsPondus() {
+    return this.oeufsPondus;
+  }
 
   /**
-   * Création d'une fourmiliere.
-   * 
-   * @return
+   * Création d'une fourmiliere dont-elle est la reine.
+   * @return La nouvelle Fourmiliere.
    */
   public Fourmiliere creerFourmiliere() {
     Fourmiliere laFourmiliere = new Fourmiliere(this.stadeEvolution.getFourmis());
@@ -36,20 +39,23 @@ public class Reine extends SexueFemelle {
   @Override
   protected void step() {
     age++;
-    this.pondre();
-
+    if (this.isAlive()) {
+      this.pondre();
+    }
   }
 
   @Override
-  protected Etape mourrir() {
-    if (this.age >= this.esperanceVie) {
-      detruireFourmilliere();
+  protected Etape mourir() {
+    /*if (this.age >= this.esperanceVie) {
       return new Mort(stadeEvolution.getFourmis(),
           this.stadeEvolution.getRepresentationGraphique());
-    }
+    }*/
     return stadeEvolution;
   }
 
+  /**
+   * Detruit la fourmiliere.
+   */
   public void detruireFourmilliere() {
     this.stadeEvolution.getFourmis().setFourmilliere(null);
   }
@@ -67,8 +73,7 @@ public class Reine extends SexueFemelle {
   }
 
   /**
-   * Créer une portée de fourmis.
-   * 
+   * Créer une portée de X fourmis.
    */
   public void pondre() {
     Fourmis fourmis = this.stadeEvolution.getFourmis();
@@ -78,10 +83,6 @@ public class Reine extends SexueFemelle {
       oeufsPondus = (int) (Math.random() * (3 - 1)) + 1;
       this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
     }
-  }
-
-  public int getOeufsPondus() {
-    return this.oeufsPondus;
   }
 
 }

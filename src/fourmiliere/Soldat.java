@@ -3,13 +3,14 @@ package fourmiliere;
 import environnement.InformationsFourmiliere;
 
 public class Soldat extends Role {
-  Integer age;
-  Integer esperanceVie;
+  
+  protected int age;
+  protected int esperanceVie;
   Adulte stadeEvolution;
   
   /**
-   * Constructeur.
-   * @param adulte Fourmilliere 
+   * Constructeur du rôle soldat pour une fourmis adulte.
+   * @param adulte Fourmis étant adulte
    */
   public Soldat(Adulte adulte) {
     super();
@@ -24,7 +25,7 @@ public class Soldat extends Role {
   }
 
   @Override
-  protected Etape mourrir() {
+  protected Etape mourir() {
     if (this.age >= this.esperanceVie) {
       Fourmis fourmis = this.stadeEvolution.getFourmis();
       return new Mort(fourmis, this.stadeEvolution.getRepresentationGraphique());

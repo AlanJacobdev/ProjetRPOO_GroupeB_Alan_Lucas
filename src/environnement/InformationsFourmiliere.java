@@ -1,18 +1,16 @@
 package environnement;
 
-import fourmiliere.Fourmis;
-import java.util.ArrayList;
-import java.util.List;
 
 public class InformationsFourmiliere {
-  int nbOeufs;
-  int nbLarves;
-  int nbNymphes;
-  int nbOuvrieres;
-  int nbSoldats;
-  int nbSexueFemelles;
-  int nbSexueMales;
-  int nbMorts;
+ 
+  protected int nbOeufs;
+  protected int nbLarves;
+  protected int nbNymphes;
+  protected int nbOuvrieres;
+  protected int nbSoldats;
+  protected int nbSexueFemelles;
+  protected int nbSexueMales;
+  protected int nbMorts;
   
   /**
    * Constructeur d'une classe contenant toutes les informations de mesure de la fourmiliere.
