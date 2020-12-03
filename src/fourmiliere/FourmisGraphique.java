@@ -24,7 +24,7 @@ public class FourmisGraphique {
             this.getFourmis().getFourmiliere().getPositionFourmiliere().y);
     this.representationGraphique = new GOval();
     this.representationGraphique.setPosition(coordonneesActuelle);
-    this.representationGraphique.setDimension(new Dimension(10, 10));
+    this.representationGraphique.setDimension(new Dimension(5, 5));
     this.getFourmis().getFourmiliere().getLeTerrain()
         .ajouterFourmisGraphique(representationGraphique);
   }
@@ -61,11 +61,11 @@ public class FourmisGraphique {
         if (this.coordonneesActuelle.x > this.getFourmis().getFourmiliere()
             .getPositionFourmiliere().x - 5
             && this.coordonneesActuelle.x < this.getFourmis().getFourmiliere()
-                .getPositionFourmiliere().x + 15
+                .getPositionFourmiliere().x + 20
             && this.coordonneesActuelle.y > this.getFourmis().getFourmiliere()
                 .getPositionFourmiliere().y - 5
             && this.coordonneesActuelle.y < this.getFourmis().getFourmiliere()
-                .getPositionFourmiliere().y + 15) {
+                .getPositionFourmiliere().y + 20) {
           this.representationGraphique.setColor(Color.red);
         } else {
           this.representationGraphique.setColor(Color.blue);
