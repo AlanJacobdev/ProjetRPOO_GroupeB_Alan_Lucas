@@ -1,2 +1,5 @@
 .classpath
 *.class
+bin/environnement/Simulateur.class
+bin/test/testFourmiliere.class
+journal.txt
