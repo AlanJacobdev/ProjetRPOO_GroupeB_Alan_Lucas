@@ -3,29 +3,46 @@ package fourmiliere;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
+import graphicLayer.GRect;
 
 public class Proie {
-  private Point position;
   private Dimension taille;
-  private Color couleur;
-  
-  public Proie() {
+  private Dimension tailleTerrain;
+  private Point positionActuelle;
+  private GRect representationGraphique;
+
+  /**
+   * Constructeur Proie.
+   * 
+   * @param tailleTerrain .
+   * 
+   */
+  public Proie(Dimension tailleTerrain) {
+    this.tailleTerrain = tailleTerrain;
     int x = (int) (Math.random() * (500 - 0));
     int y = (int) (Math.random() * (500 - 0));
-    this.position = new Point(x, y);
-    this.taille = new Dimension(10, 10);
-    this.couleur = Color.ORANGE;
+    this.positionActuelle = new Point(x, y);
+    this.representationGraphique = new GRect();
+    this.representationGraphique.setColor(Color.ORANGE);
+    this.representationGraphique.setDimension(new Dimension(10, 10));
+    this.representationGraphique.setPosition(positionActuelle);
   }
 
-  public Point getPosition() {
-    return position;
+  public Point getPositionActuelle() {
+    return positionActuelle;
   }
 
-  public Dimension getTaille() {
-    return taille;
+  public void setPositionActuelle(Point positionActuelle) {
+    this.positionActuelle = positionActuelle;
   }
 
-  public Color getCouleur() {
-    return couleur;
+  public GRect getRepresentationGraphique() {
+    return representationGraphique;
   }
+
+  public void setRepresentationGraphique(GRect representationGraphique) {
+    this.representationGraphique = representationGraphique;
+  }
+
+
 }
