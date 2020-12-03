@@ -4,10 +4,14 @@ import environnement.InformationsFourmiliere;
 
 public class Mort extends Etape {
 
-  Fourmis fourmisMorte;
-  
-  public Mort(Fourmis fourmis) {
+  private Fourmis fourmisMorte;
+  private FourmisGraphique representationGraphique;
+  private int nbStepMort;
+
+  public Mort(Fourmis fourmis, FourmisGraphique fourmisGraphique) {
     this.fourmisMorte = fourmis;
+    this.representationGraphique = fourmisGraphique;
+    this.representationGraphique.mort();
   }
 
   @Override
@@ -17,17 +21,22 @@ public class Mort extends Etape {
 
   @Override
   protected void step() {
+    this.nbStepMort++;
+    if (this.nbStepMort == 5) {
+      this.fourmisMorte.getFourmiliere().getLeTerrain()
+          .supprimerFourmisGraphique(this.representationGraphique.getRepresentationGraphique());
+    }
   }
 
   @Override
   protected Role getRole() {
     return null;
   }
-  
-    
+
+
   @Override
   protected void renseignerInformations(InformationsFourmiliere infos) {
     infos.addMort(fourmisMorte);
   }
-  
+
 }

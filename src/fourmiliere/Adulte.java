@@ -92,6 +92,8 @@ public class Adulte extends Etape {
     this.representationGraphique.prochainePosition();
   }
 
-
+  public FourmisGraphique getRepresentationGraphique() {
+    return this.representationGraphique;
+  }
 
 }

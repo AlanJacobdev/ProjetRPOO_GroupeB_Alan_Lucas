@@ -37,14 +37,15 @@ public class Reine extends SexueFemelle {
   protected void step() {
     age++;
     this.pondre();
-    
+
   }
 
   @Override
   protected Etape mourrir() {
     if (this.age >= this.esperanceVie) {
       detruireFourmilliere();
-      return new Mort(stadeEvolution.getFourmis());
+      return new Mort(stadeEvolution.getFourmis(),
+          this.stadeEvolution.getRepresentationGraphique());
     }
     return stadeEvolution;
   }
@@ -78,9 +79,9 @@ public class Reine extends SexueFemelle {
       this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
     }
   }
-  
+
   public int getOeufsPondus() {
     return this.oeufsPondus;
   }
-  
+
 }

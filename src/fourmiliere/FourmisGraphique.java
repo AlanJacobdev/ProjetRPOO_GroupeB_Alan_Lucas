@@ -32,6 +32,10 @@ public class FourmisGraphique {
   private Fourmis getFourmis() {
     return this.laFourmis;
   }
+  
+  public GOval getRepresentationGraphique() {
+    return this.representationGraphique;
+  }
 
 
   private Boolean dansFourmiliere() {
@@ -87,6 +91,15 @@ public class FourmisGraphique {
           this.representationGraphique.setColor(Color.blue);
         }
       }
+    }
+  }
+  
+  /**
+   * Mort de la fourmis.
+   */
+  public void mort() {
+    if (this.dansTerritoire()) {
+      this.representationGraphique.setColor(Color.RED);
     }
   }
 }

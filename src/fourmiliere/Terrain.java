@@ -95,6 +95,10 @@ public class Terrain {
   public void ajouterFourmisGraphique(GOval fourmis) {
     this.getLeTerrain().addFourmis(fourmis);
   }
+  
+  public void supprimerFourmisGraphique(GOval fourmis) {
+    this.getLeTerrain().delFourmis(fourmis);
+  }
 
   private void ajouterProie() {
     Proie proie = new Proie(this);

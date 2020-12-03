@@ -29,7 +29,7 @@ public class Ouvrier extends Role {
     if (this.age >= this.esperanceVie) {
       Fourmis fourmis = this.stadeEvolution.getFourmis();
       fourmis.getFourmiliere().ajoutFourmisMorte(fourmis);
-      return new Mort(fourmis);
+      return new Mort(fourmis, this.stadeEvolution.getRepresentationGraphique());
     }
     return stadeEvolution;
   }

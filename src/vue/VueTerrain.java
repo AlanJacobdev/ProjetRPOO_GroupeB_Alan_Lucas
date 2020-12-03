@@ -59,6 +59,10 @@ public class VueTerrain {
   public void addFourmis(GOval fourmis) {
     this.leTerrainVue.addElement(fourmis);
   }
+  
+  public void delFourmis(GOval fourmis) {
+    this.leTerrainVue.removeElement(fourmis);
+  }
 
 
   public void rafraichirTerrain() {
