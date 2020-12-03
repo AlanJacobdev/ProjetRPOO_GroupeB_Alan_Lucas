@@ -9,6 +9,7 @@ import java.awt.Point;
 
 
 
+
 public class VueTerrain {
 
   GSpace leTerrainVue;
@@ -32,11 +33,12 @@ public class VueTerrain {
    * Ajouter une fourmiliere au terrain.
    * 
    * @param fourmiliere Une fourmiliere
-   * @param territoire Le territoire
    */
-  public void addFourmiliere(GRect territoire, GRect fourmiliere) {
-    leTerrainVue.addElement(territoire);
+  public void addFourmiliere(GRect fourmiliere) {
     leTerrainVue.addElement(fourmiliere);
+    Point positionFourmiliere = new Point((this.dimensionsTerrain.height / 2) - 10,
+        (this.dimensionsTerrain.width / 2) - 10);
+    fourmiliere.setPosition(positionFourmiliere);
   }
 
   /**
@@ -51,7 +53,4 @@ public class VueTerrain {
   public void rafraichirTerrain() {
     leTerrainVue.repaint();
   }
-
-
-
 }

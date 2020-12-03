@@ -1,5 +1,7 @@
 package fourmiliere;
 
+import java.awt.Dimension;
+import java.awt.Point;
 import environnement.InformationsFourmiliere;
 import environnement.Saison;
 import graphicLayer.GOval;
@@ -69,7 +71,7 @@ public class Terrain {
 
   /**
    * Ajout d'une fourilière au centre du terain.
-   * 
+   *
    * @param representationGraphique .
    */
   public void ajouterFourmiliereGraphique(GRect representationGraphique,
@@ -95,6 +97,11 @@ public class Terrain {
   public void step() {
     this.laFourmiliere.step();
     this.leTerrain.rafraichirTerrain();
+    
+    int tirage = (int) (Math.random() * (5 - 0));
+    if(tirage == 3) {
+      this.ajouterProie();
+    }
   }
 
   public void renseignementFourmiliere() {
@@ -116,5 +123,8 @@ public class Terrain {
   public void rafraichirIhm() {
     this.leTerrain.rafraichirTerrain();
   }
-
+  
+  private void ajouterProie() {
+    Proie proie = new Proie();
+  }
 }
