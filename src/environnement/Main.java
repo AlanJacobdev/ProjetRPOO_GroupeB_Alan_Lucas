@@ -1,7 +1,6 @@
 package environnement;
 
 import fourmiliere.Fourmiliere;
-import fourmiliere.Fourmis;
 import fourmiliere.Reine;
 import fourmiliere.Terrain;
 import java.awt.Point;
