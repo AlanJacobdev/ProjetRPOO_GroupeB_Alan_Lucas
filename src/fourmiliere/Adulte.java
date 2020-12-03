@@ -74,7 +74,7 @@ public class Adulte extends Etape {
   @Override
   protected void step() {
     this.getRole().step();
-    if (! (this.getRole() instanceof Reine)) {
+    if (!(this.getRole() instanceof Reine)) {
       this.prochainePosition();
     }
   }

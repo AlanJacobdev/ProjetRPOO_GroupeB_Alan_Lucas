@@ -21,7 +21,7 @@ public class Fourmis {
   }
   
   public Role getRole() {
-    return this.etape.next().getRole();
+    return this.etape.getRole();
   }
 
   public Fourmiliere getFourmiliere() {
@@ -58,8 +58,5 @@ public class Fourmis {
   public void renseignementFourmiliere(InformationsFourmiliere infos) {
     this.getEtape().renseignerInformations(infos);
   }
-
-
-
 
 }

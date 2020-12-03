@@ -122,6 +122,7 @@ public class Fourmiliere {
     for (Fourmis f : lesFourmis) {
       f.renseignementFourmiliere(infos);
     }
+      
   }
 
   /**

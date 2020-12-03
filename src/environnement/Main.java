@@ -39,7 +39,7 @@ public class Main {
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
 
     simulateur.getReine().pondre();
-    while (printemps.getNbTempsEcoule() < 850) {
+    while (printemps.getNbTempsEcoule() < 1050) {
       jour = printemps.getNbTempsEcoule();
       leTerrain.step();
       leTerrain.renseignementFourmiliere();

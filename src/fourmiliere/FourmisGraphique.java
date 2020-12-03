@@ -99,7 +99,7 @@ public class FourmisGraphique {
    */
   public void mort() {
     if (this.dansTerritoire()) {
-      this.representationGraphique.setColor(Color.RED);
+      this.representationGraphique.setColor(Color.yellow);
     }
   }
 }
