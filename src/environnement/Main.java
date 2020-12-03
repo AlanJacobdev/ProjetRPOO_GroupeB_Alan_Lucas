@@ -26,17 +26,18 @@ public class Main {
       e1.printStackTrace();
     }
     Simulateur simulateur = new Simulateur();
-    
+
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
 
     Terrain leTerrain = simulateur.getLeTerrain();
     laFourmiliere.setLeTerrain(leTerrain);
     laFourmiliere.setPositionFourmiliere(
         new Point(leTerrain.getTailleTerrain().height, leTerrain.getTailleTerrain().width));
-    leTerrain.ajouterFourmiliereGraphique(laFourmiliere.getRepresentationGraphique());
+    leTerrain.ajouterFourmiliereGraphique(laFourmiliere.getRepresentationGraphique(),
+        laFourmiliere.getRepresentationTerritoire());
     leTerrain.open();
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
-    
+
     simulateur.getReine().pondre();
     while (printemps.getNbTempsEcoule() < 365) {
       jour = printemps.getNbTempsEcoule();

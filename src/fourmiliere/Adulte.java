@@ -14,7 +14,7 @@ public class Adulte extends Etape {
 
   protected Fourmis fourmis;
   protected Point coordonneesActuelle;
-  protected GOval representationGraphique;
+  protected FourmisGraphique representationGraphique;
   static int minimumPopulation = 0;
   static int maximalPopulationOuvriere = 65;
   static int maximalPopulationSoldat = 85;
@@ -30,14 +30,7 @@ public class Adulte extends Etape {
 
     if (fourmis.saFourmiliere != null) {
       this.roleFourmis = this.creerRole();
-      this.coordonneesActuelle =
-          new Point(this.getFourmis().getFourmiliere().getPositionFourmiliere().x,
-              this.getFourmis().getFourmiliere().getPositionFourmiliere().y);
-      this.representationGraphique = new GOval();
-      this.representationGraphique.setPosition(coordonneesActuelle);
-      this.representationGraphique.setDimension(new Dimension(10, 10));
-      this.getFourmis().getFourmiliere().getLeTerrain()
-          .ajouterFourmisGraphique(representationGraphique);
+      this.representationGraphique = new FourmisGraphique(this.fourmis);
     }
   }
 
@@ -81,11 +74,9 @@ public class Adulte extends Etape {
   @Override
   protected void step() {
     this.getRole().step();
-    if (this.coordonneesActuelle != null) {
+    if (! (this.getRole() instanceof Reine)) {
       this.prochainePosition();
     }
-
-
   }
 
   @Override
@@ -98,38 +89,7 @@ public class Adulte extends Etape {
    * 
    */
   public void prochainePosition() {
-    int deplacement = (int) (Math.random() * (100 - 0));
-    if (!(coordonneesActuelle.x > this.getFourmis().getFourmiliere().getPositionFourmiliere().x
-        + 200
-        || coordonneesActuelle.y > this.getFourmis().getFourmiliere().getPositionFourmiliere().y
-            + 200)) {
-      if (deplacement <= 25) {
-        this.coordonneesActuelle = new Point(coordonneesActuelle.x, coordonneesActuelle.y + 5);
-        this.representationGraphique.setPosition(coordonneesActuelle);
-      } else if (deplacement <= 50) {
-        this.coordonneesActuelle = new Point(coordonneesActuelle.x, coordonneesActuelle.y - 5);
-        this.representationGraphique.setPosition(coordonneesActuelle);
-      } else if (deplacement <= 75) {
-        this.coordonneesActuelle = new Point(coordonneesActuelle.x + 5, coordonneesActuelle.y);
-        this.representationGraphique.setPosition(coordonneesActuelle);
-      } else if (deplacement <= 100) {
-        this.coordonneesActuelle = new Point(coordonneesActuelle.x - 5, coordonneesActuelle.y);
-        this.representationGraphique.setPosition(coordonneesActuelle);
-      }
-
-      if (this.coordonneesActuelle.x > this.getFourmis().getFourmiliere().getPositionFourmiliere().x
-          - 5
-          && this.coordonneesActuelle.x < this.getFourmis().getFourmiliere()
-              .getPositionFourmiliere().x + 15
-          && this.coordonneesActuelle.y > this.getFourmis().getFourmiliere()
-              .getPositionFourmiliere().y - 5
-          && this.coordonneesActuelle.y < this.getFourmis().getFourmiliere()
-              .getPositionFourmiliere().y + 15) {
-        this.representationGraphique.setColor(Color.red);
-      } else {
-        this.representationGraphique.setColor(Color.blue);
-      }
-    }
+    this.representationGraphique.prochainePosition();
   }
 
 

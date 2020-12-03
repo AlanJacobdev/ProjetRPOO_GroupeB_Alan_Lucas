@@ -22,7 +22,7 @@ public class Terrain {
    */
   public Terrain() {
     this.lesSaisons = new Saison();
-    this.tailleTerrain = new Dimension(400, 400);
+    this.tailleTerrain = new Dimension(500, 500);
     this.leTerrain = new VueTerrain(tailleTerrain);
   }
 
@@ -69,13 +69,20 @@ public class Terrain {
 
   /**
    * Ajout d'une fourilière au centre du terain.
+   * 
    * @param representationGraphique .
    */
-  public void ajouterFourmiliereGraphique(GRect representationGraphique) {
+  public void ajouterFourmiliereGraphique(GRect representationGraphique,
+      GRect representationTerritoire) {
     Point coordoneesFourmiliere =
         new Point(this.tailleTerrain.height / 2, this.tailleTerrain.width / 2);
     this.laFourmiliere.setPositionFourmiliere(coordoneesFourmiliere);
-    this.getLeTerrain().addFourmiliere(representationGraphique, coordoneesFourmiliere);
+    Point coordoneesTerritoire =
+        new Point(coordoneesFourmiliere.x - 190, coordoneesFourmiliere.y - 190);
+    this.laFourmiliere.getRepresentationTerritoire().setPosition(coordoneesTerritoire);
+    this.laFourmiliere.getRepresentationTerritoire().setDimension(new Dimension(400, 400));
+    this.laFourmiliere.getRepresentationGraphique().setPosition(coordoneesFourmiliere);
+    this.getLeTerrain().addFourmiliere(representationTerritoire, representationGraphique);
   }
 
   public void ajouterFourmisGraphique(GOval fourmis) {

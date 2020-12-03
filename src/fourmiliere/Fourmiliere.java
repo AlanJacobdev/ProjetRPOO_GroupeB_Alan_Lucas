@@ -18,6 +18,7 @@ public class Fourmiliere {
   private Terrain leTerrain;
   private Point positionFourmiliere;
   private GRect representationGraphique;
+  private GRect representationTerritoire;
 
 
   /**
@@ -33,6 +34,9 @@ public class Fourmiliere {
     this.positionFourmiliere = null;
     this.representationGraphique = new GRect();
     this.representationGraphique.setColor(Color.red);
+    this.representationTerritoire = new GRect();
+    this.representationTerritoire.setColor(Color.GREEN.darker());
+    this.representationTerritoire.setBorderColor(Color.white);
   }
 
   /**
@@ -102,8 +106,14 @@ public class Fourmiliere {
     this.representationGraphique = representationGraphique;
   }
 
-  
-  
+  public GRect getRepresentationTerritoire() {
+    return representationTerritoire;
+  }
+
+  public void setRepresentationTerritoire(GRect representationTerritoire) {
+    this.representationTerritoire = representationTerritoire;
+  }
+
   /**
    * .
    * @param infos .
