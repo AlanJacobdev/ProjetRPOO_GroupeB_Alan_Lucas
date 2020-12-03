@@ -45,11 +45,12 @@ public class Proie {
 
   /**
    * Savoir si la proie est dans le terrain.
-   * @return 
+   * 
+   * @return
    */
   public Boolean dansTerrain() {
-    if (positionActuelle.x < this.terrain.getTailleTerrain().width || positionActuelle.x > 0
-        || positionActuelle.y < this.terrain.getTailleTerrain().height || positionActuelle.x > 0) {
+    if (positionActuelle.x < this.terrain.getTailleTerrain().width && positionActuelle.x > 0
+        && positionActuelle.y < this.terrain.getTailleTerrain().height && positionActuelle.x > 0) {
       return true;
     } else {
       return false;
@@ -63,20 +64,21 @@ public class Proie {
     int deplacement = (int) (Math.random() * (100 - 0));
     if (this.dansTerrain()) {
       if (deplacement <= 25) {
-        this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y + 5);
+        this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y + 15);
         this.representationGraphique.setPosition(positionActuelle);
       } else if (deplacement <= 50) {
-        this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y - 5);
+        this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y - 15);
         this.representationGraphique.setPosition(positionActuelle);
       } else if (deplacement <= 75) {
-        this.positionActuelle = new Point(positionActuelle.x + 5, positionActuelle.y);
+        this.positionActuelle = new Point(positionActuelle.x + 15, positionActuelle.y);
         this.representationGraphique.setPosition(positionActuelle);
       } else if (deplacement <= 100) {
-        this.positionActuelle = new Point(positionActuelle.x - 5, positionActuelle.y);
+        this.positionActuelle = new Point(positionActuelle.x - 15, positionActuelle.y);
         this.representationGraphique.setPosition(positionActuelle);
       }
 
     } else {
+      System.out.println("test");
       this.terrain.supprimerProie(this);
     }
 
