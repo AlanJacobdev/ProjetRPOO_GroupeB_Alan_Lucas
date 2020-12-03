@@ -45,7 +45,7 @@ public class Mort extends Etape {
 
   @Override
   protected void renseignerInformations(InformationsFourmiliere infos) {
-    infos.addMort(fourmisMorte);
+    infos.incrementerMort();
   }
 
 }

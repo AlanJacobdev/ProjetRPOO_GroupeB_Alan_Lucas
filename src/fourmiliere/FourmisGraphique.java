@@ -54,8 +54,8 @@ public class FourmisGraphique {
   }
 
   private Boolean dansTerritoire() {
-    System.out.println(this.getFourmis().getFourmiliere().getPositionFourmiliere().y
-            - 200);
+    //System.out.println(this.getFourmis().getFourmiliere().getPositionFourmiliere().y
+            //- 200);
     if (coordonneesActuelle.x <= this.getFourmis().getFourmiliere().getPositionFourmiliere().x + 200
         && coordonneesActuelle.x >= this.getFourmis().getFourmiliere().getPositionFourmiliere().x
             - 200
