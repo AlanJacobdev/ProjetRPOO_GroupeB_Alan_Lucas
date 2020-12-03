@@ -95,6 +95,11 @@ public class Terrain {
   public void step() {
     this.laFourmiliere.step();
     this.leTerrain.rafraichirTerrain();
+    
+    int tirage = (int) (Math.random() * (5 - 0));
+    if(tirage == 3) {
+      this.ajouterProie();
+    }
   }
 
   public void renseignementFourmiliere() {
@@ -115,6 +120,10 @@ public class Terrain {
 
   public void rafraichirIhm() {
     this.leTerrain.rafraichirTerrain();
+  }
+  
+  private void ajouterProie() {
+    Proie proie = new Proie();
   }
 
 }
