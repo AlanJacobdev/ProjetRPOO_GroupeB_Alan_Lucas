@@ -54,6 +54,8 @@ public class FourmisGraphique {
   }
 
   private Boolean dansTerritoire() {
+    System.out.println(this.getFourmis().getFourmiliere().getPositionFourmiliere().y
+            - 200);
     if (coordonneesActuelle.x <= this.getFourmis().getFourmiliere().getPositionFourmiliere().x + 200
         && coordonneesActuelle.x >= this.getFourmis().getFourmiliere().getPositionFourmiliere().x
             - 200
@@ -71,18 +73,22 @@ public class FourmisGraphique {
    * Déplacement aléatoire de la fourmis.
    * 
    */
-  public void deplacementFourmis() {
+  public void prochainePosition() {
     if (this.coordonneesActuelle != null) {
       int deplacement = (int) (Math.random() * (100 - 0));
       if (this.dansTerritoire()) {
         if (deplacement <= 25) {
-          this.representationGraphique.setPosition(this.prochainPoint(5, 0));
+          this.coordonneesActuelle = prochainPoint(5, 0);
+          this.representationGraphique.setPosition(coordonneesActuelle);
         } else if (deplacement <= 50) {
-          this.representationGraphique.setPosition(this.prochainPoint(5, 1));
+          this.coordonneesActuelle = prochainPoint(5, 1);
+          this.representationGraphique.setPosition(coordonneesActuelle);
         } else if (deplacement <= 75) {
-          this.representationGraphique.setPosition(this.prochainPoint(5, 2));
+          this.coordonneesActuelle = prochainPoint(5, 2);
+          this.representationGraphique.setPosition(coordonneesActuelle);
         } else if (deplacement <= 100) {
-          this.representationGraphique.setPosition(this.prochainPoint(5, 3));
+          this.coordonneesActuelle = prochainPoint(5, 3);
+          this.representationGraphique.setPosition(coordonneesActuelle);
         }
         if (this.dansFourmiliere()) {
           this.representationGraphique.setColor(Color.red);
@@ -90,7 +96,10 @@ public class FourmisGraphique {
           this.representationGraphique.setColor(Color.blue);
         }
       }
+      // else {
+      // System.out.println(this.coordonneesActuelle);
     }
+
   }
 
   /** . */
