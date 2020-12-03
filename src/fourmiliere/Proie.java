@@ -6,7 +6,6 @@ import java.awt.Point;
 import graphicLayer.GRect;
 
 public class Proie {
-  private Dimension taille;
   private Dimension tailleTerrain;
   private Point positionActuelle;
   private GRect representationGraphique;
@@ -44,5 +43,29 @@ public class Proie {
     this.representationGraphique = representationGraphique;
   }
 
+  /**
+   * Déplacement aléatoire d'une proie.
+   */
+  public void prochainePosition() {
+    int deplacement = (int) (Math.random() * (100 - 0));
+    System.out.println(deplacement);
+    if (!(positionActuelle.x > this.tailleTerrain.width || positionActuelle.x < 0
+        || positionActuelle.y > this.tailleTerrain.height || positionActuelle.x < 0)) {
+      if (deplacement <= 25) {
+        this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y + 5);
+        this.representationGraphique.setPosition(positionActuelle);
+      } else if (deplacement <= 50) {
+        this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y - 5);
+        this.representationGraphique.setPosition(positionActuelle);
+      } else if (deplacement <= 75) {
+        this.positionActuelle = new Point(positionActuelle.x + 5, positionActuelle.y);
+        this.representationGraphique.setPosition(positionActuelle);
+      } else if (deplacement <= 100) {
+        this.positionActuelle = new Point(positionActuelle.x - 5, positionActuelle.y);
+        this.representationGraphique.setPosition(positionActuelle);
+      }
+
+    }
+  }
 
 }

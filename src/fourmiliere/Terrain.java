@@ -1,11 +1,13 @@
 package fourmiliere;
 
+import java.awt.Dimension;
+import java.awt.Point;
+import java.util.ArrayList;
+import java.util.List;
 import environnement.InformationsFourmiliere;
 import environnement.Saison;
 import graphicLayer.GOval;
 import graphicLayer.GRect;
-import java.awt.Dimension;
-import java.awt.Point;
 import vue.VueTerrain;
 
 
@@ -17,6 +19,7 @@ public class Terrain {
   private Fourmiliere laFourmiliere;
   private InformationsFourmiliere infos;
   private VueTerrain leTerrain;
+  private List<Proie> lesProies;
 
   /**
    * Constructeur.
@@ -25,6 +28,7 @@ public class Terrain {
     this.lesSaisons = new Saison();
     this.tailleTerrain = new Dimension(500, 500);
     this.leTerrain = new VueTerrain(tailleTerrain);
+    this.lesProies = new ArrayList<Proie>();
   }
 
   public void afficherTerrain() {
@@ -92,6 +96,7 @@ public class Terrain {
 
   private void ajouterProie() {
     Proie proie = new Proie(this.getTailleTerrain());
+    this.lesProies.add(proie);
     this.leTerrain.addProie(proie.getRepresentationGraphique());
   }
 
@@ -100,8 +105,9 @@ public class Terrain {
    */
   public void step() {
     this.laFourmiliere.step();
+    this.deplacementProies();
     this.leTerrain.rafraichirTerrain();
-
+    
     int tirage = (int) (Math.random() * (50 - 0));
     if (tirage == 1) {
       this.ajouterProie();
@@ -124,6 +130,15 @@ public class Terrain {
 
   }
 
+  /**
+   * Deplacement des proies.
+   */
+  public void deplacementProies() {
+    for (Proie p : lesProies) {
+      p.prochainePosition();
+    }
+  }
+  
   public void rafraichirIhm() {
     this.leTerrain.rafraichirTerrain();
   }
