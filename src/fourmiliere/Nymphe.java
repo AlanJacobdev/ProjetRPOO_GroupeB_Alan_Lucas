@@ -11,7 +11,7 @@ public class Nymphe extends Etape {
   /**
    * Constructeur d'une nymphe.
    * 
-   * @param fourmis La fourmilière.
+   * @param fourmis La fourmis.
    */
   public Nymphe(Fourmis fourmis) {
     this.age = 0;

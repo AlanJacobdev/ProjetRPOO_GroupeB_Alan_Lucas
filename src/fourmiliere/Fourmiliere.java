@@ -22,7 +22,7 @@ public class Fourmiliere {
 
 
   /**
-   * Constructeur d'une fourmilière.
+   * Constructeur d'une fourmiliere.
    * 
    * @param reine La fourmis reine.
    */
@@ -84,7 +84,7 @@ public class Fourmiliere {
   }
   
   /**
-   * Avance d'une certaine durée le temps.
+   * Avance d'une certaine duree le temps.
    */
   public void step() {
     for (Fourmis uneFourmis : lesFourmis) {
@@ -99,7 +99,7 @@ public class Fourmiliere {
   /**
    * Créer une portée de fourmis.
    * 
-   * @param nombre : Nombre de fourmis à créer.
+   * @param nombre : Nombre de fourmis à creer.
    */
   public void nouvellesFourmis(Integer nombre) {
     for (int i = 0; i < nombre; i++) {
@@ -109,7 +109,7 @@ public class Fourmiliere {
 
   /**
    * Ajoute une fourmis mortes à la liste des fourmis mortes.
-   * @param fourmis Une fourmis mortes.
+   * @param fourmis Une fourmis morte.
    */
   public void ajoutFourmisMorte(Fourmis fourmis) {
     this.lesFourmisMortes.add(fourmis);

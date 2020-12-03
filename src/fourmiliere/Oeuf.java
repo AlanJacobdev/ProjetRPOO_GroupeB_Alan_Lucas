@@ -11,7 +11,7 @@ public class Oeuf extends Etape {
   /**
    * Constructeur d'un oeuf.
    * 
-   * @param fourmis La fourmilière.
+   * @param fourmis La fourmis.
    */
   public Oeuf(Fourmis fourmis) {
     age = 0;

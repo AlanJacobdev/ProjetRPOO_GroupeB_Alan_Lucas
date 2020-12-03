@@ -9,8 +9,8 @@ public class SexueFemelle extends Sexue {
   protected Adulte stadeEvolution;
 
   /**
-   * Constructeur du rôle Sexue femelle pour une fourmis adulte.
-   * @param adulte Fourmis étant adulte
+   * Constructeur du role Sexue femelle pour une fourmis adulte.
+   * @param adulte Fourmis etant adulte
    */
   public SexueFemelle(Adulte adulte) {
     super();

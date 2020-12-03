@@ -9,8 +9,8 @@ public class Soldat extends Role {
   Adulte stadeEvolution;
   
   /**
-   * Constructeur du rôle soldat pour une fourmis adulte.
-   * @param adulte Fourmis étant adulte
+   * Constructeur du role soldat pour une fourmis adulte.
+   * @param adulte Fourmis etant adulte
    */
   public Soldat(Adulte adulte) {
     super();

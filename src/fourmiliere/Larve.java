@@ -11,7 +11,7 @@ public class Larve extends Etape {
   /**
    * Constructeur d'une larve.
    * 
-   * @param fourmis La fourmilière.
+   * @param fourmis La fourmis.
    */
   public Larve(Fourmis fourmis) {
     this.age = 0;

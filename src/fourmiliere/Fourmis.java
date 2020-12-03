@@ -6,13 +6,13 @@ import environnement.InformationsFourmiliere;
 
 public class Fourmis {
 
-  Etape etape;
-  Fourmiliere saFourmiliere;
+  protected Etape etape;
+  protected Fourmiliere saFourmiliere;
 
   /**
    * Constructeur d'une fourmis.
    * 
-   * @param fourmiliere La fourmilière a laquelle elle est liée
+   * @param fourmiliere La fourmilière a laquelle elle est liee
    */
   public Fourmis(Fourmiliere fourmiliere) {
     this.saFourmiliere = fourmiliere;
@@ -36,9 +36,9 @@ public class Fourmis {
   }
 
   /**
-   * Création d'un reine.
+   * Création d'une reine.
    * 
-   * @return un Objet Fourmis dont l'étape est de type Adulte et le role est de type Reine.
+   * @return un objet Fourmis dont l'etape est de type Adulte et le role est de type Reine.
    */
   public Fourmis creerReine() {
     Adulte reine = new Adulte(this);

@@ -12,7 +12,7 @@ public class Mort extends Etape {
   protected final int jourAvantMort = 5;
 
   /**
-   * Constructeur repréentant une fourmis morte.
+   * Constructeur representant une fourmis morte.
    * @param fourmis Fourmis morte
    * @param fourmisGraphique Fourmis graphique morte
    */

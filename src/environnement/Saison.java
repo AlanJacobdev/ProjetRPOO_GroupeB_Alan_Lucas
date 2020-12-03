@@ -4,12 +4,14 @@ public class Saison {
   protected final int annee = 365;
   protected final int printemps = 80;
   protected final int ete = 172;
+  private int tempsEcoule = 1;
+  private int jourActuel = 1;
   /**
    * Temps écouté depuis la création de la fourmilière.
    */
   protected int nbTempsEcoule;
   /**
-   * Jour de l'année en cours. Le premier jour s'identifie au 1er janvier.
+   * Jour de l'annee en cours. Le premier jour s'identifie au 1er janvier.
    */
   protected int jourDeLannee;
 
@@ -17,8 +19,8 @@ public class Saison {
    * Constructeur de la classe Saison.
    */
   public Saison() {
-    this.nbTempsEcoule = 1;
-    this.jourDeLannee = 1;
+    this.nbTempsEcoule = this.tempsEcoule;
+    this.jourDeLannee = this.jourActuel;
   }
 
 
@@ -27,7 +29,7 @@ public class Saison {
   }
 
   /**
-   * Incrementation du temps écoulé depuis le début de la fourmilière.
+   * Incrementation du temps ecoule depuis le debut de la fourmiliere.
    */
   public void incrementerJour() {
     this.nbTempsEcoule++;

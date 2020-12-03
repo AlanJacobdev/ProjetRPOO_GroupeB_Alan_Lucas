@@ -11,12 +11,12 @@ public abstract class Role {
 
   /**
    * Mourir ou non.
-   * @return Etape de la vie de la fourmis
+   * @return Etape de la vie de la fourmis.
    */
   protected abstract Etape mourir();
 
   /**
-   * Renseigner les informations relatifs aux Roles et étapes de la fourmis dans le bilan.
+   * Renseigner les informations relatifs aux Roles et etapes de la fourmis dans le bilan.
    * @param infos Bilan qui sert à connaitre la répartition dans la fourmiliere.
    */
   protected abstract void renseignerInformations(InformationsFourmiliere infos);

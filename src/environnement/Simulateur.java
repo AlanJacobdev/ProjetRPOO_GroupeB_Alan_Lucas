@@ -51,10 +51,4 @@ public class Simulateur {
     leTerrain.setLaFourmiliere(laFourmiliere);
     laFourmiliere.setLeTerrain(leTerrain);
   }
-  
-
-
-  
-  
-  
 }

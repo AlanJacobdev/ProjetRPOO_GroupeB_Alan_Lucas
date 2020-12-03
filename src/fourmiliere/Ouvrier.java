@@ -8,8 +8,8 @@ public class Ouvrier extends Role {
   protected Adulte stadeEvolution;
 
   /**
-   * Constructeur du rôle Ouvrier pour une fourmis adulte.
-   * @param adulte Fourmis étant adulte
+   * Constructeur du role Ouvrier pour une fourmis adulte.
+   * @param adulte Fourmis etant adulte
    */
   public Ouvrier(Adulte adulte) {
     super();

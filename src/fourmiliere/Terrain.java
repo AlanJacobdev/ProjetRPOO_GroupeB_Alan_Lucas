@@ -132,7 +132,7 @@ public class Terrain {
   }
 
   /**
-   * Avance d'une certaine durée le temps.
+   * Avance d'une certaine duree le temps.
    */
   public void step() {
     this.laFourmiliere.step();
@@ -153,7 +153,7 @@ public class Terrain {
   }
 
   /**
-   * Permet de récupérer des informations sur la fourmiliere. Fait circuler le bilan des
+   * Permet de recuperer des informations sur la fourmiliere. Fait circuler le bilan des
    * informations dans aux fourmis presentent dans la fourmilliere.
    */
   public void renseignementFourmiliere() {
@@ -186,7 +186,7 @@ public class Terrain {
 
   
   /**
-   * Afiiche les informations relatives à la fourmilière.
+   * Affiche les informations relatives à la fourmiliere.
    */
   @Override
   public String toString() {

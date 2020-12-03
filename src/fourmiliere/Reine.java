@@ -10,9 +10,9 @@ public class Reine extends SexueFemelle {
   protected int oeufsPondus;
 
   /**
-   * Constructeur du rôle Reine pour une fourmis adulte.
+   * Constructeur du role Reine pour une fourmis adulte.
    * Une fourmilliere ne peut en contenir qu'une.
-   * @param adulte Fourmis étant adulte
+   * @param adulte Fourmis etant adulte
    */
   public Reine(Adulte adulte) {
     super(adulte);
@@ -26,7 +26,7 @@ public class Reine extends SexueFemelle {
   }
 
   /**
-   * Création d'une fourmiliere dont-elle est la reine.
+   * Creation d'une fourmiliere dont-elle est la reine.
    * @return La nouvelle Fourmiliere.
    */
   public Fourmiliere creerFourmiliere() {
@@ -46,10 +46,6 @@ public class Reine extends SexueFemelle {
 
   @Override
   protected Etape mourir() {
-    /*if (this.age >= this.esperanceVie) {
-      return new Mort(stadeEvolution.getFourmis(),
-          this.stadeEvolution.getRepresentationGraphique());
-    }*/
     return stadeEvolution;
   }
 
@@ -73,7 +69,7 @@ public class Reine extends SexueFemelle {
   }
 
   /**
-   * Créer une portée de X fourmis.
+   * Creer une portée de X fourmis.
    */
   public void pondre() {
     Fourmis fourmis = this.stadeEvolution.getFourmis();
