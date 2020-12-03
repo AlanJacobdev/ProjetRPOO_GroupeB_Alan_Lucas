@@ -100,7 +100,10 @@ Grâce à l'évolution de la fourmis de Nymphe à Adulte, la fourmis est dotée 
 **Gestion du cas** 
 * La gestion des prois est quasi-similaire à celle des fourmis, la différence est que ces dernières apparaissent aléatoirement sur le terrain et ne sont pas limitées à un territoire. Si elle dépasse le cadre du terrain visualisable, ces dernières sont supprimées graphiquement et déférencées. Leur deplacement sont aléatoire et ont autant de chance de se déplacer dans les 4 directions possibles (Haut, Bas, Droite, Gauche). Les proies sont représentées graphiquement par des carrées blancs.
 
-[alt text](/Exercici 5.2.avi)
+----------------
+**Trace d'éxecution graphique**
+
+![trace](/Ex52.gif)
 
 ----------------
 
