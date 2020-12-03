@@ -20,6 +20,7 @@ public class Terrain {
   private InformationsFourmiliere infos;
   private VueTerrain leTerrain;
   private List<Proie> lesProies;
+  private List<Proie> lesProiesMortes;
 
   /**
    * Constructeur.
@@ -29,6 +30,7 @@ public class Terrain {
     this.tailleTerrain = new Dimension(500, 500);
     this.leTerrain = new VueTerrain(tailleTerrain);
     this.lesProies = new ArrayList<Proie>();
+    this.lesProiesMortes = new ArrayList<Proie>();
   }
 
   public void afficherTerrain() {
@@ -101,8 +103,7 @@ public class Terrain {
   }
 
   public void supprimerProie(Proie proie) {
-    this.leTerrain.delProie(proie.getRepresentationGraphique());
-    this.lesProies.remove(proie);
+    this.lesProiesMortes.add(proie);
   }
   
   /**
@@ -111,6 +112,12 @@ public class Terrain {
   public void step() {
     this.laFourmiliere.step();
     this.deplacementProies();
+    if (this.lesProiesMortes.size() > 0) {
+      for (Proie proie : this.lesProiesMortes) {
+        this.leTerrain.delProie(proie.getRepresentationGraphique());
+        this.lesProies.remove(proie);
+      }
+    }
     this.leTerrain.rafraichirTerrain();
     
     int tirage = (int) (Math.random() * (50 - 0));
