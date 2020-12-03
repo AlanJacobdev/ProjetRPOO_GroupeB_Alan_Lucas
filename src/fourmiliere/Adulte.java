@@ -2,6 +2,7 @@ package fourmiliere;
 
 import environnement.InformationsFourmiliere;
 import graphicLayer.GOval;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
 
@@ -30,8 +31,8 @@ public class Adulte extends Etape {
     if (fourmis.saFourmiliere != null) {
       this.roleFourmis = this.creerRole();
       this.coordonneesActuelle =
-          new Point(this.getFourmis().getFourmiliere().getPositionFourmiliere().x / 2,
-              this.getFourmis().getFourmiliere().getPositionFourmiliere().y / 2);
+          new Point(this.getFourmis().getFourmiliere().getPositionFourmiliere().x,
+              this.getFourmis().getFourmiliere().getPositionFourmiliere().y);
       this.representationGraphique = new GOval();
       this.representationGraphique.setPosition(coordonneesActuelle);
       this.representationGraphique.setDimension(new Dimension(10, 10));
@@ -115,8 +116,20 @@ public class Adulte extends Etape {
         this.coordonneesActuelle = new Point(coordonneesActuelle.x - 5, coordonneesActuelle.y);
         this.representationGraphique.setPosition(coordonneesActuelle);
       }
-    }
 
+      if (this.coordonneesActuelle.x > this.getFourmis().getFourmiliere().getPositionFourmiliere().x
+          - 5
+          && this.coordonneesActuelle.x < this.getFourmis().getFourmiliere()
+              .getPositionFourmiliere().x + 15
+          && this.coordonneesActuelle.y > this.getFourmis().getFourmiliere()
+              .getPositionFourmiliere().y - 5
+          && this.coordonneesActuelle.y < this.getFourmis().getFourmiliere()
+              .getPositionFourmiliere().y + 15) {
+        this.representationGraphique.setColor(Color.red);
+      } else {
+        this.representationGraphique.setColor(Color.blue);
+      }
+    }
   }
 
 

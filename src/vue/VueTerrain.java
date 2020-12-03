@@ -34,10 +34,9 @@ public class VueTerrain {
    * 
    * @param fourmiliere Une fourmiliere
    */
-  public void addFourmiliere(GRect fourmiliere) {
+  public void addFourmiliere(GRect fourmiliere, Point coo) {
     leTerrainVue.addElement(fourmiliere);
-    Point positionFourmiliere = new Point((this.dimensionsTerrain.height / 2) - 10,
-        (this.dimensionsTerrain.width / 2) - 10);
+    Point positionFourmiliere = coo;
     fourmiliere.setPosition(positionFourmiliere);
   }
 

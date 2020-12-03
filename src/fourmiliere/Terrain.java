@@ -6,6 +6,7 @@ import graphicLayer.GOval;
 import graphicLayer.GRect;
 import vue.VueTerrain;
 import java.awt.Dimension;
+import java.awt.Point;
 
 
 public class Terrain {
@@ -66,8 +67,15 @@ public class Terrain {
     return leTerrain;
   }
 
+  /**
+   * Ajout d'une fourilière au centre du terain.
+   * @param representationGraphique .
+   */
   public void ajouterFourmiliereGraphique(GRect representationGraphique) {
-    this.getLeTerrain().addFourmiliere(representationGraphique);
+    Point coordoneesFourmiliere =
+        new Point(this.tailleTerrain.height / 2, this.tailleTerrain.width / 2);
+    this.laFourmiliere.setPositionFourmiliere(coordoneesFourmiliere);
+    this.getLeTerrain().addFourmiliere(representationGraphique, coordoneesFourmiliere);
   }
 
   public void ajouterFourmisGraphique(GOval fourmis) {
