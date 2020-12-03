@@ -102,8 +102,9 @@ Grâce à l'évolution de la fourmis de Nymphe à Adulte, la fourmis est dotée 
 
 ----------------
 **Trace d'éxecution graphique**
+De la création à la mort de la fourmilière :
 
-![GIF du cube](/ex52.gif)
+![GIF du cube](/exo52.gif)
 
 ----------------
 
