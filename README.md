@@ -53,6 +53,33 @@ Voici les différentes questions que nous avons abordé:
     * De mort
 
 ----------------
+**Trace d'éxecution**
+
+Jour n°687
+Population : 279
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 180
+- Nombre de soldats : 62
+- Nombre de femelles : 19
+- Nombre de mâles : 18
+- Nombre de morts : 0
+
+Jour n°688
+Population : 279
+Informations sur la fourmilière :
+- Nombre d'oeufs : 0
+- Nombre de larves : 0
+- Nombre de nymphes : 0
+- Nombre d'ouvrières : 180
+- Nombre de soldats : 62
+- Nombre de femelles : 18
+- Nombre de mâles : 18
+- Nombre de morts : 1
+
+----------------
 
 ## Exercice 2 : Traces graphiques
 
@@ -73,6 +100,13 @@ Grâce à l'évolution de la fourmis de Nymphe à Adulte, la fourmis est dotée 
 **Gestion du cas** 
 * La gestion des prois est quasi-similaire à celle des fourmis, la différence est que ces dernières apparaissent aléatoirement sur le terrain et ne sont pas limitées à un territoire. Si elle dépasse le cadre du terrain visualisable, ces dernières sont supprimées graphiquement et déférencées. Leur deplacement sont aléatoire et ont autant de chance de se déplacer dans les 4 directions possibles (Haut, Bas, Droite, Gauche). Les proies sont représentées graphiquement par des carrées blancs.
 
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
+    <source src="path/to/video.mp4" type="video/mp4">
+    <source src="path/to/video.ogg" type="video/ogg">
+    <source src="path/to/video.webm" type="video/webm">
+  </video>
+</figure>
 
 ----------------
 
