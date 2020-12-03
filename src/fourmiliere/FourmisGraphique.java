@@ -93,7 +93,7 @@ public class FourmisGraphique {
     }
   }
 
-  /** .*/
+  /** . */
   public Point prochainPoint(int pas, int direction) {
     switch (direction) {
       case 0:
@@ -103,20 +103,20 @@ public class FourmisGraphique {
           return new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y + pas);
         }
       case 1:
-        if (this.coordonneesActuelle.y + pas < 50) {
+        if (this.coordonneesActuelle.y - pas < 50) {
           return new Point(this.coordonneesActuelle.x, 50);
         } else {
           return new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y - pas);
         }
       case 2:
         if (this.coordonneesActuelle.x + pas > 450) {
-          return new Point(this.coordonneesActuelle.x, 50);
+          return new Point(450, this.coordonneesActuelle.y);
         } else {
           return new Point(this.coordonneesActuelle.x + pas, this.coordonneesActuelle.y);
         }
       case 3:
-        if (this.coordonneesActuelle.x + pas < 50) {
-          return new Point(this.coordonneesActuelle.x, 50);
+        if (this.coordonneesActuelle.x - pas < 50) {
+          return new Point(50, this.coordonneesActuelle.y);
         } else {
           return new Point(this.coordonneesActuelle.x - pas, this.coordonneesActuelle.y);
         }
