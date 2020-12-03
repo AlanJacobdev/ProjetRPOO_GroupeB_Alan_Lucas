@@ -27,7 +27,7 @@ import org.junit.jupiter.api.Test;
 
 
 
-class testFourmiliere {
+class TestFourmiliere {
   
   private void oeufToLarve(Fourmis fourmis) {
     for (int i = 0; i < 4; i++) {
@@ -41,20 +41,20 @@ class testFourmiliere {
     }
   }
   
-  private void NympheToAdulte(Fourmis fourmis) {
+  private void nympheToAdulte(Fourmis fourmis) {
     for (int i = 0; i < 10; i++) {
       fourmis.step();
     }
   }
   
   private void pondre(Saison saison) {
-    for(int i = 0; i < 90; i++) {
+    for (int i = 0; i < 90; i++) {
       saison.incrementerJour();
     }
   }
   
   private void avancerTemps(Terrain terrain, Saison saison) {
-    for(int i = 0; i < 130; i++) {
+    for (int i = 0; i < 130; i++) {
       terrain.step();
       terrain.renseignementFourmiliere();
       saison.incrementerJour();
@@ -123,7 +123,7 @@ class testFourmiliere {
     assertTrue(fourmis.getEtape() instanceof Larve);
     this.larveToNymphe(fourmis);
     assertTrue(fourmis.getEtape() instanceof Nymphe);
-    this.NympheToAdulte(fourmis);
+    this.nympheToAdulte(fourmis);
     assertTrue(fourmis.getEtape() instanceof Adulte);
   }
   
