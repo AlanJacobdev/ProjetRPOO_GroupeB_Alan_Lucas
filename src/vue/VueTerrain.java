@@ -40,6 +40,16 @@ public class VueTerrain {
   }
 
   /**
+   * Ajouter une proie au terrain.
+   * 
+   * @param Proie la Proie
+   */
+  public void addProie(GRect proie) {
+    leTerrainVue.addElement(proie);
+  }
+
+
+  /**
    * Ajout d'une fourmis au terrain.
    * 
    */
