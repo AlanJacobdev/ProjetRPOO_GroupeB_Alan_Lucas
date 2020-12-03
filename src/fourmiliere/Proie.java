@@ -44,12 +44,24 @@ public class Proie {
   }
 
   /**
+   * Savoir si la proie est dans le terrain.
+   * @return 
+   */
+  public Boolean dansTerrain() {
+    if (positionActuelle.x < this.terrain.getTailleTerrain().width || positionActuelle.x > 0
+        || positionActuelle.y < this.terrain.getTailleTerrain().height || positionActuelle.x > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  /**
    * Déplacement aléatoire d'une proie.
    */
   public void prochainePosition() {
     int deplacement = (int) (Math.random() * (100 - 0));
-    if (!(positionActuelle.x > this.terrain.getTailleTerrain().width || positionActuelle.x < 0
-        || positionActuelle.y > this.terrain.getTailleTerrain().height || positionActuelle.x < 0)) {
+    if (this.dansTerrain()) {
       if (deplacement <= 25) {
         this.positionActuelle = new Point(positionActuelle.x, positionActuelle.y + 5);
         this.representationGraphique.setPosition(positionActuelle);
@@ -67,7 +79,7 @@ public class Proie {
     } else {
       this.terrain.supprimerProie(this);
     }
-    
+
   }
 
 }
