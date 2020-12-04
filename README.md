@@ -163,6 +163,13 @@ De la création à la mort de la fourmilière :
 
 ![GIF du cube](/exo52.gif)
 
+**Légende :**
+* Blanc : Les proies
+* Bleu : Fourmis Adultes
+* Jaune : Fourmis Mortes
+* Rouge : Fourmilière
+* Rectangle blanc : Territoire de la fourmilière
+
 ----------------
 
 ## Exercice 3 : Sur la piste des fourmis
@@ -177,6 +184,11 @@ Une fois la fourmi dans la fourmilière, elle repasse en couleur bleu et repart 
 Au passage sur une case, les fourmis déposent des phéromones permettant de suivre la trace de celle-ci. Si l'endroit où elle se situe n'est pas marqué par une phéromone alors elle y ajoute une phéromone avec une intensité maximale, cette dernière se décrementant tout les 10 steps. Ainsi, une trainée est dessinée derrière la proie afin de pouvoir guider d'autres fourmis, celle-ci change de couleur afin de pouvoir distinguer la faible intensité. Dans le cas, où l'intensité est de 0, la case de phéromones devient invisble et attends une nouveau passage pour s'activer. Les fourmis recherchent dans les quatres directions de déplacement possible (haut, bas, droit, gauche) si il y a existence de phéromones afin de modifier dynamiquement la probabilité de chance de s'y rendre. 
 Cette tâche est extrement lourde sachant que 1600 (80×80) cases de phéromones sont vérifiés à chaque steps, puis traiter l'information en fonction de chaque fourmis (incrémentation, etc...). Ainsi, plus il y a de fourmi, plus nous avons du mal a gérer les phéromones, les trainées deviennent de plus en plus petite en fonction du nombre de fourmies créées.
 
+----------------
+**Trace d'éxecution graphique**
+![GIF du cube](/exo53.png)
+
+**Légende :**
 
 ## Javadoc
 
