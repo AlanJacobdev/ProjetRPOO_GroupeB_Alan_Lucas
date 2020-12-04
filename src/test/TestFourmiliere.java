@@ -29,30 +29,51 @@ import org.junit.jupiter.api.Test;
 
 class TestFourmiliere {
   
+  /**
+   * Passe le temps pour evoluer un oeuf en larve.
+   * @param fourmis la fourmis a l'etape d'oeuf.
+   */
   private void oeufToLarve(Fourmis fourmis) {
     for (int i = 0; i < 4; i++) {
       fourmis.step();
     }
   }
   
+  /**
+   * Passe le temps pour evoluer une larve en nymphe.
+   * @param fourmis la fourmis a l'etape de larve.
+   */
   private void larveToNymphe(Fourmis fourmis) {
     for (int i = 0; i < 10; i++) {
       fourmis.step();
     }
   }
   
+  /**
+   * Passe le temps pour evoluer une nymphe en adulte.
+   * @param fourmis la fourmis a l'etape de nymphe.
+   */
   private void nympheToAdulte(Fourmis fourmis) {
     for (int i = 0; i < 10; i++) {
       fourmis.step();
     }
   }
   
+  /**
+   * Passe le temps jusqu'au printemps.
+   * @param saison la saison.
+   */
   private void pondre(Saison saison) {
     for (int i = 0; i < 90; i++) {
       saison.incrementerJour();
     }
   }
   
+  /**
+   * Avance le temps de la simulation pour mettre a jour les informations de la fourmiliere.
+   * @param terrain Le terrain. 
+   * @param saison La saison.
+   */
   private void avancerTemps(Terrain terrain, Saison saison) {
     for (int i = 0; i < 130; i++) {
       terrain.step();
@@ -64,6 +85,9 @@ class TestFourmiliere {
   @BeforeEach
   void setUp() throws Exception {}
 
+  /**
+   * Test de creation d'un simulateur.
+   */
   @Test
   void testSimulateur() {
     Simulateur simulateur = new Simulateur();
@@ -74,6 +98,9 @@ class TestFourmiliere {
     assertNotNull(simulateur.getFourmiliere());
   }
   
+  /**
+   * Test des methodes de la classe Fourmiliere.
+   */
   @Test
   void testFourmiliereInstance() {
     Simulateur simulateur = new Simulateur();
@@ -99,6 +126,9 @@ class TestFourmiliere {
     laFourmiliere.setLeTerrain(terrain);
   }
   
+  /**
+   * Test des methode de la classe Fourmis.
+   */
   @Test
   void testFourmis() {
     Simulateur simulateur = new Simulateur();
@@ -127,6 +157,9 @@ class TestFourmiliere {
     assertTrue(fourmis.getEtape() instanceof Adulte);
   }
   
+  /**
+   * Test de creation d'une reine.
+   */
   @Test
   void testCreerReine() {
     Simulateur simulateur = new Simulateur();
@@ -141,6 +174,9 @@ class TestFourmiliere {
     assertTrue(fourmiliere.getFourmis().size() == 0);
   }
   
+  /**
+   * Test du bon fonctionnement du systeme de ponte.
+   */
   @Test
   void testPonte() {
     Simulateur simulateur = new Simulateur();
@@ -158,6 +194,9 @@ class TestFourmiliere {
     assertTrue(nbOeufsPondus == lesFourmis.size());
   }
   
+  /**
+   * Test du bon fonctionnement de l'attribution d'un role a l'etape adulte.
+   */
   @Test
   void testRole() {
     Simulateur simulateur = new Simulateur();
