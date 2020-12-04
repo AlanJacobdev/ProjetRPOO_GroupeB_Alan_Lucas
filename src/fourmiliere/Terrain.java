@@ -73,6 +73,7 @@ public class Terrain {
 
   /**
    * Récupérer un phéromone.
+   * 
    * @param x coordonnées en x
    * @param y coordonées en y
    * @return <b>true</b> si le phéromone existe sinon <b>false</b>
@@ -172,11 +173,7 @@ public class Terrain {
    */
   public void step() {
     this.laFourmiliere.step();
-    for (int i = 1; i < lesPheromones.length; i++) {
-      for (int j = 1; j < lesPheromones[i].length; j++) {
-        lesPheromones[i][j].step(false);
-      }
-    }
+    verificationPheromones();
     int tirage = (int) (Math.random() * (10 - 0));
     if (tirage == 1) {
       if (this.lesProies.size() < this.laFourmiliere.getFourmis().size() * 0.05) {
@@ -225,6 +222,30 @@ public class Terrain {
     this.leTerrain.rafraichirTerrain();
   }
 
+  /**
+   * Vérifie la présence d'une fourmi sur la case x y.
+   */
+  public void verificationPheromones() {
+    List<Fourmis> lesfourmis = this.getLaFourmiliere().getFourmis();
+    for (int i = 1; i < lesPheromones.length; i++) {
+      for (int j = 1; j < lesPheromones[i].length; j++) {
+        for (int k = 0; k < lesfourmis.size(); k++) {
+          Fourmis uneFourmis = lesfourmis.get(k);
+          Pheromone unPheromone = lesPheromones[i][j];
+          if (uneFourmis.getEtape() instanceof Adulte) {
+            if (((Adulte) uneFourmis.getEtape()).getRepresentationGraphique()
+                .getCoordonneesActuelle().x == unPheromone.coordonees.x
+                && ((Adulte) uneFourmis.getEtape()).getRepresentationGraphique()
+                    .getCoordonneesActuelle().y == unPheromone.coordonees.y) {
+              lesPheromones[i][j].step(true);
+            } else {
+              lesPheromones[i][j].step(false);
+            }
+          }
+        }
+      }
+    }
+  }
 
   /**
    * Affiche les informations relatives à la fourmiliere.

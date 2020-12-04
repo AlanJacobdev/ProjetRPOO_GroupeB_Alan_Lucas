@@ -43,24 +43,24 @@ public class Pheromone {
     if (this.intensitePheromone == 0) {
       this.representationGraphique.setColor(couleur);
     }
-    this.intensitePheromone = 80;
+    this.intensitePheromone = 400;
   }
 
   /**
    * Si aucune passe sur la position de la phéromone, alors celle-ci se détériore.
    */
   public void aucunPassageFourmis() {
-    this.couleur = couleur.darker();
-    this.representationGraphique.setColor(couleur);
-    this.representationGraphique.setBorderColor(couleur);
     this.intensitePheromone--;
-    if (this.intensitePheromone <= 0) {
+    if (this.intensitePheromone > 0) {
+      this.couleur = couleur.brighter();
+      this.representationGraphique.setColor(couleur);
+      this.representationGraphique.setBorderColor(couleur);
+    } else if (this.intensitePheromone <= 0) {
       this.couleur = Color.GREEN.darker();
       this.representationGraphique.setColor(couleur);
       this.representationGraphique.setBorderColor(couleur);
     }
   }
-
 
   /**
    * Avancé dans le temps.

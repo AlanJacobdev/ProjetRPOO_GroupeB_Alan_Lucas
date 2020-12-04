@@ -96,6 +96,7 @@ public class Fourmiliere {
     }
   }
 
+
   /**
    * Créer une portée de fourmis.
    * 

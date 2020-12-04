@@ -34,6 +34,10 @@ public class FourmisGraphique {
   private Fourmis getFourmis() {
     return this.laFourmis;
   }
+  
+  public Point getCoordonneesActuelle() {
+    return coordonneesActuelle;
+  }
 
   public GOval getRepresentationGraphique() {
     return this.representationGraphique;
