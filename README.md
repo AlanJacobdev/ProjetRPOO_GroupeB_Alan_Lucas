@@ -13,9 +13,7 @@ Avant d'aborder les questions, voici comment est structuré notre projet :
 
 *  [Gestion graphique](#gestion-graphique)
 
-
-
-Voici les différentes questions que nous avons abordé:
+Voici les différentes questions que nous avons abordées :
 
 *  [Exercice 5-1 : Installation d’une fourmilière et trace simple](#exercice-1--installation-dune-fourmilière-et-trace-simple)
 
@@ -30,7 +28,7 @@ Voici les différentes questions que nous avons abordé:
 ## Diagramme de classe
 
 Ce diagramme de classe prends en compte l'attribution du rôle et des étapes d'une fourmi.
-Une fourmi est lié à une fourmilière qui est elle-même lié à un terrain.
+Une fourmi est liée à une fourmilière qui est elle-même liée à un terrain.
 
 ![Diagramme de classe](/Classes.png)
 
@@ -43,27 +41,27 @@ Ainsi la classe Etape comprends :
   * Adulte
   * Mort
   
-Chacunes de ces étapes possèdent une durée de vie limité, quand celle-ci est atteinte elle passe a la suivante. Sauf pour le cas de la classe mort, la référence de l'objet disparait au bout de cette durée (la fourmi est supprimée). A l'étape Adulte, un rôle lui est attribué parmis 4 possibles :
+Chacunes de ces étapes possèdent une durée de vie limité, quand celle-ci est atteinte elle passe à la suivante. Sauf pour le cas de la classe mort, la référence de l'objet disparait au bout de cette durée (la fourmi est supprimée). A l'étape Adulte, un rôle lui est attribué parmis les 4 possibles :
 
   * Ouvrier
   * Soldat
   * Sexué Mâle
   * Sexué Femelle 
   
-Celui-ci est déterminé par un tirage aléatoire, des attribut permeetent de determiner les limites de probabilité de l'attribution de chacuns de ces rôles (Ces attributs sont static et pas forcément optimisés). Chacune de ces fourmis adultes possèdent une durée de vie propre à elle-même.
+Celui-ci est déterminé par un tirage aléatoire, des attributs permettent de determiner les limites de probabilité de l'attribution de chacuns de ces rôles (Ces attributs sont static et pas forcément optimisés). Chacune de ces fourmis adultes possèdent une durée de vie propre à elle-même.
 Chacune de ces classes possèdent 3 méthodes communes :
 
-* **step()** : Permet de faire une avancé dans le temps (dans le cas de notre simuation il s'agit d'un jour)
+* **step()** : Permet de faire une avancée dans le temps (dans le cas de notre simuation il s'agit d'un jour)
 
 * **next()** ou **mourir()** : Permet de connaître l'étape actuelle d'une fourmi. La fonction **next()** d'adulte appelle **mourir()** de Rôle.
 
-* **renseignementInformations(...)** : Fait passer un bilan de la fourmilière à chaque avancée dans le temps, celui-ci permet l'incrementation d'attributs par les feuilles de l'attribut Etape de fourmi. Ce bilan d'informations sur la fourmilière permet d'écrire dans le journal a chaque avancé dans le temps. 
+* **renseignementInformations(...)** : Fait passer un bilan de la fourmilière à chaque avancée dans le temps, celui-ci permet l'incrementation d'attributs par les feuilles de l'attribut Etape de fourmi. Ce bilan d'information sur la fourmilière permet d'écrire dans le journal à chaque avancé dans le temps. 
 
 ----------------
 
 ## Gestion graphique
 
-La gestion graphique ne se fait pas par un MVC, chaque élement afficher possède un attribut graphique lié au package graphicLayer, hormis la fourmis qui est géré dans une classe dédié à son affichage (fourmisGraphique).
+La gestion graphique ne se fait pas par un MVC, chaque élement affiché possède un attribut graphique lié au package graphicLayer, hormis la fourmi qui est gérée dans une classe dédiée à son affichage (fourmisGraphique).
 
 Ainsi la classe VueTerrain sert essentiellement de vue auxquels on ajoute des élements de nos classes métier. On les intégre à l'affichage dans l'ordre suivant : 
   * Le terrain (la fenètre)
@@ -73,6 +71,7 @@ Ainsi la classe VueTerrain sert essentiellement de vue auxquels on ajoute des é
   * Les fourmis
 
 Les fourmis ne sont pas visible si elle se trouve au niveau de la foumilière afin de donner l'impression de rentrer au sein de celle-ci.
+L'implémentation graphique avance de la même durée dans les 3 exercices (un jour).
 
 ----------------
 
@@ -186,9 +185,16 @@ Cette tâche est extrement lourde sachant que 1600 (80×80) cases de phéromones
 
 ----------------
 **Trace d'éxecution graphique**
+
 ![GIF du cube](/exo53.png)
 
 **Légende :**
+* Blanc / Contour rouge : Les proies
+* Bleu : Fourmis adultes
+* Rouge : Fourmilière
+* Magenta : Fourmis ramenant une proie à la fourmilière
+* Rectangle blanc : Territoire de la fourmilière
+
 
 ## Javadoc
 
