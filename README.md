@@ -11,6 +11,7 @@ Avant d'aborder les questions, voici comment est structuré notre projet :
 
 *  [Diagramme de classe](#diagramme-de-classe)
 
+*  [Gestion graphique](#gestion-graphique)
 
 
 
@@ -35,6 +36,7 @@ Une fourmi est lié à une fourmilière qui est elle-même lié à un terrain.
 
 L'utilité des classes abstraites Role et Etape était de pouvoir implementer des fonctions et y lier différentes classes.
 Ainsi la classe Etape comprends :
+
   * Oeuf 
   * Larve
   * Nymphe
@@ -42,10 +44,12 @@ Ainsi la classe Etape comprends :
   * Mort
   
 Chacunes de ces étapes possèdent une durée de vie limité, quand celle-ci est atteinte elle passe a la suivante. Sauf pour le cas de la classe mort, la référence de l'objet disparait au bout de cette durée (la fourmi est supprimée). A l'étape Adulte, un rôle lui est attribué parmis 4 possibles :
+
   * Ouvrier
   * Soldat
   * Sexué Mâle
-  * Sexué Femelle) 
+  * Sexué Femelle 
+  
 Celui-ci est déterminé par un tirage aléatoire, des attribut permeetent de determiner les limites de probabilité de l'attribution de chacuns de ces rôles (Ces attributs sont static et pas forcément optimisés). Chacune de ces fourmis adultes possèdent une durée de vie propre à elle-même.
 Chacune de ces classes possèdent 3 méthodes communes :
 
@@ -55,13 +59,20 @@ Chacune de ces classes possèdent 3 méthodes communes :
 
 * **renseignementInformations(...)** : Fait passer un bilan de la fourmilière à chaque avancée dans le temps, celui-ci permet l'incrementation d'attributs par les feuilles de l'attribut Etape de fourmi. Ce bilan d'informations sur la fourmilière permet d'écrire dans le journal a chaque avancé dans le temps. 
 
-
 ----------------
 
 ## Gestion graphique
 
+La gestion graphique ne se fait pas par un MVC, chaque élement afficher possède un attribut graphique lié au package graphicLayer, hormis la fourmis qui est géré dans une classe dédié à son affichage (fourmisGraphique).
 
+Ainsi la classe VueTerrain sert essentiellement de vue auxquels on ajoute des élements de nos classes métier. On les intégre à l'affichage dans l'ordre suivant : 
+  * Le terrain (la fenètre)
+  * Le territoire de la fourmiliere (200 autour de la fourmilière)
+  * Les phéromones (stockées dans un tableau de 400 par 400)
+  * Les proies (qui se génère en fonction de la population de la fourmillière)
+  * Les fourmis
 
+Les fourmis ne sont pas visible si elle se trouve au niveau de la foumilière afin de donner l'impression de rentrer au sein de celle-ci.
 
 ----------------
 
@@ -156,11 +167,16 @@ De la création à la mort de la fourmilière :
 
 ## Exercice 3 : Sur la piste des fourmis
 
-**La Chasse**
+**La Chasse et le stock de nourriture**
 * Quand une fourmi se trouve au même endroit qu'une proie, elle la tue et ramène directement à la fourmilière, sur la simulation on voit la proie disparaître (car elle est morte), la fourmi passe de la couleur bleu à la couleur magenta puis se déplace en direction de la fourmilière.
 Quand une fourmi rentre à la fourmilière, elle augmente de 1 le stock de nourriture.
 Une trace de cette augmentation a été ajouté au journal, on peut donc suivre l'état des stocks de nourriture au fur et à mesure de la simulation.
-Une fois la fourmi dans la fourmilière, elle repasse en couleur bleu et repars à la recherche d'une nouvelle proie.
+Une fois la fourmi dans la fourmilière, elle repasse en couleur bleu et repart à la recherche d'une nouvelle proie.
+
+**Les phéromones**
+Au passage sur une case, les fourmis déposent des phéromones permettant de suivre la trace de celle-ci. Si l'endroit où elle se situe n'est pas marqué par une phéromone alors elle y ajoute une phéromone avec une intensité maximale, cette dernière se décrementant tout les 10 steps. Ainsi, une trainée est dessinée derrière la proie afin de pouvoir guider d'autres fourmis, celle-ci change de couleur afin de pouvoir distinguer la faible intensité. Dans le cas, où l'intensité est de 0, la case de phéromones devient invisble et attends une nouveau passage pour s'activer. Les fourmis recherchent dans les quatres directions de déplacement possible (haut, bas, droit, gauche) si il y a existence de phéromones afin de modifier dynamiquement la probabilité de chance de s'y rendre. 
+Cette tâche est extrement lourde sachant que 1600 (80×80) cases de phéromones sont vérifiés à chaque steps, puis traiter l'information en fonction de chaque fourmis (incrémentation, etc...). Ainsi, plus il y a de fourmi, plus nous avons du mal a gérer les phéromones, les trainées deviennent de plus en plus petite en fonction du nombre de fourmies créées.
+
 
 ## Javadoc
 
