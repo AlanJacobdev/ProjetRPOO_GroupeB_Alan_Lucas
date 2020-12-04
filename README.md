@@ -7,6 +7,9 @@ Le but de ce projet étant la simulation de l'évolution d'une fourmilliere en g
 
 ----------------
 
+Avant d'aborder les questions, voici comment est structuré notre projet : 
+
+*  [Diagramme de classe](#diagramme-de-classe)
 
 
 
@@ -21,11 +24,42 @@ Voici les différentes questions que nous avons abordé:
 
 *  [JavaDoc](#javadoc)
 
+----------------
+
+## Diagramme de classe
+
+Ce diagramme de classe prends en compte l'attribution du rôle et des étapes d'une fourmi.
+Une fourmi est lié à une fourmilière qui est elle-même lié à un terrain.
+
+![Diagramme de classe](/Classes.png)
+
+L'utilité des classes abstraites Role et Etape était de pouvoir implementer des fonctions et y lier différentes classes.
+Ainsi la classe Etape comprends :
+* Oeuf 
+* Larve
+* Nymphe
+* Adulte
+* Mort
+Chacunes de ces étapes possèdent une durée de vie limité, quand celle-ci est atteinte elle passe a la suivante. Sauf pour le cas de la classe mort, la référence de l'objet disparait au bout de cette durée (la fourmi est supprimée). A l'étape Adulte, un rôle lui est attribué parmis 4 possibles :
+* Ouvrier
+* Soldat
+* Sexué Mâle
+* Sexué Femelle) 
+Celui-ci est déterminé par un tirage aléatoire, des attribut permeetent de determiner les limites de probabilité de l'attribution de chacuns de ces rôles (Ces attributs sont static et pas forcément optimisés). Chacune de ces fourmis adultes possèdent une durée de vie propre à elle-même.
+Chacune de ces classes possèdent 3 méthodes communes :
+
+* **step()** : Permet de faire une avancé dans le temps (dans le cas de notre simuation il s'agit d'un jour)
+
+* **next()** ou **mourir()** : Permet de connaître l'étape actuelle d'une fourmi. La fonction **next()** d'adulte appelle **mourir()** de Rôle.
+
+* **renseignementInformations(...)** : Fait passer un bilan de la fourmilière à chaque avancée dans le temps, celui-ci permet l'incrementation d'attributs par les feuilles de l'attribut Etape de fourmi. Ce bilan d'informations sur la fourmilière permet d'écrire dans le journal a chaque avancé dans le temps. 
 
 
+----------------
+
+## Gestion graphique
 
 
-![GIF du cube](/Classes.png)
 
 
 ----------------
@@ -99,12 +133,12 @@ Informations sur la fourmilière :
 **Gestion du cas**
 
 * Un terrain est mise en place graphiquement via le package graphicLayer, à sa création la fourmilière est ainsi implémenté sur ce terrain par un carré rouge.
-Grâce à l'évolution de la fourmis de Nymphe à Adulte, la fourmis est dotée d'un attribut FourmisGraphique, qui est ajouté sur le terrain afin de pouvoir simuler la fourmis sur le terrain. Celle-ci est placée au centre de la fourmilliere et n'est pas visible tant qu'elle se trouve dans la fourmilière.
+Grâce à l'évolution de la fourmi de Nymphe à Adulte, la fourmi est dotée d'un attribut FourmisGraphique, qui est ajouté sur le terrain afin de pouvoir simuler la fourmi sur le terrain. Celle-ci est placée au centre de la fourmilliere et n'est pas visible tant qu'elle se trouve dans la fourmilière.
 
 *On demande de tracer graphiquement ledéplacement des fourmis. Déplacement aléatoire pur : Représentez la fourmilière par un carré et chaquefourmi par un point. On doit pouvoir visualiser un nuage de points dont l’évolution est complètementaléatoire. La seule contrainte qui gère le déplacement est qu’une fourmi ne sort jamais de son territoire.*
 
 **Gestion du cas**
-* Les fourmis sont donc caractérisées par des ronds bleus, se déplaçant de manière totalement aléatoire, ayant 25% de chance de se déplacer sur les axes des abscisse et ordonnée (positif et négatif) par rapport à elle (étant l'origine de ces axes). Le pas d'incrémentation ou de décrementation du déplacement de la fourmis est fixé par une variable globale. Cette fourmis peut sortir de 1 case de son territoire, à partir de ce moment elle réfléchit à faire demi-tour et revenir vers sa fourmiliere. Au survol de la fourmilière ces dernières deviennent invisible, simulant leur entrée dans la fourmiliere. Si ces dernières meurs en dehors de la fourmilière et dans leur territoire elle se colorent en jaune et disparaissent 5 pas dans le temps plus tard.
+* Les fourmis sont donc caractérisées par des ronds bleus, se déplaçant de manière totalement aléatoire, ayant 25% de chance de se déplacer sur les axes des abscisse et ordonnée (positif et négatif) par rapport à elle (étant l'origine de ces axes). Le pas d'incrémentation ou de décrementation du déplacement de la fourmi est fixé par une variable globale. Cette fourmi peut sortir de 1 case de son territoire, à partir de ce moment elle réfléchit à faire demi-tour et revenir vers sa fourmiliere. Au survol de la fourmilière ces dernières deviennent invisible, simulant leur entrée dans la fourmiliere. Si ces dernières meurs en dehors de la fourmilière et dans leur territoire elle se colorent en jaune et disparaissent 5 pas dans le temps plus tard.
 
 *Les proies : Représentez le déplacement aléatoire de proies qui entrent et qui sortent du territoirevisualisé*
 
@@ -122,10 +156,10 @@ De la création à la mort de la fourmilière :
 ## Exercice 3 : Sur la piste des fourmis
 
 **La Chasse**
-* Quand une fourmis se trouve au même endroits qu'une proie, elle la tue et rentre directement à la fourmilière, sur la simulation, on voit que la proie disparrait (car elle est morte), la fourmis passe de la couleur bleu à la couleur majenta puis se déplace en direction de la fourmilière.
-Quand une fourmis rentre à la fourmilière, elle augmente de 1 le nombre de nourriture.
-Une trace de cette augmentation à été ajouter au journal, donc on peut suivre l'état des stocks de nourriture à la fin de la simulation.
-Une fois la fourmis dans la fourmilière, elle repasse en couleur bleu et repars à la recherche d'une nouvelle proie.
+* Quand une fourmi se trouve au même endroit qu'une proie, elle la tue et ramène directement à la fourmilière, sur la simulation on voit la proie disparaître (car elle est morte), la fourmi passe de la couleur bleu à la couleur magenta puis se déplace en direction de la fourmilière.
+Quand une fourmi rentre à la fourmilière, elle augmente de 1 le stock de nourriture.
+Une trace de cette augmentation a été ajouté au journal, on peut donc suivre l'état des stocks de nourriture au fur et à mesure de la simulation.
+Une fois la fourmi dans la fourmilière, elle repasse en couleur bleu et repars à la recherche d'une nouvelle proie.
 
 ## Javadoc
 
