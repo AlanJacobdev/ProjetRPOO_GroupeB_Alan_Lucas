@@ -10,6 +10,7 @@ public class Proie {
   protected Terrain terrain;
   protected Point positionActuelle;
   protected GRect representationGraphique;
+  protected boolean mort;
 
   /**
    * Constructeur d'une proie.
@@ -26,6 +27,7 @@ public class Proie {
     this.representationGraphique.setDimension(new Dimension(5, 5));
     this.representationGraphique.setPosition(positionActuelle);
     this.representationGraphique.setBorderColor(Color.WHITE.darker());
+    this.mort = false;
   }
 
   public Point getPositionActuelle() {
@@ -80,7 +82,18 @@ public class Proie {
     } else {
       this.terrain.supprimerProie(this);
     }
-
+  }
+  
+  /**
+   * La proie est morte.
+   */
+  public void morte() {
+    this.mort = true;
+    this.representationGraphique.setColor(Color.BLACK);
+  }
+  
+  public boolean isMort() {
+    return this.mort;
   }
 
 }

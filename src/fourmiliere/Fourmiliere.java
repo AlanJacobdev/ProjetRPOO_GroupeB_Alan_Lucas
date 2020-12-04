@@ -19,6 +19,7 @@ public class Fourmiliere {
   private Point positionFourmiliere;
   private GRect representationGraphique;
   private GRect representationTerritoire;
+  private int stockNourriture;
 
 
   /**
@@ -37,6 +38,7 @@ public class Fourmiliere {
     this.representationTerritoire = new GRect();
     this.representationTerritoire.setColor(Color.GREEN.darker());
     this.representationTerritoire.setBorderColor(Color.white);
+    this.stockNourriture = 0;
   }
 
   public int getRayonTerritoire() {
@@ -136,6 +138,11 @@ public class Fourmiliere {
     for (Fourmis f : lesFourmis) {
       f.renseignementFourmiliere(infos);
     }
+  }
+  
+  public void ajoutNourriture() {
+    this.stockNourriture++;
+    System.out.println("Stock = " + this.stockNourriture);
   }
 
   /**
