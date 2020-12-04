@@ -13,6 +13,7 @@ import vue.VueTerrain;
 public class Terrain {
 
   protected final int coteTerrain = 500;
+  protected final int tailleTerritoireFourmiliere = 400;
   protected Saison lesSaisons;
   protected Dimension tailleTerrain;
   protected Fourmiliere laFourmiliere;
@@ -20,6 +21,7 @@ public class Terrain {
   protected VueTerrain leTerrain;
   protected List<Proie> lesProies;
   protected List<Proie> lesProiesMortes;
+  protected Pheromone[][] tableau;
 
   /**
    * Constructeur d'un terrain.
@@ -30,6 +32,7 @@ public class Terrain {
     this.leTerrain = new VueTerrain(tailleTerrain);
     this.lesProies = new ArrayList<Proie>();
     this.lesProiesMortes = new ArrayList<Proie>();
+    this.preconfigurerPheromone();
   }
 
   public Fourmiliere getLaFourmiliere() {
@@ -39,7 +42,6 @@ public class Terrain {
   public void setLaFourmiliere(Fourmiliere laFourmiliere) {
     this.laFourmiliere = laFourmiliere;
   }
-
 
   public Saison getLesSaisons() {
     return lesSaisons;
@@ -90,7 +92,8 @@ public class Terrain {
     Point coordoneesTerritoire =
         new Point(coordoneesFourmiliere.x - 190, coordoneesFourmiliere.y - 190);
     this.laFourmiliere.getRepresentationTerritoire().setPosition(coordoneesTerritoire);
-    this.laFourmiliere.getRepresentationTerritoire().setDimension(new Dimension(400, 400));
+    this.laFourmiliere.getRepresentationTerritoire()
+        .setDimension(new Dimension(tailleTerritoireFourmiliere, tailleTerritoireFourmiliere));
     this.laFourmiliere.getRepresentationGraphique().setPosition(coordoneesFourmiliere);
     this.getLeTerrain().addFourmiliere(representationTerritoire, representationGraphique);
   }
@@ -102,6 +105,29 @@ public class Terrain {
    */
   public void ajouterFourmisGraphique(GOval fourmis) {
     this.getLeTerrain().addFourmis(fourmis);
+  }
+
+  /**
+   * Mettre en place le tableau des phéromones.
+   */
+  public void preconfigurerPheromone() {
+    this.tableau =
+        new Pheromone[this.tailleTerritoireFourmiliere][this.tailleTerritoireFourmiliere];
+    for (int i = 60; i < tableau.length + 60; i++) {
+      for (int j = 60; j < tableau[i].length + 60; j++) {
+        tableau[i][j] = new Pheromone(this, new Point(i, j));
+      }
+    }
+  }
+
+  public void supprimerPheromone(GRect representationGraphique) {
+    // TODO Auto-generated method stub
+
+  }
+
+  public void ajouterPheromone(GRect representationGraphique) {
+    // TODO Auto-generated method stub
+
   }
 
   /**
@@ -160,7 +186,7 @@ public class Terrain {
     this.infos = new InformationsFourmiliere();
     this.laFourmiliere.renseignementFourmiliere(infos);
   }
-  
+
   /**
    * Affiche le terrain graphique.
    */
@@ -184,7 +210,7 @@ public class Terrain {
     this.leTerrain.rafraichirTerrain();
   }
 
-  
+
   /**
    * Affiche les informations relatives à la fourmiliere.
    */
