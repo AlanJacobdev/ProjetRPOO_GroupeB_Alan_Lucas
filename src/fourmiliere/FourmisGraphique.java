@@ -4,6 +4,7 @@ import graphicLayer.GOval;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
+import java.util.List;
 
 
 public class FourmisGraphique {
@@ -34,7 +35,7 @@ public class FourmisGraphique {
   private Fourmis getFourmis() {
     return this.laFourmis;
   }
-  
+
   public Point getCoordonneesActuelle() {
     return coordonneesActuelle;
   }
@@ -87,20 +88,24 @@ public class FourmisGraphique {
    * Déplacement aléatoire de la fourmis au sein de son territoire.
    */
   public void prochainePosition() {
+    List<Integer> deplacementFourmi = DeplacementPheromone.getDeplacement()
+        .calculPourcentageDeplacement(((Adulte) this.getFourmis().getEtape()));
     if (this.coordonneesActuelle != null) {
       int deplacement =
           (int) (Math.random() * (Adulte.maximalPopulation - Adulte.minimumPopulation));
       if (this.dansTerritoire()) {
-        if (deplacement <= 25) {
+        if (deplacement <= deplacementFourmi.get(0)) {
           this.coordonneesActuelle = prochainPoint(this.pas, 0);
           this.representationGraphique.setPosition(coordonneesActuelle);
-        } else if (deplacement <= 50) {
+        } else if (deplacement <= deplacementFourmi.get(1) + deplacementFourmi.get(0)) {
           this.coordonneesActuelle = prochainPoint(this.pas, 1);
           this.representationGraphique.setPosition(coordonneesActuelle);
-        } else if (deplacement <= 75) {
+        } else if (deplacement <= deplacementFourmi.get(2) + deplacementFourmi.get(1)
+            + deplacementFourmi.get(0)) {
           this.coordonneesActuelle = prochainPoint(this.pas, 2);
           this.representationGraphique.setPosition(coordonneesActuelle);
-        } else if (deplacement <= 100) {
+        } else if (deplacement <= deplacementFourmi.get(3) + deplacementFourmi.get(2)
+            + deplacementFourmi.get(1) + deplacementFourmi.get(0)) {
           this.coordonneesActuelle = prochainPoint(this.pas, 3);
           this.representationGraphique.setPosition(coordonneesActuelle);
         }
@@ -123,29 +128,33 @@ public class FourmisGraphique {
   public Point prochainPoint(int pas, int direction) {
     switch (direction) {
       case 0:
-        if (this.coordonneesActuelle.y + pas > this.laFourmis.getFourmiliere()
-            .getPositionFourmiliere().y + this.laFourmis.getFourmiliere().getRayonTerritoire()) {
+        if (this.coordonneesActuelle.y
+            + pas > this.laFourmis.getFourmiliere().getPositionFourmiliere().y
+                + this.laFourmis.getFourmiliere().getRayonTerritoire()) {
           return new Point(this.coordonneesActuelle.x, 450);
         } else {
           return new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y + pas);
         }
       case 1:
-        if (this.coordonneesActuelle.y - pas < this.laFourmis.getFourmiliere()
-            .getPositionFourmiliere().y - this.laFourmis.getFourmiliere().getRayonTerritoire()) {
+        if (this.coordonneesActuelle.y
+            - pas < this.laFourmis.getFourmiliere().getPositionFourmiliere().y
+                - this.laFourmis.getFourmiliere().getRayonTerritoire()) {
           return new Point(this.coordonneesActuelle.x, 50);
         } else {
           return new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y - pas);
         }
       case 2:
-        if (this.coordonneesActuelle.x + pas > this.laFourmis.getFourmiliere()
-            .getPositionFourmiliere().x + this.laFourmis.getFourmiliere().getRayonTerritoire()) {
+        if (this.coordonneesActuelle.x
+            + pas > this.laFourmis.getFourmiliere().getPositionFourmiliere().x
+                + this.laFourmis.getFourmiliere().getRayonTerritoire()) {
           return new Point(450, this.coordonneesActuelle.y);
         } else {
           return new Point(this.coordonneesActuelle.x + pas, this.coordonneesActuelle.y);
         }
       case 3:
-        if (this.coordonneesActuelle.x - pas < this.laFourmis.getFourmiliere()
-            .getPositionFourmiliere().x - this.laFourmis.getFourmiliere().getRayonTerritoire()) {
+        if (this.coordonneesActuelle.x
+            - pas < this.laFourmis.getFourmiliere().getPositionFourmiliere().x
+                - this.laFourmis.getFourmiliere().getRayonTerritoire()) {
           return new Point(50, this.coordonneesActuelle.y);
         } else {
           return new Point(this.coordonneesActuelle.x - pas, this.coordonneesActuelle.y);

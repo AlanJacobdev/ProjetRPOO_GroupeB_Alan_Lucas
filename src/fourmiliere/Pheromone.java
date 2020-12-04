@@ -41,6 +41,11 @@ public class Pheromone {
     this.nombreDePas = 0;
   }
 
+  
+  public int getIntensitePheromone() {
+    return intensitePheromone;
+  }
+
   /**
    * Réagis au passage de la fourmi et s'affiche.
    */
@@ -48,9 +53,9 @@ public class Pheromone {
     if (this.intensitePheromone == 0) {
       this.representationGraphique.setColor(couleurPheromone);
       this.representationGraphique.setBorderColor(couleurPheromone);
-      this.intensitePheromone = 30;
+      this.intensitePheromone = 100;
     } else {
-      this.intensitePheromone = 30;
+      this.intensitePheromone = 100;
       this.representationGraphique.setColor(couleurPheromone);
       this.representationGraphique.setBorderColor(couleurPheromone);
     }
