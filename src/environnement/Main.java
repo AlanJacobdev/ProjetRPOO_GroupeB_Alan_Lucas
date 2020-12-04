@@ -24,7 +24,7 @@ public class Main {
 
     Terrain leTerrain = simulateur.getLeTerrain();
 
-    while (reine.isAlive() && flag) {
+    while (flag) {
       leTerrain.step();
       leTerrain.renseignementFourmiliere();
       simulateur.getJournal().ecrire(leTerrain, printemps.getNbTempsEcoule());
