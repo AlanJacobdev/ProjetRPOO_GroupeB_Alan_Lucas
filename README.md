@@ -85,16 +85,19 @@ L'implémentation graphique avance de la même durée dans les 3 exercices (un j
  *Elle s’installe et pond.*  
  
 **Gestion du cas**
+
 *  Elle est installée dans sa fourmilière et commence à pondre au début du printemps (jour 80 de la simulation modulo 365), sa portée comprends entre 1 et 3 oeuf chaque jour jusqu'au début de l'été (jour 172 de la simulation modulo 365). Pour devenir un adulte, il faut 25 jours à partir de la ponte. Chaque rôle est attribué de façon aléatoire via un tirage au sort d'un nombre compris entre 0 et 100. De plus chaque fourmis est vouée à mourir entre 547 et 913 jours.
 
 *La simulation met en oeuvre l’évolution de la fourmilière jusqu’à ce qu’il ne reste plus de nymphe.*
 
 **Gestion du cas**
+
 * La simulation prends fin quand la reine décède (celle-ci ayant pour espérance de vie comprise entre 1461 et 3652 jours), amenant à la mort de tout les habitants de la fourmilière ensuite.
 
 *Il est tout d’abord demandé de produire des traces alphanumériques permettant de suivre dans letemps, l’évolution de la fourmilière. Cette trace comportera, par exemple, le nombre d’oeufs, de larves,de nymphes et de fourmis (ouvrières, soldats et individus sexués).*
 
 **Gestion du cas**
+
 * Nous avons mis en place une classe Journal qui écris dans un fichier texte à chaque step (avancée dans le temps) effectuée. Ainsi on peut y voir l'evolution de la foumilière, plus précisement:
   * Le jour actuel
   * La taille de la population de fourmis vivante
@@ -149,15 +152,18 @@ Grâce à l'évolution de la fourmi de Nymphe à Adulte, la fourmi est dotée d'
 *On demande de tracer graphiquement ledéplacement des fourmis. Déplacement aléatoire pur : Représentez la fourmilière par un carré et chaquefourmi par un point. On doit pouvoir visualiser un nuage de points dont l’évolution est complètementaléatoire. La seule contrainte qui gère le déplacement est qu’une fourmi ne sort jamais de son territoire.*
 
 **Gestion du cas**
+
 * Les fourmis sont donc caractérisées par des ronds bleus, se déplaçant de manière totalement aléatoire, ayant 25% de chance de se déplacer sur les axes des abscisse et ordonnée (positif et négatif) par rapport à elle (étant l'origine de ces axes). Le pas d'incrémentation ou de décrementation du déplacement de la fourmi est fixé par une variable globale. Cette fourmi peut sortir de 1 case de son territoire, à partir de ce moment elle réfléchit à faire demi-tour et revenir vers sa fourmiliere. Au survol de la fourmilière ces dernières deviennent invisible, simulant leur entrée dans la fourmiliere. Si ces dernières meurs en dehors de la fourmilière et dans leur territoire elle se colorent en jaune et disparaissent 5 pas dans le temps plus tard.
 
 *Les proies : Représentez le déplacement aléatoire de proies qui entrent et qui sortent du territoirevisualisé*
 
 **Gestion du cas** 
+
 * La gestion des prois est quasi-similaire à celle des fourmis, la différence est que ces dernières apparaissent aléatoirement sur le terrain et ne sont pas limitées à un territoire. Si elle dépasse le cadre du terrain visualisable, ces dernières sont supprimées graphiquement et déférencées. Leur deplacement sont aléatoire et ont autant de chance de se déplacer dans les 4 directions possibles (Haut, Bas, Droite, Gauche). Les proies sont représentées graphiquement par des carrées blancs.
 
 ----------------
 **Trace d'éxecution graphique**
+
 De la création à la mort de la fourmilière :
 
 ![GIF du cube](/exo52.gif)
@@ -174,12 +180,14 @@ De la création à la mort de la fourmilière :
 ## Exercice 3 : Sur la piste des fourmis
 
 **La Chasse et le stock de nourriture**
+
 * Quand une fourmi se trouve au même endroit qu'une proie, elle la tue et ramène directement à la fourmilière, sur la simulation on voit la proie disparaître (car elle est morte), la fourmi passe de la couleur bleu à la couleur magenta puis se déplace en direction de la fourmilière.
 Quand une fourmi rentre à la fourmilière, elle augmente de 1 le stock de nourriture.
 Une trace de cette augmentation a été ajouté au journal, on peut donc suivre l'état des stocks de nourriture au fur et à mesure de la simulation.
 Une fois la fourmi dans la fourmilière, elle repasse en couleur bleu et repart à la recherche d'une nouvelle proie.
 
 **Les phéromones**
+
 Au passage sur une case, les fourmis déposent des phéromones permettant de suivre la trace de celle-ci. Si l'endroit où elle se situe n'est pas marqué par une phéromone alors elle y ajoute une phéromone avec une intensité maximale, cette dernière se décrementant tout les 10 steps. Ainsi, une trainée est dessinée derrière la proie afin de pouvoir guider d'autres fourmis, celle-ci change de couleur afin de pouvoir distinguer la faible intensité. Dans le cas, où l'intensité est de 0, la case de phéromones devient invisble et attends une nouveau passage pour s'activer. Les fourmis recherchent dans les quatres directions de déplacement possible (haut, bas, droit, gauche) si il y a existence de phéromones afin de modifier dynamiquement la probabilité de chance de s'y rendre. 
 Cette tâche est extrement lourde sachant que 1600 (80×80) cases de phéromones sont vérifiés à chaque steps, puis traiter l'information en fonction de chaque fourmis (incrémentation, etc...). Ainsi, plus il y a de fourmi, plus nous avons du mal a gérer les phéromones, les trainées deviennent de plus en plus petite en fonction du nombre de fourmies créées.
 
