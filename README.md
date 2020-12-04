@@ -35,16 +35,17 @@ Une fourmi est lié à une fourmilière qui est elle-même lié à un terrain.
 
 L'utilité des classes abstraites Role et Etape était de pouvoir implementer des fonctions et y lier différentes classes.
 Ainsi la classe Etape comprends :
-* Oeuf 
-* Larve
-* Nymphe
-* Adulte
-* Mort
+  * Oeuf 
+  * Larve
+  * Nymphe
+  * Adulte
+  * Mort
+  
 Chacunes de ces étapes possèdent une durée de vie limité, quand celle-ci est atteinte elle passe a la suivante. Sauf pour le cas de la classe mort, la référence de l'objet disparait au bout de cette durée (la fourmi est supprimée). A l'étape Adulte, un rôle lui est attribué parmis 4 possibles :
-* Ouvrier
-* Soldat
-* Sexué Mâle
-* Sexué Femelle) 
+  * Ouvrier
+  * Soldat
+  * Sexué Mâle
+  * Sexué Femelle) 
 Celui-ci est déterminé par un tirage aléatoire, des attribut permeetent de determiner les limites de probabilité de l'attribution de chacuns de ces rôles (Ces attributs sont static et pas forcément optimisés). Chacune de ces fourmis adultes possèdent une durée de vie propre à elle-même.
 Chacune de ces classes possèdent 3 méthodes communes :
 
