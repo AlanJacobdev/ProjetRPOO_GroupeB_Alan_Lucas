@@ -10,7 +10,7 @@ public class Fourmis {
   protected Fourmiliere saFourmiliere;
 
   /**
-  * @param fourmiliere La fourmiliere a laquelle elle est liee
+  * @param fourmiliere La fourmiliere a laquelle elle est liee.
   */
   public Fourmis(Fourmiliere fourmiliere) {
     this.saFourmiliere = fourmiliere;
@@ -18,7 +18,7 @@ public class Fourmis {
   }
 
   public Role getRole() {
-    return this.etape.next().getRole();
+    return this.etape.getRole();
   }
 
   public Fourmiliere getFourmiliere() {

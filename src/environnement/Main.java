@@ -1,6 +1,8 @@
 package environnement;
 
+import fourmiliere.Adulte;
 import fourmiliere.Fourmiliere;
+import fourmiliere.Reine;
 import fourmiliere.Terrain;
 
 
@@ -13,18 +15,23 @@ public class Main {
    */
   public static void main(String[] args) {
     Simulateur simulateur = new Simulateur();
+    boolean flag = true;
+    Reine reine = simulateur.getReine();
     simulateur.getJournal().viderJournal();
-    simulateur.getReine().pondre();
+    reine.pondre();
     Fourmiliere laFourmiliere = simulateur.getFourmiliere();
     Saison printemps = laFourmiliere.getLeTerrain().getLesSaisons();
-    
+
     Terrain leTerrain = simulateur.getLeTerrain();
 
-    while (printemps.getNbTempsEcoule() < 365) {
+    while (reine.isAlive() && flag) {
       leTerrain.step();
       leTerrain.renseignementFourmiliere();
       simulateur.getJournal().ecrire(leTerrain, printemps.getNbTempsEcoule());
       printemps.incrementerJour();
+      if (leTerrain.getInfos().getNbOuvrieres() != 0) {
+        flag = false;
+      }
       try {
         Thread.sleep(10);
       } catch (InterruptedException e) {
