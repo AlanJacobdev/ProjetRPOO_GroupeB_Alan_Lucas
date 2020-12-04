@@ -106,6 +106,8 @@ De la création à la mort de la fourmilière :
 
 ![GIF du cube](/exo52.gif)
 
+*_Légende_*
+
 ----------------
 
 ## Exercice 3 : Sur la piste des fourmis
