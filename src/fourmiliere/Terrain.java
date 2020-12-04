@@ -211,7 +211,9 @@ public class Terrain {
    */
   public void deplacementProies() {
     for (Proie p : lesProies) {
-      p.prochainePosition();
+      if (!(p.isMort())) {
+        p.prochainePosition();
+      }
     }
   }
 
@@ -243,6 +245,21 @@ public class Terrain {
             }
           }
         }
+      }
+    }
+  }
+  
+  /**
+   * Teste si une fourmis se trouve au meme endrois qu'une proie, alors elle tue la proie.
+   * @param coordonneeFourmis La position de la fourmis.
+   */
+  public void attaqueUneProie(Point coordonneeFourmis) {
+    for (Proie proie : this.lesProies) {
+      if ((proie.getPositionActuelle().getX() < coordonneeFourmis.getX() + 5 
+            && proie.getPositionActuelle().getY() > coordonneeFourmis.getY() - 5) 
+          && (proie.getPositionActuelle().getX() > coordonneeFourmis.getX() - 5 
+              && proie.getPositionActuelle().getY() < coordonneeFourmis.getY() + 5)) {
+        proie.morte();
       }
     }
   }

@@ -109,6 +109,9 @@ public class FourmisGraphique {
         } else {
           this.representationGraphique.setColor(Color.blue);
         }
+        
+        this.manger();
+        
       }
     }
   }
@@ -162,5 +165,9 @@ public class FourmisGraphique {
     if (this.dansTerritoire()) {
       this.representationGraphique.setColor(Color.yellow);
     }
+  }
+  
+  private void manger() {
+    this.laFourmis.getFourmiliere().getLeTerrain().attaqueUneProie(this.coordonneesActuelle);
   }
 }
