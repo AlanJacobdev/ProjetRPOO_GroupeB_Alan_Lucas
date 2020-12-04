@@ -79,7 +79,9 @@ public class Terrain {
    * @return <b>true</b> si le phéromone existe sinon <b>false</b>
    */
   public Pheromone getUnPheromone(int x, int y) {
-    Pheromone unPheromone = this.lesPheromones[x / 5 - 55][y / 5 - 55];
+    int xpos = (x - 55) / 5;
+    int ypos = (y - 55) / 5;
+    Pheromone unPheromone = this.lesPheromones[xpos][ypos];
     if (unPheromone != null) {
       return unPheromone;
     }
@@ -133,6 +135,7 @@ public class Terrain {
     for (int i = 1; i < lesPheromones.length; i++) {
       for (int j = 1; j < lesPheromones[i].length; j++) {
         lesPheromones[i][j] = new Pheromone(this, new Point(55 + i * 5, 55 + j * 5));
+        System.out.println(55 + i * 5);
       }
     }
   }

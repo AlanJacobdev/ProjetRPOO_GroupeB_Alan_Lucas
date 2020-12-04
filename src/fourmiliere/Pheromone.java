@@ -10,7 +10,7 @@ public class Pheromone {
   protected final Color couleurTerrain = Color.GREEN.darker();
   protected final Color couleurPheromone = Color.gray;
   protected final int taillePheromone = 5;
-  protected final int miseAJourPheromone = 5;
+  protected final int miseAJourPheromone = 10;
   protected Color decrementationCouleur;
   protected GRect representationGraphique;
   protected int intensitePheromone;
@@ -41,6 +41,11 @@ public class Pheromone {
     this.nombreDePas = 0;
   }
 
+  
+  public int getIntensitePheromone() {
+    return intensitePheromone;
+  }
+
   /**
    * Réagis au passage de la fourmi et s'affiche.
    */
@@ -48,9 +53,9 @@ public class Pheromone {
     if (this.intensitePheromone == 0) {
       this.representationGraphique.setColor(couleurPheromone);
       this.representationGraphique.setBorderColor(couleurPheromone);
-      this.intensitePheromone = 30;
+      this.intensitePheromone = 100;
     } else {
-      this.intensitePheromone = 30;
+      this.intensitePheromone = 100;
       this.representationGraphique.setColor(couleurPheromone);
       this.representationGraphique.setBorderColor(couleurPheromone);
     }

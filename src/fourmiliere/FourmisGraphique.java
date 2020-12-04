@@ -4,6 +4,7 @@ import graphicLayer.GOval;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Point;
+import java.util.List;
 
 
 public class FourmisGraphique {
@@ -17,7 +18,7 @@ public class FourmisGraphique {
 
   /**
    * Construction de l'aspect graphique d'une fourmis adulte.
-   * 
+   *
    * @param fourmis La fourmis réelle
    */
   public FourmisGraphique(Fourmis fourmis) {
@@ -47,7 +48,7 @@ public class FourmisGraphique {
 
   /**
    * Savoir si la fourmis se situe dans la fourmiliere ou non.
-   * 
+   *
    * @return <b>true</b> si la fourmis se situe dans la fourmiliere sinon <b>false</b>
    */
   private Boolean dansFourmiliere() {
@@ -67,7 +68,7 @@ public class FourmisGraphique {
 
   /**
    * Savoir si la fourmis se situe dans le terrain ou non.
-   * 
+   *
    * @return <b>true</b> si la fourmis se situe dans le territoire sinon <b>false</b>
    */
   private Boolean dansTerritoire() {
@@ -89,34 +90,30 @@ public class FourmisGraphique {
    * Déplacement aléatoire de la fourmis au sein de son territoire.
    */
   public void prochainePosition() {
-    if (!(this.retourFourmiliere)) {
+    if(!(this.retourFourmiliere)){
+      List<Integer> deplacementFourmi = DeplacementPheromone.getDeplacement()
+          .calculPourcentageDeplacement(((Adulte) this.getFourmis().getEtape()));
       if (this.coordonneesActuelle != null) {
         int deplacement =
             (int) (Math.random() * (Adulte.maximalPopulation - Adulte.minimumPopulation));
         if (this.dansTerritoire()) {
-          if (deplacement <= 25) {
+          if (deplacement <= deplacementFourmi.get(0)) {
             this.coordonneesActuelle = prochainPoint(this.pas, 0);
             this.representationGraphique.setPosition(coordonneesActuelle);
-          } else if (deplacement <= 50) {
+          } else if (deplacement <= deplacementFourmi.get(1) + deplacementFourmi.get(0)) {
             this.coordonneesActuelle = prochainPoint(this.pas, 1);
             this.representationGraphique.setPosition(coordonneesActuelle);
-          } else if (deplacement <= 75) {
+          } else if (deplacement <= deplacementFourmi.get(2) + deplacementFourmi.get(1)
+              + deplacementFourmi.get(0)) {
             this.coordonneesActuelle = prochainPoint(this.pas, 2);
             this.representationGraphique.setPosition(coordonneesActuelle);
-          } else if (deplacement <= 100) {
+          } else if (deplacement <= deplacementFourmi.get(3) + deplacementFourmi.get(2)
+              + deplacementFourmi.get(1) + deplacementFourmi.get(0)) {
             this.coordonneesActuelle = prochainPoint(this.pas, 3);
             this.representationGraphique.setPosition(coordonneesActuelle);
           }
-          if (this.dansFourmiliere()) {
-            this.representationGraphique.setColor(Color.red);
-          } else {
-            this.representationGraphique.setColor(Color.blue);
-          }
-
           this.manger();
-
         }
-      }
     } else {
       if (this.dansFourmiliere()) {
         this.laFourmis.getFourmiliere().ajoutNourriture();
@@ -162,7 +159,7 @@ public class FourmisGraphique {
 
   /**
    * Permet de calculer ou se trouve la fourmis à l'instant T.
-   * 
+   *
    * @param pas Distance entre 2 position lors d'un pas en avant dans le temps.
    * @param direction Direction dans laquelle la fourmis se dirige
    * @return La nouvelle position
