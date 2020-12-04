@@ -11,6 +11,7 @@ public class InformationsFourmiliere {
   protected int nbSexueFemelles;
   protected int nbSexueMales;
   protected int nbMorts;
+  protected int etatDesStocks;
   
   /**
    * Constructeur d'une classe contenant toutes les informations de mesure de la fourmiliere.
@@ -24,6 +25,7 @@ public class InformationsFourmiliere {
     this.nbSexueFemelles = 0;
     this.nbSexueMales = 0;
     this.nbMorts = 0;
+    this.etatDesStocks = 0;
   }
   
 

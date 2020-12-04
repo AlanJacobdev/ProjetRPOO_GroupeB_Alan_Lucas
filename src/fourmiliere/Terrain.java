@@ -176,7 +176,7 @@ public class Terrain {
 
     int tirage = (int) (Math.random() * (10 - 0));
     if (tirage == 1) {
-      if (this.lesProies.size() < this.laFourmiliere.getFourmis().size() * 0.05) {
+      if (this.lesProies.size() < this.laFourmiliere.getFourmis().size() * 0.5) {
         this.ajouterProie();
       }
     }

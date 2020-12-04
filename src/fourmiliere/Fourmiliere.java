@@ -11,6 +11,7 @@ import java.util.List;
 
 public class Fourmiliere {
 
+  private int stockNourriture;
   private final int rayonTerritoire = 200;
   private List<Fourmis> lesFourmis;
   private List<Fourmis> lesFourmisMortes;
@@ -19,7 +20,6 @@ public class Fourmiliere {
   private Point positionFourmiliere;
   private GRect representationGraphique;
   private GRect representationTerritoire;
-  private int stockNourriture;
 
 
   /**
@@ -142,7 +142,6 @@ public class Fourmiliere {
   
   public void ajoutNourriture() {
     this.stockNourriture++;
-    System.out.println("Stock = " + this.stockNourriture);
   }
 
   /**
@@ -154,6 +153,8 @@ public class Fourmiliere {
     StringBuffer string = new StringBuffer();
     string.append("Population : ");
     string.append(this.lesFourmis.size() + "\n");
+    string.append("Etat des stocks : ");
+    string.append(this.stockNourriture + "\n");
     return string.toString();
   }
 
