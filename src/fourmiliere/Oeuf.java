@@ -4,22 +4,21 @@ import environnement.InformationsFourmiliere;
 
 public class Oeuf extends Etape {
 
-  protected int age;
-  protected final int joursAvantLarve = 3;
-  protected Fourmis fourmis;
+  Integer age;
+  Integer joursAvantLarve = 3;
+  Fourmis fourmis;
 
   /**
    * Constructeur d'un oeuf.
-   * 
-   * @param fourmis La fourmis.
+   *
+   * @param fourmis la fourmis.
    */
   public Oeuf(Fourmis fourmis) {
     age = 0;
     this.fourmis = fourmis;
   }
-  
-  @Override
-  protected void step() {
+
+  public void step() {
     age++;
   }
 
@@ -40,6 +39,6 @@ public class Oeuf extends Etape {
   protected void renseignerInformations(InformationsFourmiliere infos) {
     infos.incrementerOeufs();
   }
-  
+
 
 }

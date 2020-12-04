@@ -186,7 +186,7 @@ class TestFourmiliere {
     assertFalse(nbFemelle == 0);
     int nbMale = lesInfos.getNbSexueMales();
     assertFalse(nbMale == 0);
-    int nbMorts = lesInfos.getNbDeMorts();
+    int nbMorts = lesInfos.getNombreDeMorts();
     assertTrue(nbMorts == 0);
     
     int calculNbOuvriere = 0;

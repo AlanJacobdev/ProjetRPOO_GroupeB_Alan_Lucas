@@ -1,29 +1,24 @@
 package fourmiliere;
 
 import environnement.InformationsFourmiliere;
-import graphicLayer.GRect;
-import java.awt.Color;
 import java.awt.Point;
 import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class Fourmiliere {
 
-  private final int rayonTerritoire = 200;
   private List<Fourmis> lesFourmis;
   private List<Fourmis> lesFourmisMortes;
   private Fourmis reine;
   private Terrain leTerrain;
   private Point positionFourmiliere;
-  private GRect representationGraphique;
-  private GRect representationTerritoire;
+
 
 
   /**
    * Constructeur d'une fourmiliere.
-   * 
+   *
    * @param reine La fourmis reine.
    */
   public Fourmiliere(Fourmis reine) {
@@ -32,15 +27,48 @@ public class Fourmiliere {
     this.reine = reine;
     this.leTerrain = null;
     this.positionFourmiliere = null;
-    this.representationGraphique = new GRect();
-    this.representationGraphique.setColor(Color.red);
-    this.representationTerritoire = new GRect();
-    this.representationTerritoire.setColor(Color.GREEN.darker());
-    this.representationTerritoire.setBorderColor(Color.white);
   }
 
-  public int getRayonTerritoire() {
-    return rayonTerritoire;
+  /**
+   * Avance d'une certaine durée le temps.
+   */
+  public void step() {
+    for (Fourmis uneFourmis : lesFourmis) {
+      uneFourmis.step();
+    }
+    this.reine.step();
+    if (this.lesFourmisMortes.size() > 0) {
+      this.removeFourmis();
+    }
+  }
+
+  /**
+   * Créer une portee de fourmis.
+   *
+   * @param nombre : Nombre de fourmis à creer.
+   */
+  public void nouvellesFourmis(Integer nombre) {
+    for (int i = 0; i < nombre; i++) {
+      this.lesFourmis.add(new Fourmis(this));
+    }
+  }
+
+  /**
+  * Ajoute une fourmis a la liste des fourmis mortes.
+  * @parem fourmis Une fourmis morte.
+  */
+  public void ajoutFourmisMorte(Fourmis fourmis) {
+    this.lesFourmisMortes.add(fourmis);
+  }
+
+  /**
+  * Retire les fourmis mortes de la liste des fourmis.
+  */
+  private void removeFourmis() {
+    for (Fourmis fourmis : this.lesFourmisMortes) {
+      this.lesFourmis.remove(fourmis);
+    }
+    this.lesFourmisMortes = new ArrayList<>();
   }
 
   public List<Fourmis> getFourmis() {
@@ -67,69 +95,11 @@ public class Fourmiliere {
     return this.lesFourmisMortes;
   }
 
-  public GRect getRepresentationGraphique() {
-    return representationGraphique;
-  }
-
-  public void setRepresentationGraphique(GRect representationGraphique) {
-    this.representationGraphique = representationGraphique;
-  }
-
-  public GRect getRepresentationTerritoire() {
-    return representationTerritoire;
-  }
-
-  public void setRepresentationTerritoire(GRect representationTerritoire) {
-    this.representationTerritoire = representationTerritoire;
-  }
-  
   /**
-   * Avance d'une certaine duree le temps.
-   */
-  public void step() {
-    for (Fourmis uneFourmis : lesFourmis) {
-      uneFourmis.step();
-    }
-    this.reine.step();
-    if (this.lesFourmisMortes.size() > 0) {
-      this.removeFourmis();
-    }
-  }
-
-  /**
-   * Créer une portée de fourmis.
-   * 
-   * @param nombre : Nombre de fourmis à creer.
-   */
-  public void nouvellesFourmis(Integer nombre) {
-    for (int i = 0; i < nombre; i++) {
-      this.lesFourmis.add(new Fourmis(this));
-    }
-  }
-
-  /**
-   * Ajoute une fourmis mortes à la liste des fourmis mortes.
-   * @param fourmis Une fourmis morte.
-   */
-  public void ajoutFourmisMorte(Fourmis fourmis) {
-    this.lesFourmisMortes.add(fourmis);
-  }
-
-  /**
-   * Retire les fourmis mortes de la listes des fourmis.
-   */
-  private void removeFourmis() {
-    for (Fourmis fourmis : this.lesFourmisMortes) {
-      this.lesFourmis.remove(fourmis);
-    }
-    this.lesFourmisMortes = new ArrayList<>();
-  }
-
-  /**
-   * Permet de récupérer des informations sur la fourmiliere. Fait circuler le bilan des
-   * informations dans aux fourmis prsentent dans la fourmilliere.
-   * 
-   * @param infos Bilan des informations de la fourmiliere.
+   * Appelle la mise à jours des informations de chaques fourmis dans les informations de la
+   * fourmiliere.
+   *
+   * @param infos Information de la fourmiliere.
    */
   public void renseignementFourmiliere(InformationsFourmiliere infos) {
     for (Fourmis f : lesFourmis) {
@@ -138,8 +108,8 @@ public class Fourmiliere {
   }
 
   /**
-   * Affichage des informations de la fourmiliere.
-   * 
+   * Affichage des informations de la fourmilière.
+   *
    * @return Chaine de caractères contenant les informations.
    */
   public String toString() {

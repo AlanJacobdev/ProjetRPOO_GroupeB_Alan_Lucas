@@ -4,9 +4,12 @@ import environnement.InformationsFourmiliere;
 
 public abstract class Etape {
 
+  public Etape() {
+  }
+
   /**
    * Retourne l'étape actuelle de la fourmis.
-   * @return Etape 
+   * @return
    */
   protected abstract Etape next();
 
@@ -23,10 +26,9 @@ public abstract class Etape {
 
   /**
    * Permet de récupérer des informations sur la fourmiliere. Fait circuler le bilan des
-   * informations dans aux fourmis prsentent dans la fourmilliere.
+   * informations dans aux fourmis presentent dans la fourmilliere.
    * 
    * @param infos Bilan des informations de la fourmiliere.
    */
   protected abstract void renseignerInformations(InformationsFourmiliere infos);
-  
 }

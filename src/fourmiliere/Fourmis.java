@@ -1,7 +1,7 @@
 package fourmiliere;
 
 import environnement.InformationsFourmiliere;
-
+import java.awt.Point;
 
 
 public class Fourmis {
@@ -10,17 +10,15 @@ public class Fourmis {
   protected Fourmiliere saFourmiliere;
 
   /**
-   * Constructeur d'une fourmis.
-   * 
-   * @param fourmiliere La fourmilière a laquelle elle est liee
-   */
+  * @param fourmiliere La fourmiliere a laquelle elle est liee
+  */
   public Fourmis(Fourmiliere fourmiliere) {
     this.saFourmiliere = fourmiliere;
     this.etape = new Oeuf(this);
   }
 
   public Role getRole() {
-    return this.etape.getRole();
+    return this.etape.next().getRole();
   }
 
   public Fourmiliere getFourmiliere() {
@@ -36,8 +34,8 @@ public class Fourmis {
   }
 
   /**
-   * Création d'une reine.
-   * 
+   * Creation d'une reine.
+   *
    * @return un objet Fourmis dont l'etape est de type Adulte et le role est de type Reine.
    */
   public Fourmis creerReine() {
@@ -49,8 +47,8 @@ public class Fourmis {
   }
 
   /**
-   * Avance d'une certaine duree le temps.
-   */
+  * Avance d'une certaine duree le temps.
+  */
   public void step() {
     this.etape = etape.next();
     etape.step();
@@ -59,11 +57,10 @@ public class Fourmis {
   /**
    * Permet de récupérer des informations sur la fourmiliere. Fait circuler le bilan des
    * informations dans aux fourmis prsentent dans la fourmilliere.
-   * 
+   *
    * @param infos Bilan des informations de la fourmiliere.
    */
   public void renseignementFourmiliere(InformationsFourmiliere infos) {
     this.getEtape().renseignerInformations(infos);
   }
-
 }

@@ -3,14 +3,13 @@ package fourmiliere;
 import environnement.InformationsFourmiliere;
 
 public class SexueFemelle extends Sexue {
-  
-  protected int age;
-  protected int esperanceVie;
-  protected Adulte stadeEvolution;
+  Integer age;
+  Integer esperanceVie;
+  Adulte stadeEvolution;
 
   /**
    * Constructeur du role Sexue femelle pour une fourmis adulte.
-   * @param adulte Fourmis etant adulte
+   * @param adulte Fourmis etant adulte.
    */
   public SexueFemelle(Adulte adulte) {
     super();
@@ -23,12 +22,13 @@ public class SexueFemelle extends Sexue {
   protected void step() {
     age++;
   }
-  
+
   @Override
-  protected Etape mourir() {
+  protected Etape mourrir() {
     if (this.age >= this.esperanceVie) {
       Fourmis fourmis = this.stadeEvolution.getFourmis();
-      return new Mort(fourmis, this.stadeEvolution.getRepresentationGraphique());
+      fourmis.getFourmiliere().ajoutFourmisMorte(fourmis);
+      return new Mort(fourmis);
     }
     return stadeEvolution;
   }
@@ -37,5 +37,5 @@ public class SexueFemelle extends Sexue {
   protected void renseignerInformations(InformationsFourmiliere infos) {
     infos.incrementerSexueFemelle();
   }
-  
+
 }

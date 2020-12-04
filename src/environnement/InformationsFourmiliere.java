@@ -1,16 +1,18 @@
 package environnement;
 
+import fourmiliere.Fourmis;
+import java.util.ArrayList;
+import java.util.List;
 
 public class InformationsFourmiliere {
- 
-  protected int nbOeufs;
-  protected int nbLarves;
-  protected int nbNymphes;
-  protected int nbOuvrieres;
-  protected int nbSoldats;
-  protected int nbSexueFemelles;
-  protected int nbSexueMales;
-  protected int nbMorts;
+  int nbOeufs;
+  int nbLarves;
+  int nbNymphes;
+  int nbOuvrieres;
+  int nbSoldats;
+  int nbSexueFemelles;
+  int nbSexueMales;
+  List<Fourmis> lesMorts;
   
   /**
    * Constructeur d'une classe contenant toutes les informations de mesure de la fourmiliere.
@@ -23,7 +25,7 @@ public class InformationsFourmiliere {
     this.nbSoldats = 0;
     this.nbSexueFemelles = 0;
     this.nbSexueMales = 0;
-    this.nbMorts = 0;
+    this.lesMorts = new ArrayList<Fourmis>();
   }
   
 
@@ -55,9 +57,41 @@ public class InformationsFourmiliere {
   public void incrementerSexueMale() {
     this.nbSexueMales++;
   }
+
+  public void decrementerOeufs() {
+    this.nbOeufs--;
+  }
+
+  public void decrementerLarves() {
+    this.nbLarves--;
+  }
+
+  public void decrementerNymphes() {
+    this.nbNymphes--;
+  }
+
+  public void decrementerOuvrieres() {
+    this.nbOuvrieres--;
+  }
+
+  public void decrementerSoldats() {
+    this.nbSoldats--;
+  }
+
+  public void decrementerSexueFemelle() {
+    this.nbSexueFemelles--;
+  }
+
+  public void decrementerSexueMale() {
+    this.nbSexueMales--;
+  }
   
-  public void incrementerMort() {
-    this.nbMorts++;
+  public void addMort(Fourmis fourmis) {
+    this.lesMorts.add(fourmis);
+  }
+  
+  public int getNombreDeMorts() {
+    return this.lesMorts.size();
   }
   
   public int getNbOeufs() {
@@ -87,10 +121,6 @@ public class InformationsFourmiliere {
   public int getNbSexueMales() {
     return nbSexueMales;
   }
-  
-  public int getNbDeMorts() {
-    return this.nbMorts;
-  }
 
   
   /**
@@ -116,7 +146,7 @@ public class InformationsFourmiliere {
     result.append("\n- Nombre de mâles : ");
     result.append(this.nbSexueMales);
     result.append("\n- Nombre de morts : ");
-    result.append(this.nbMorts + "\n\n");
+    result.append(this.getNombreDeMorts() + "\n\n");
     return result.toString();
   }
 }

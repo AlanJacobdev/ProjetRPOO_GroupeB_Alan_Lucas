@@ -4,15 +4,15 @@ import environnement.Saison;
 
 public class Reine extends SexueFemelle {
 
-  protected Integer age;
-  protected Integer esperanceVie;
-  protected Adulte stadeEvolution;
-  protected int oeufsPondus;
+  private Integer age;
+  private Integer esperanceVie;
+  private Adulte stadeEvolution;
+  private int oeufsPondus;
 
   /**
    * Constructeur du role Reine pour une fourmis adulte.
-   * Une fourmilliere ne peut en contenir qu'une.
-   * @param adulte Fourmis etant adulte
+   * une fourmiliere ne peut en contenir qu'une.
+   * @param adulte Fourmis etant adulte.
    */
   public Reine(Adulte adulte) {
     super(adulte);
@@ -27,7 +27,7 @@ public class Reine extends SexueFemelle {
 
   /**
    * Creation d'une fourmiliere dont-elle est la reine.
-   * @return La nouvelle Fourmiliere.
+   * @return la nouvelle fourmiliere.
    */
   public Fourmiliere creerFourmiliere() {
     Fourmiliere laFourmiliere = new Fourmiliere(this.stadeEvolution.getFourmis());
@@ -39,13 +39,18 @@ public class Reine extends SexueFemelle {
   @Override
   protected void step() {
     age++;
-    if (this.isAlive()) {
+    if (this.isAlive()){
       this.pondre();
     }
   }
 
+  /**
+   * Si la fourmis atteint son esperance de vie elle meure, alors elle retourne son nouvel etat
+   * mort. <br>
+   * Sinon retourne son etape adulte.
+   */
   @Override
-  protected Etape mourir() {
+  protected Etape mourrir() {
     return stadeEvolution;
   }
 
@@ -58,7 +63,7 @@ public class Reine extends SexueFemelle {
 
   /**
    * Savoir si la reine est vivante.
-   * 
+   *
    * @return <b>true</b> si la reine est vivante sinon <b>false</b>
    */
   public boolean isAlive() {
@@ -70,15 +75,15 @@ public class Reine extends SexueFemelle {
 
   /**
    * Creer une portée de X fourmis.
+   *
    */
   public void pondre() {
     Fourmis fourmis = this.stadeEvolution.getFourmis();
     Fourmiliere fourmiliere = fourmis.getFourmiliere();
     Saison laSaison = fourmiliere.getLeTerrain().getLesSaisons();
     if (laSaison.isPrintemps()) {
-      oeufsPondus = (int) (Math.random() * (3 - 1)) + 1;
+      oeufsPondus = (int) (Math.random() * (20 - 10)) + 10;
       this.stadeEvolution.getFourmis().getFourmiliere().nouvellesFourmis(oeufsPondus);
     }
   }
-
 }
