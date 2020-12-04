@@ -211,7 +211,7 @@ public class Terrain {
    */
   public void deplacementProies() {
     for (Proie p : lesProies) {
-      if (!(p.isMort())) {
+      if (!(p.isMort()) /*|| !(p.isEnCombat())*/) {
         p.prochainePosition();
       }
     }
@@ -259,9 +259,12 @@ public class Terrain {
             && proie.getPositionActuelle().getY() > coordonneeFourmis.getY() - 5) 
           && (proie.getPositionActuelle().getX() > coordonneeFourmis.getX() - 5 
               && proie.getPositionActuelle().getY() < coordonneeFourmis.getY() + 5)) {
+        //proie.enCombat();
+        //return true;
         proie.morte();
       }
     }
+    //return false;
   }
 
   /**

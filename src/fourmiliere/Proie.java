@@ -10,7 +10,8 @@ public class Proie {
   protected Terrain terrain;
   protected Point positionActuelle;
   protected GRect representationGraphique;
-  
+  protected int poids;
+  protected boolean enCombat;
   protected boolean mort;
 
   /**
@@ -29,6 +30,9 @@ public class Proie {
     this.representationGraphique.setPosition(positionActuelle);
     this.representationGraphique.setBorderColor(Color.WHITE.darker());
     
+    this.poids = (int) (Math.random() * (3 - 1));
+    System.out.println(this.poids);
+    this.enCombat = false;
     this.mort = false;
   }
 
@@ -88,8 +92,13 @@ public class Proie {
   }
   
   
+  public void enCombat() {
+    this.enCombat = true;
+  }
   
-  
+  public boolean isEnCombat() {
+    return this.enCombat;
+  }
   
   /**
    * La proie est morte.
