@@ -121,7 +121,11 @@ De la création à la mort de la fourmilière :
 
 ## Exercice 3 : Sur la piste des fourmis
 
-...
+**La Chasse**
+* Quand une fourmis se trouve au même endroits qu'une proie, elle la tue et rentre directement à la fourmilière, sur la simulation, on voit que la proie disparrait (car elle est morte), la fourmis passe de la couleur bleu à la couleur majenta puis se déplace en direction de la fourmilière.
+Quand une fourmis rentre à la fourmilière, elle augmente de 1 le nombre de nourriture.
+Une trace de cette augmentation à été ajouter au journal, donc on peut suivre l'état des stocks de nourriture à la fin de la simulation.
+Une fois la fourmis dans la fourmilière, elle repasse en couleur bleu et repars à la recherche d'une nouvelle proie.
 
 ## Javadoc
 
