@@ -90,7 +90,7 @@ public class FourmisGraphique {
    * Déplacement aléatoire de la fourmis au sein de son territoire.
    */
   public void prochainePosition() {
-    if(!(this.retourFourmiliere)){
+    if (!(this.retourFourmiliere)) {
       List<Integer> deplacementFourmi = DeplacementPheromone.getDeplacement()
           .calculPourcentageDeplacement(((Adulte) this.getFourmis().getEtape()));
       if (this.coordonneesActuelle != null) {
@@ -112,8 +112,14 @@ public class FourmisGraphique {
             this.coordonneesActuelle = prochainPoint(this.pas, 3);
             this.representationGraphique.setPosition(coordonneesActuelle);
           }
-          this.manger();
+          if (this.dansFourmiliere()) {
+            this.representationGraphique.setColor(Color.red);
+          } else {
+            this.representationGraphique.setColor(Color.blue);
+          }
         }
+      }
+      this.manger();
     } else {
       if (this.dansFourmiliere()) {
         this.laFourmis.getFourmiliere().ajoutNourriture();
@@ -132,17 +138,17 @@ public class FourmisGraphique {
         } else if (trajetY == 0) {
           int direction = this.definitionDirection(trajetX);
           this.coordonneesActuelle =
-              new Point(this.coordonneesActuelle.x  + direction, this.coordonneesActuelle.y);
+              new Point(this.coordonneesActuelle.x + direction, this.coordonneesActuelle.y);
           this.representationGraphique.setPosition(this.coordonneesActuelle);
         } else if (trajetX <= trajetY) {
           int direction = this.definitionDirection(trajetX);
           this.coordonneesActuelle =
-              new Point(this.coordonneesActuelle.x  + direction, this.coordonneesActuelle.y);
+              new Point(this.coordonneesActuelle.x + direction, this.coordonneesActuelle.y);
           this.representationGraphique.setPosition(this.coordonneesActuelle);
         } else if (trajetY < trajetX) {
           int direction = this.definitionDirection(trajetY);
           this.coordonneesActuelle =
-              new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y  + direction);
+              new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y + direction);
           this.representationGraphique.setPosition(this.coordonneesActuelle);
         }
       }
@@ -151,9 +157,9 @@ public class FourmisGraphique {
 
   private int definitionDirection(int val) {
     if (val > 0) {
-      return -1;
+      return -5;
     } else {
-      return 1;
+      return 5;
     }
   }
 
@@ -213,7 +219,8 @@ public class FourmisGraphique {
   }
 
   private void manger() {
-    Proie laProie = this.laFourmis.getFourmiliere().getLeTerrain().attaqueUneProie(this.coordonneesActuelle);
+    Proie laProie =
+        this.laFourmis.getFourmiliere().getLeTerrain().attaqueUneProie(this.coordonneesActuelle);
     if (laProie != null) {
       this.retourFourmiliere = true;
       this.laFourmis.getFourmiliere().getLeTerrain().supprimerProie(laProie);
