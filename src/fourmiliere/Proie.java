@@ -26,7 +26,7 @@ public class Proie {
     this.representationGraphique.setColor(Color.WHITE);
     this.representationGraphique.setDimension(new Dimension(5, 5));
     this.representationGraphique.setPosition(positionActuelle);
-    this.representationGraphique.setBorderColor(Color.WHITE.darker());
+    this.representationGraphique.setBorderColor(Color.red.darker());
     this.mort = false;
   }
 

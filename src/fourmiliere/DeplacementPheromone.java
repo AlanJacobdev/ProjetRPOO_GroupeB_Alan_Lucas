@@ -37,7 +37,7 @@ public class DeplacementPheromone {
     Point coordonneesFourmi = f.getRepresentationGraphique().getCoordonneesActuelle();
     Pheromone bas = f.getFourmis().getFourmiliere().getLeTerrain()
         .getUnPheromone(coordonneesFourmi.x, coordonneesFourmi.y - 5);
-    
+
     int intensiteBas = bas.getIntensitePheromone();
     if (intensiteBas > 0) {
       pheromoneBas = true;
@@ -73,9 +73,9 @@ public class DeplacementPheromone {
    * et leur présence autour de la fourmi.
    * 
    * @param nombrePheromone Nombre de phéromones entourant la fourmis (max 4)
-   * @param pheromoneHaut   Présence de phéromone sur la cas du haut ou non
-   * @param pheromoneBas    Présence de phéromone sur la cas du bas ou non
-   * @param pheromoneDroit  Présence de phéromone sur la cas du droit ou non
+   * @param pheromoneHaut Présence de phéromone sur la cas du haut ou non
+   * @param pheromoneBas Présence de phéromone sur la cas du bas ou non
+   * @param pheromoneDroit Présence de phéromone sur la cas du droit ou non
    * @param pheromoneGauche Présence de phéromone sur la cas du gauche ou non
    * @return Liste contenant les pourcentages de déplacement tel que [Haut,Bas,Droite,Gauche]
    */
@@ -84,32 +84,68 @@ public class DeplacementPheromone {
     List<Integer> liste = new ArrayList<Integer>();
 
     if (nombrePheromone == 1) {
-      if (pheromoneHaut ? liste.add(40) : liste.add(20))
-        ;
-      if (pheromoneBas ? liste.add(40) : liste.add(20))
-        ;
-      if (pheromoneDroit ? liste.add(40) : liste.add(20))
-        ;
-      if (pheromoneGauche ? liste.add(40) : liste.add(20))
-        ;
+      if (pheromoneHaut) {
+        liste.add(40);
+      } else {
+        liste.add(20);
+      }
+      if (pheromoneBas) {
+        liste.add(40);
+      } else {
+        liste.add(20);
+      }
+      if (pheromoneDroit) {
+        liste.add(40);
+      } else {
+        liste.add(20);
+      }
+      if (pheromoneGauche) {
+        liste.add(40);
+      } else {
+        liste.add(20);
+      }
     } else if (nombrePheromone == 2) {
-      if (pheromoneHaut ? liste.add(35) : liste.add(15))
-        ;
-      if (pheromoneBas ? liste.add(35) : liste.add(15))
-        ;
-      if (pheromoneDroit ? liste.add(35) : liste.add(15))
-        ;
-      if (pheromoneGauche ? liste.add(35) : liste.add(15))
-        ;
+      if (pheromoneHaut) {
+        liste.add(35);
+      } else {
+        liste.add(15);
+      }
+      if (pheromoneBas) {
+        liste.add(35);
+      } else {
+        liste.add(15);
+      }
+      if (pheromoneDroit) {
+        liste.add(35);
+      } else {
+        liste.add(15);
+      }
+      if (pheromoneGauche) {
+        liste.add(35);
+      } else {
+        liste.add(15);
+      }
     } else if (nombrePheromone == 3) {
-      if (pheromoneHaut ? liste.add(30) : liste.add(10))
-        ;
-      if (pheromoneBas ? liste.add(30) : liste.add(10))
-        ;
-      if (pheromoneDroit ? liste.add(30) : liste.add(10))
-        ;
-      if (pheromoneGauche ? liste.add(30) : liste.add(10))
-        ;
+      if (pheromoneHaut) {
+        liste.add(30);
+      } else {
+        liste.add(10);
+      } 
+      if (pheromoneBas) {
+        liste.add(30);
+      } else {
+        liste.add(10);
+      } 
+      if (pheromoneDroit) {
+        liste.add(30);
+      } else {
+        liste.add(10);
+      } 
+      if (pheromoneGauche) {
+        liste.add(30);
+      } else {
+        liste.add(10);
+      } 
     } else {
       liste.add(25);
       liste.add(25);
