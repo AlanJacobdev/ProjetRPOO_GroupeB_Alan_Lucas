@@ -88,7 +88,7 @@ public class Terrain {
         new Point(this.tailleTerrain.height / 2, this.tailleTerrain.width / 2);
     this.laFourmiliere.setPositionFourmiliere(coordoneesFourmiliere);
     Point coordoneesTerritoire =
-        new Point(coordoneesFourmiliere.x - 190, coordoneesFourmiliere.y - 190);
+        new Point(coordoneesFourmiliere.x - 195, coordoneesFourmiliere.y - 195);
     this.laFourmiliere.getRepresentationTerritoire().setPosition(coordoneesTerritoire);
     this.laFourmiliere.getRepresentationTerritoire().setDimension(new Dimension(400, 400));
     this.laFourmiliere.getRepresentationGraphique().setPosition(coordoneesFourmiliere);
