@@ -10,7 +10,7 @@ public class Pheromone {
   protected final Color couleurTerrain = Color.GREEN.darker();
   protected final Color couleurPheromone = Color.gray;
   protected final int taillePheromone = 5;
-  protected final int miseAJourPheromone = 5;
+  protected final int miseAJourPheromone = 10;
   protected Color decrementationCouleur;
   protected GRect representationGraphique;
   protected int intensitePheromone;
