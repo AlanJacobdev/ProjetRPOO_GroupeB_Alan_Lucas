@@ -13,7 +13,7 @@ public class FourmisGraphique {
   private Fourmis laFourmis;
   private Point coordonneesActuelle;
   private GOval representationGraphique;
-  protected boolean enCombat;
+  private boolean retourFourmiliere;
 
   /**
    * Construction de l'aspect graphique d'une fourmis adulte.
@@ -30,7 +30,7 @@ public class FourmisGraphique {
     this.representationGraphique.setDimension(new Dimension(tailleFourmis, tailleFourmis));
     this.getFourmis().getFourmiliere().getLeTerrain()
         .ajouterFourmisGraphique(representationGraphique);
-    this.enCombat = false;
+    this.retourFourmiliere = false;
   }
 
   private Fourmis getFourmis() {
@@ -89,7 +89,7 @@ public class FourmisGraphique {
    * Déplacement aléatoire de la fourmis au sein de son territoire.
    */
   public void prochainePosition() {
-    /*if(!(this.enCombat)) {*/
+    if (!(this.retourFourmiliere)) {
       if (this.coordonneesActuelle != null) {
         int deplacement =
             (int) (Math.random() * (Adulte.maximalPopulation - Adulte.minimumPopulation));
@@ -112,12 +112,52 @@ public class FourmisGraphique {
           } else {
             this.representationGraphique.setColor(Color.blue);
           }
-  
+
           this.manger();
-  
+
         }
       }
-    //}
+    } else {
+      if (this.dansFourmiliere()) {
+        this.laFourmis.getFourmiliere().ajoutNourriture();
+        this.retourFourmiliere = false;
+        this.representationGraphique.setColor(Color.blue);
+      } else {
+        this.representationGraphique.setColor(Color.MAGENTA);
+        Fourmiliere laFourmiliere = this.laFourmis.getFourmiliere();
+        int trajetX = this.coordonneesActuelle.x - laFourmiliere.getPositionFourmiliere().x;
+        int trajetY = this.coordonneesActuelle.y - laFourmiliere.getPositionFourmiliere().y;
+        if (trajetX == 0) {
+          int direction = this.definitionDirection(trajetY);
+          this.coordonneesActuelle =
+              new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y + direction);
+          this.representationGraphique.setPosition(this.coordonneesActuelle);
+        } else if (trajetY == 0) {
+          int direction = this.definitionDirection(trajetX);
+          this.coordonneesActuelle =
+              new Point(this.coordonneesActuelle.x  + direction, this.coordonneesActuelle.y);
+          this.representationGraphique.setPosition(this.coordonneesActuelle);
+        } else if (trajetX <= trajetY) {
+          int direction = this.definitionDirection(trajetX);
+          this.coordonneesActuelle =
+              new Point(this.coordonneesActuelle.x  + direction, this.coordonneesActuelle.y);
+          this.representationGraphique.setPosition(this.coordonneesActuelle);
+        } else if (trajetY < trajetX) {
+          int direction = this.definitionDirection(trajetY);
+          this.coordonneesActuelle =
+              new Point(this.coordonneesActuelle.x, this.coordonneesActuelle.y  + direction);
+          this.representationGraphique.setPosition(this.coordonneesActuelle);
+        }
+      }
+    }
+  }
+
+  private int definitionDirection(int val) {
+    if (val > 0) {
+      return -1;
+    } else {
+      return 1;
+    }
   }
 
   /**
@@ -176,6 +216,10 @@ public class FourmisGraphique {
   }
 
   private void manger() {
-    this.laFourmis.getFourmiliere().getLeTerrain().attaqueUneProie(this.coordonneesActuelle);
+    Proie laProie = this.laFourmis.getFourmiliere().getLeTerrain().attaqueUneProie(this.coordonneesActuelle);
+    if (laProie != null) {
+      this.retourFourmiliere = true;
+      this.laFourmis.getFourmiliere().getLeTerrain().supprimerProie(laProie);
+    }
   }
 }
