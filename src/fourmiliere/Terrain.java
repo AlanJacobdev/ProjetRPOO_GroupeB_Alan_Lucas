@@ -173,7 +173,7 @@ public class Terrain {
    */
   public void step() {
     this.laFourmiliere.step();
-    verificationPheromones();
+
     int tirage = (int) (Math.random() * (10 - 0));
     if (tirage == 1) {
       if (this.lesProies.size() < this.laFourmiliere.getFourmis().size() * 0.05) {
@@ -187,6 +187,7 @@ public class Terrain {
         this.lesProies.remove(proie);
       }
     }
+    verificationPheromones();
     this.leTerrain.rafraichirTerrain();
   }
 

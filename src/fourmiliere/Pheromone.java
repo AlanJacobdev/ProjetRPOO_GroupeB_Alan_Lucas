@@ -7,8 +7,10 @@ import java.awt.Point;
 
 
 public class Pheromone {
-
+  static final Color couleurTerrain = Color.GREEN.darker();
+  static final Color couleurPheromone = Color.gray;
   static final int taillePheromone = 5;
+  protected Color decrementationCouleur;
   protected GRect representationGraphique;
   protected int intensitePheromone;
   protected Terrain leTerrain;
@@ -31,9 +33,9 @@ public class Pheromone {
     this.representationGraphique.setColor(couleur);
     this.representationGraphique.setBorderColor(couleur);
     this.leTerrain.ajouterPheromone(this.representationGraphique);
-    System.out.println(this.coordonees);
     this.representationGraphique.setPosition(this.coordonees);
     this.representationGraphique.setDimension(new Dimension(taillePheromone, taillePheromone));
+    this.decrementationCouleur = couleurPheromone;
   }
 
   /**
@@ -41,9 +43,12 @@ public class Pheromone {
    */
   public void passageFourmis() {
     if (this.intensitePheromone == 0) {
-      this.representationGraphique.setColor(couleur);
+      this.representationGraphique.setColor(couleurPheromone);
+      this.intensitePheromone = 30;
+    } else {
+      this.intensitePheromone = 30;
+      this.representationGraphique.setColor(couleurPheromone);
     }
-    this.intensitePheromone = 400;
   }
 
   /**
@@ -51,15 +56,18 @@ public class Pheromone {
    */
   public void aucunPassageFourmis() {
     this.intensitePheromone--;
-    if (this.intensitePheromone > 0) {
-      this.couleur = couleur.brighter();
-      this.representationGraphique.setColor(couleur);
-      this.representationGraphique.setBorderColor(couleur);
-    } else if (this.intensitePheromone <= 0) {
-      this.couleur = Color.GREEN.darker();
-      this.representationGraphique.setColor(couleur);
-      this.representationGraphique.setBorderColor(couleur);
+    if (this.intensitePheromone != -1) {
     }
+    if (this.intensitePheromone <= 0) {
+      this.intensitePheromone = 0;
+      this.representationGraphique.setColor(couleurTerrain);
+      this.representationGraphique.setBorderColor(couleurTerrain);
+    } else if (this.intensitePheromone <= 10) {
+      this.decrementationCouleur = Color.LIGHT_GRAY;
+      this.representationGraphique.setColor(decrementationCouleur);
+      this.representationGraphique.setBorderColor(decrementationCouleur);
+    }
+
   }
 
   /**

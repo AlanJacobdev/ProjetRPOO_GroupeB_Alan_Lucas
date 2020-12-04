@@ -1,9 +1,11 @@
 package environnement;
 
-import fourmiliere.Terrain;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import fourmiliere.Terrain;
 
 public class Journal {
 
@@ -40,6 +42,18 @@ public class Journal {
     }
   }
 
+  /**
+   * Vide le journal.
+   */
+  public void viderJournal() {
+    PrintWriter pw;
+    try {
+      pw = new PrintWriter(journalActivite);
+      pw.close();
+    } catch (FileNotFoundException e1) {
+      e1.printStackTrace();
+    }
+  }
 
 
 }
