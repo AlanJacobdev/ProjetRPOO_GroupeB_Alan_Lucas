@@ -7,15 +7,17 @@ import java.awt.Point;
 
 
 public class Pheromone {
-  static final Color couleurTerrain = Color.GREEN.darker();
-  static final Color couleurPheromone = Color.gray;
-  static final int taillePheromone = 5;
+  protected final Color couleurTerrain = Color.GREEN.darker();
+  protected final Color couleurPheromone = Color.gray;
+  protected final int taillePheromone = 5;
+  protected final int miseAJourPheromone = 5;
   protected Color decrementationCouleur;
   protected GRect representationGraphique;
   protected int intensitePheromone;
   protected Terrain leTerrain;
   protected Color couleur;
   protected Point coordonees;
+  protected int nombreDePas;
 
 
 
@@ -36,6 +38,7 @@ public class Pheromone {
     this.representationGraphique.setPosition(this.coordonees);
     this.representationGraphique.setDimension(new Dimension(taillePheromone, taillePheromone));
     this.decrementationCouleur = couleurPheromone;
+    this.nombreDePas = 0;
   }
 
   /**
@@ -44,10 +47,12 @@ public class Pheromone {
   public void passageFourmis() {
     if (this.intensitePheromone == 0) {
       this.representationGraphique.setColor(couleurPheromone);
+      this.representationGraphique.setBorderColor(couleurPheromone);
       this.intensitePheromone = 30;
     } else {
       this.intensitePheromone = 30;
       this.representationGraphique.setColor(couleurPheromone);
+      this.representationGraphique.setBorderColor(couleurPheromone);
     }
   }
 
@@ -55,18 +60,19 @@ public class Pheromone {
    * Si aucune passe sur la position de la phéromone, alors celle-ci se détériore.
    */
   public void aucunPassageFourmis() {
-    this.intensitePheromone--;
-    if (this.intensitePheromone != -1) {
+    if (nombreDePas % miseAJourPheromone == 0) {
+      this.intensitePheromone--;
+      if (this.intensitePheromone <= 0) {
+        this.intensitePheromone = 0;
+        this.representationGraphique.setColor(couleurTerrain);
+        this.representationGraphique.setBorderColor(couleurTerrain);
+      } else if (this.intensitePheromone <= 10) {
+        this.decrementationCouleur = Color.LIGHT_GRAY;
+        this.representationGraphique.setColor(decrementationCouleur);
+        this.representationGraphique.setBorderColor(decrementationCouleur);
+      }
     }
-    if (this.intensitePheromone <= 0) {
-      this.intensitePheromone = 0;
-      this.representationGraphique.setColor(couleurTerrain);
-      this.representationGraphique.setBorderColor(couleurTerrain);
-    } else if (this.intensitePheromone <= 10) {
-      this.decrementationCouleur = Color.LIGHT_GRAY;
-      this.representationGraphique.setColor(decrementationCouleur);
-      this.representationGraphique.setBorderColor(decrementationCouleur);
-    }
+
 
   }
 
@@ -76,6 +82,7 @@ public class Pheromone {
    * @param presenceFourmi Une fourmi est passé sur la case correspondant à la phéromone.
    */
   public void step(Boolean presenceFourmi) {
+    ++nombreDePas;
     if (presenceFourmi) {
       this.passageFourmis();
     } else {
