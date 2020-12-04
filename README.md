@@ -7,6 +7,10 @@ Le but de ce projet étant la simulation de l'évolution d'une fourmilliere en g
 
 ----------------
 
+
+
+
+
 Voici les différentes questions que nous avons abordé:
 
 *  [Exercice 5-1 : Installation d’une fourmilière et trace simple](#exercice-1--installation-dune-fourmilière-et-trace-simple)
@@ -16,6 +20,13 @@ Voici les différentes questions que nous avons abordé:
 *  [Exercice 5-3 : Sur la piste des fourmis](#exercice-3--sur-la-piste-des-fourmis)
 
 *  [JavaDoc](#javadoc)
+
+
+
+
+
+![GIF du cube](/Classes.png)
+
 
 ----------------
 
