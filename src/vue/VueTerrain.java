@@ -14,7 +14,7 @@ public class VueTerrain {
   Dimension dimensionsTerrain;
 
   /**
-   * Constructeur d'un terrain graphique. 
+   * Constructeur d'un terrain graphique.
    * 
    * @param dimensionsTerrain Les dimension du terrain graphique
    */
@@ -35,44 +35,64 @@ public class VueTerrain {
    * Ajouter une fourmiliere au terrain.
    * 
    * @param fourmiliere Une fourmiliere
-   * @param territoire Le territoire
    */
-  public void addFourmiliere(GRect territoire, GRect fourmiliere) {
-    leTerrainVue.addElement(territoire);
+  public void addFourmiliere(GRect fourmiliere) {
+
     leTerrainVue.addElement(fourmiliere);
   }
 
   /**
+   * Ajouter du territoire d'une fouriliere au terrain.
+   * 
+   * @param territoire Le territoire
+   */
+  public void addTerritoire(GRect territoire) {
+    leTerrainVue.addElement(territoire);
+  }
+
+  /**
    * Ajouter une proie au terrain.
+   * 
    * @param proie la Proie
    */
   public void addProie(GRect proie) {
     leTerrainVue.addElement(proie);
   }
-  
+
   /**
    * Suppresion d'une proie sur le terrain.
+   * 
    * @param proie la proie a supprimer
    */
   public void delProie(GRect proie) {
     leTerrainVue.removeElement(proie);
   }
 
-
   /**
    * Ajout d'une fourmis au terrain.
+   * 
    * @param fourmis la fourmis a ajouter
    */
   public void addFourmis(GOval fourmis) {
     this.leTerrainVue.addElement(fourmis);
   }
-  
+
   /**
    * Permet la suppression de fourmis sur le terrain.
+   * 
    * @param fourmis la fourmis a supprimer
    */
   public void delFourmis(GOval fourmis) {
     this.leTerrainVue.removeElement(fourmis);
+  }
+
+  /**
+   * Ajout d'un pheromone au terrain.
+   * 
+   * @param pheromone le pheromone a ajouter
+   */
+  public void addPheromone(GRect pheromone) {
+    this.leTerrainVue.addElement(pheromone);
   }
 
   /**

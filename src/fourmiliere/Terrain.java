@@ -21,7 +21,7 @@ public class Terrain {
   protected VueTerrain leTerrain;
   protected List<Proie> lesProies;
   protected List<Proie> lesProiesMortes;
-  protected Pheromone[][] tableau;
+  protected Pheromone[][] lesPheromones;
 
   /**
    * Constructeur d'un terrain.
@@ -32,7 +32,6 @@ public class Terrain {
     this.leTerrain = new VueTerrain(tailleTerrain);
     this.lesProies = new ArrayList<Proie>();
     this.lesProiesMortes = new ArrayList<Proie>();
-    this.preconfigurerPheromone();
   }
 
   public Fourmiliere getLaFourmiliere() {
@@ -71,6 +70,21 @@ public class Terrain {
     return leTerrain;
   }
 
+
+  /**
+   * Récupérer un phéromone.
+   * @param x coordonnées en x
+   * @param y coordonées en y
+   * @return <b>true</b> si le phéromone existe sinon <b>false</b>
+   */
+  public Pheromone getUnPheromone(int x, int y) {
+    Pheromone unPheromone = this.lesPheromones[x / 5 - 55][y / 5 - 55];
+    if (unPheromone != null) {
+      return unPheromone;
+    }
+    return null;
+  }
+
   /**
    * Afficher la vue graphique du terrain.
    */
@@ -90,12 +104,14 @@ public class Terrain {
         new Point(this.tailleTerrain.height / 2, this.tailleTerrain.width / 2);
     this.laFourmiliere.setPositionFourmiliere(coordoneesFourmiliere);
     Point coordoneesTerritoire =
-        new Point(coordoneesFourmiliere.x - 190, coordoneesFourmiliere.y - 190);
+        new Point(coordoneesFourmiliere.x - 191, coordoneesFourmiliere.y - 191);
     this.laFourmiliere.getRepresentationTerritoire().setPosition(coordoneesTerritoire);
-    this.laFourmiliere.getRepresentationTerritoire()
-        .setDimension(new Dimension(tailleTerritoireFourmiliere, tailleTerritoireFourmiliere));
+    this.laFourmiliere.getRepresentationTerritoire().setDimension(
+        new Dimension(tailleTerritoireFourmiliere + 2, tailleTerritoireFourmiliere + 2));
     this.laFourmiliere.getRepresentationGraphique().setPosition(coordoneesFourmiliere);
-    this.getLeTerrain().addFourmiliere(representationTerritoire, representationGraphique);
+    this.getLeTerrain().addTerritoire(representationTerritoire);
+    this.preconfigurerPheromone();
+    this.getLeTerrain().addFourmiliere(representationGraphique);
   }
 
   /**
@@ -111,23 +127,17 @@ public class Terrain {
    * Mettre en place le tableau des phéromones.
    */
   public void preconfigurerPheromone() {
-    this.tableau =
-        new Pheromone[this.tailleTerritoireFourmiliere][this.tailleTerritoireFourmiliere];
-    for (int i = 60; i < tableau.length + 60; i++) {
-      for (int j = 60; j < tableau[i].length + 60; j++) {
-        tableau[i][j] = new Pheromone(this, new Point(i, j));
+    this.lesPheromones = new Pheromone[this.tailleTerritoireFourmiliere / 5
+        + 1][this.tailleTerritoireFourmiliere / 5 + 1];
+    for (int i = 1; i < lesPheromones.length; i++) {
+      for (int j = 1; j < lesPheromones[i].length; j++) {
+        lesPheromones[i][j] = new Pheromone(this, new Point(55 + i * 5, 55 + j * 5));
       }
     }
   }
 
-  public void supprimerPheromone(GRect representationGraphique) {
-    // TODO Auto-generated method stub
-
-  }
-
   public void ajouterPheromone(GRect representationGraphique) {
-    // TODO Auto-generated method stub
-
+    this.leTerrain.addPheromone(representationGraphique);
   }
 
   /**
@@ -162,6 +172,11 @@ public class Terrain {
    */
   public void step() {
     this.laFourmiliere.step();
+    for (int i = 1; i < lesPheromones.length; i++) {
+      for (int j = 1; j < lesPheromones[i].length; j++) {
+        lesPheromones[i][j].step(false);
+      }
+    }
     int tirage = (int) (Math.random() * (10 - 0));
     if (tirage == 1) {
       if (this.lesProies.size() < this.laFourmiliere.getFourmis().size() * 0.05) {

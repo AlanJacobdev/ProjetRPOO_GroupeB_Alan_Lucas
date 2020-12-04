@@ -47,7 +47,7 @@ public class Main {
       simulateur.getJournal().ecrire(leTerrain, jour);
       printemps.incrementerJour();
       try {
-        Thread.sleep(10);
+        Thread.sleep(1000);
       } catch (InterruptedException e) {
         e.printStackTrace();
       }

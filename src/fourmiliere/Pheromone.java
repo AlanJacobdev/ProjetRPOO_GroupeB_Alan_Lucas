@@ -2,6 +2,7 @@ package fourmiliere;
 
 import graphicLayer.GRect;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Point;
 
 
@@ -14,6 +15,8 @@ public class Pheromone {
   protected Color couleur;
   protected Point coordonees;
 
+
+
   /**
    * Constructeur des pheromone.
    * 
@@ -21,24 +24,26 @@ public class Pheromone {
    */
   public Pheromone(Terrain unTerrain, Point unePosition) {
     this.representationGraphique = new GRect();
-    this.couleur = Color.cyan.darker();
+    this.couleur = Color.GREEN.darker();
     this.intensitePheromone = 0;
     this.leTerrain = unTerrain;
     this.coordonees = unePosition;
+    this.representationGraphique.setColor(couleur);
+    this.representationGraphique.setBorderColor(couleur);
+    this.leTerrain.ajouterPheromone(this.representationGraphique);
+    System.out.println(this.coordonees);
+    this.representationGraphique.setPosition(this.coordonees);
+    this.representationGraphique.setDimension(new Dimension(taillePheromone, taillePheromone));
   }
 
   /**
    * Réagis au passage de la fourmi et s'affiche.
    */
   public void passageFourmis() {
-    if (this.intensitePheromone > 0) {
-      this.representationGraphique.setColor(couleur.darker());
-    } else {
+    if (this.intensitePheromone == 0) {
       this.representationGraphique.setColor(couleur);
-      this.leTerrain.ajouterPheromone(this.representationGraphique);
     }
-
-    this.intensitePheromone = 5;
+    this.intensitePheromone = 80;
   }
 
   /**
@@ -46,15 +51,20 @@ public class Pheromone {
    */
   public void aucunPassageFourmis() {
     this.couleur = couleur.darker();
-    --this.intensitePheromone;
-    if (this.intensitePheromone == 0) {
-      this.leTerrain.supprimerPheromone(this.representationGraphique);
+    this.representationGraphique.setColor(couleur);
+    this.representationGraphique.setBorderColor(couleur);
+    this.intensitePheromone--;
+    if (this.intensitePheromone <= 0) {
+      this.couleur = Color.GREEN.darker();
+      this.representationGraphique.setColor(couleur);
+      this.representationGraphique.setBorderColor(couleur);
     }
   }
 
 
   /**
    * Avancé dans le temps.
+   * 
    * @param presenceFourmi Une fourmi est passé sur la case correspondant à la phéromone.
    */
   public void step(Boolean presenceFourmi) {

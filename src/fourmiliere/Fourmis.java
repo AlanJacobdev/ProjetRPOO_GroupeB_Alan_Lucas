@@ -56,6 +56,7 @@ public class Fourmis {
     etape.step();
   }
 
+
   /**
    * Permet de récupérer des informations sur la fourmiliere. Fait circuler le bilan des
    * informations dans aux fourmis prsentent dans la fourmilliere.
