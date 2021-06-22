@@ -117,6 +117,7 @@ L'implémentation graphique avance de la même durée dans les 3 exercices (un j
 
 Jour n°687
 Population : 279
+
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
@@ -129,6 +130,7 @@ Informations sur la fourmilière :
 
 Jour n°688
 Population : 279
+
 Informations sur la fourmilière :
 - Nombre d'oeufs : 0
 - Nombre de larves : 0
