@@ -78,6 +78,7 @@ L'implémentation graphique avance de la même durée dans les 3 exercices (un j
 ## Exercice 1 : Installation d’une fourmilière et trace simple
 
 *La simulation débute avec la nidification d’une reine.*
+
 **Gestion du cas**
 
 *  Création d'une Reine, cette dernière créer une fourmiliere grâce à la méthode creerFourmiliere.
