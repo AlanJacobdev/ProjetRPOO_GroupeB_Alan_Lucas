@@ -205,7 +205,7 @@ Cette tâche est extrement lourde sachant que 1600 (80×80) cases de phéromones
 * Rouge : Fourmilière
 * Magenta : Fourmis ramenant une proie à la fourmilière
 * Rectangle blanc : Territoire de la fourmilière
-
+* Gris : Phéromones
 
 ## Javadoc
 
